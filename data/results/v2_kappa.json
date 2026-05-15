@@ -1,0 +1,80 @@
+{
+  "per_field": {
+    "prior_state.post_endo": {
+      "kappa": 0.3985,
+      "agreement_pct": 0.6,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "prior_state.post_cdk46i": {
+      "kappa": 0.6667,
+      "agreement_pct": 0.8,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "prior_state.menopausal_status": {
+      "kappa": 0.8406,
+      "agreement_pct": 0.9,
+      "n_pairs": 20,
+      "is_key_field": false
+    },
+    "biomarker.hr_pos": {
+      "kappa": 0.6429,
+      "agreement_pct": 0.95,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "biomarker.her2_neg": {
+      "kappa": 0.6491,
+      "agreement_pct": 0.95,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "biomarker.her2_low": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "biomarker.pik3ca_mut": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "biomarker.esr1_mut": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "biomarker.akt_path": {
+      "kappa": 0.0,
+      "agreement_pct": 0.95,
+      "n_pairs": 20,
+      "is_key_field": true
+    },
+    "biomarker.brca_germline": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": false
+    },
+    "drug_class": {
+      "kappa": 0.8266,
+      "agreement_pct": 0.85,
+      "n_pairs": 20,
+      "is_key_field": false
+    },
+    "excluded.post_cdk46i": {
+      "kappa": 0.7541,
+      "agreement_pct": 0.85,
+      "n_pairs": 20,
+      "is_key_field": false
+    }
+  },
+  "n_validation": 20,
+  "mean_key_field_kappa": 0.6696,
+  "min_key_field_kappa": 0.0,
+  "passes_kappa_gate_07": false
+}

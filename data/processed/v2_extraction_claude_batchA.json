@@ -1,0 +1,675 @@
+[
+  {
+    "nct_id": "NCT01740427",
+    "trial_name": "PALOMA-2",
+    "prior_state": {
+      "post_endo": false,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Palbociclib + letrozole vs placebo + letrozole, 1L postmenopausal HR+/HER2- ABC. ER+ required; no prior systemic therapy for advanced disease; CDK4/6i excluded; DFI >12mo from adjuvant letrozole/anastrozole required."
+  },
+  {
+    "nct_id": "NCT01783444",
+    "trial_name": "BOLERO-6",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": null,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "everolimus + exemestane",
+    "year_pc": 2018,
+    "guideline_target_node": "post-NSAI|all-comers|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "BOLERO-6 phase 2: everolimus+exemestane vs everolimus alone vs capecitabine in ER+ ABC after NSAI failure. Eligibility text sparse; HER2- not explicitly stated in the excerpt but trial context is HR+/HER2-. >1 prior chemo line excluded; prior exemestane/mTOR/PI3K/AKT excluded."
+  },
+  {
+    "nct_id": "NCT01905592",
+    "trial_name": "BRAVO",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": null,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": true,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "HR+_subgroup"
+    ],
+    "drug_class": "investigational (other)",
+    "year_pc": 2018,
+    "guideline_target_node": "metastatic|gBRCA|HER2-",
+    "confidence": "medium",
+    "notes": "BRAVO phase 3: niraparib vs physician's choice in germline BRCA1/2 HER2- mBC; mixed HR+/HR-. HR+ subjects required endocrine resistance (relapse on/within 12mo of adjuvant ET or progression on >=1 line of ET for advanced). Niraparib is a PARPi but is not in the canonical drug-class list (which only lists olaparib and talazoparib); used 'investigational (other)' per protocol guidance with note. Up to 2 prior cytotoxic lines for advanced disease allowed."
+  },
+  {
+    "nct_id": "NCT01942135",
+    "trial_name": "PALOMA-3",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2014,
+    "guideline_target_node": "post-endo|all-comers|HR+/HER2-",
+    "confidence": "high",
+    "notes": "PALOMA-3: palbociclib + fulvestrant vs placebo + fulvestrant in HR+/HER2- mBC progressed within 12mo of adjuvant ET or 1mo of advanced ET. Any menopausal status (premenopausal must be on LHRH agonist). Prior CDK inhibitor, fulvestrant, everolimus, PI3K-mTOR agents excluded."
+  },
+  {
+    "nct_id": "NCT01958021",
+    "trial_name": "MONALEESA-2",
+    "prior_state": {
+      "post_endo": false,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "confidence": "high",
+    "notes": "MONALEESA-2: ribociclib + letrozole vs placebo + letrozole in 1L postmenopausal HR+/HER2- advanced BC. No prior systemic anti-cancer therapy for advanced disease. Prior CDK4/6i excluded. Adjuvant letrozole/anastrozole permitted if DFI >12mo."
+  },
+  {
+    "nct_id": "NCT02000622",
+    "trial_name": "OlympiAD",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": null,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": true,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "HR+_subgroup",
+      "TNBC_subgroup"
+    ],
+    "drug_class": "PARPi (olaparib)",
+    "year_pc": 2016,
+    "guideline_target_node": "metastatic|gBRCA|HER2-",
+    "confidence": "high",
+    "notes": "OlympiAD: olaparib vs physician's choice chemo in gBRCA1/2 HER2- mBC; both HR+ and TNBC. HR+ patients required to have received and progressed on >=1 endocrine therapy (or deemed inappropriate). HER2+ excluded. Up to 2 prior chemo lines for mBC allowed; prior PARPi excluded."
+  },
+  {
+    "nct_id": "NCT02007512",
+    "trial_name": "Enzalutamide + exemestane (NCT02007512)",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2016,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: investigational androgen-receptor antagonist (enzalutamide) + exemestane in postmenopausal ER+/PR+ HER2-normal ABC. Up to 1 prior hormone and 1 prior chemo in advanced setting allowed. No canonical drug-class match."
+  },
+  {
+    "nct_id": "NCT02107703",
+    "trial_name": "MONARCH 2",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2017,
+    "guideline_target_node": "post-endo|all-comers|HR+/HER2-",
+    "confidence": "high",
+    "notes": "MONARCH 2: abemaciclib + fulvestrant vs placebo + fulvestrant in HR+/HER2- ABC progressed on neo/adjuvant ET or on 1L ET in metastatic. No more than 1 line of endocrine and no prior chemo for metastatic disease. Pre/perimenopausal allowed with ovarian suppression."
+  },
+  {
+    "nct_id": "NCT02115282",
+    "trial_name": "E2112 (exemestane +/- entinostat)",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2020,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: entinostat (HDAC inhibitor) + exemestane vs placebo + exemestane in HR+/HER2- locally advanced/metastatic BC. HDAC inhibitor + AI is investigational; no canonical drug-class in the protocol's class list."
+  },
+  {
+    "nct_id": "NCT02246621",
+    "trial_name": "MONARCH 3",
+    "prior_state": {
+      "post_endo": false,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2017,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "confidence": "high",
+    "notes": "MONARCH 3: abemaciclib + NSAI (anastrozole/letrozole) vs placebo + NSAI in 1L postmenopausal HR+/HER2- locoregionally recurrent or metastatic BC. No prior endocrine or chemo for advanced disease; DFI >12mo from neo/adjuvant ET required; prior everolimus or CDK4/6i excluded."
+  },
+  {
+    "nct_id": "NCT02258451",
+    "trial_name": "Radium-223 + exemestane + everolimus (NCT02258451)",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2020,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: radium-223 added to exemestane + everolimus in bone-dominant HR+/HER2- mBC after progression on NSAI; >=1 prior endocrine line in metastatic setting required; prior everolimus excluded; chemo for metastatic excluded. Investigational backbone — no canonical class match (everolimus + exemestane is the comparator backbone, not the experimental arm)."
+  },
+  {
+    "nct_id": "NCT02278120",
+    "trial_name": "MONALEESA-7",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "pre"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
+    "year_pc": 2017,
+    "guideline_target_node": "first-line|pre-menopausal|HR+/HER2-",
+    "confidence": "high",
+    "notes": "MONALEESA-7: ribociclib + tamoxifen/NSAI + goserelin vs placebo + ET in premenopausal/perimenopausal HR+/HER2- advanced BC. No prior hormonal anti-cancer therapy for advanced BC (<=14d NSAI/tamoxifen allowed). Prior CDK4/6i excluded. Postmenopausal excluded."
+  },
+  {
+    "nct_id": "NCT02340221",
+    "trial_name": "SANDPIPER",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": true,
+      "esr1_mut": null,
+      "akt_path": true,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "PIK3CAmut_subgroup"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2021,
+    "guideline_target_node": "post-AI|PIK3CAmut|HR+/HER2-",
+    "confidence": "high",
+    "notes": "SANDPIPER: taselisib + fulvestrant vs placebo + fulvestrant in postmenopausal ER+/HER2- locally advanced/metastatic BC with recurrence/progression on or within 12mo of adjuvant AI or progression on/within 1mo of advanced AI. Central PIK3CA cobas testing required. Prior fulvestrant, PI3K/mTOR/AKT excluded; prior >1 cytotoxic chemo for mBC excluded."
+  },
+  {
+    "nct_id": "NCT02344472",
+    "trial_name": "DETECT V / CHEVENDO",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": false,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2025,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: HER2-positive trial. DETECT V randomises HER2+/HR+ mBC patients to dual HER2 blockade (trastuzumab + pertuzumab) plus either endocrine therapy or chemotherapy, with ribociclib added in a substudy. Population is HER2-positive — out of scope for HR+/HER2- mBC."
+  },
+  {
+    "nct_id": "NCT02422615",
+    "trial_name": "MONALEESA-3",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2017,
+    "guideline_target_node": "first-or-second-line|all-comers|HR+/HER2-",
+    "confidence": "high",
+    "notes": "MONALEESA-3: ribociclib + fulvestrant vs placebo + fulvestrant in postmenopausal HR+/HER2- advanced BC. Enrols both treatment-naive (1L) and patients who progressed after one line of ET (2L). Prior fulvestrant, chemo for advanced, or any CDK4/6i excluded."
+  },
+  {
+    "nct_id": "NCT02437318",
+    "trial_name": "SOLAR-1",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": true,
+      "esr1_mut": null,
+      "akt_path": true,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "PIK3CAmut_cohort",
+      "PIK3CAwt_cohort"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2018,
+    "guideline_target_node": "post-AI|PIK3CAmut|HR+/HER2-",
+    "confidence": "high",
+    "notes": "SOLAR-1: alpelisib + fulvestrant vs placebo + fulvestrant in postmenopausal HR+/HER2- mBC with recurrence/progression on or after AI. Two cohorts by PIK3CA status (mutant and wild-type); primary endpoint in PIK3CA-mutant cohort. Prior chemo for advanced, fulvestrant, PI3K/mTOR/AKT inhibitors excluded; prior CDK4/6i allowed."
+  },
+  {
+    "nct_id": "NCT02482753",
+    "trial_name": "ACE (chidamide + exemestane)",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2018,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope (no canonical drug-class match): chidamide (HDAC inhibitor) + exemestane vs placebo + exemestane in postmenopausal HR+/HER2- advanced BC after >=1 prior endocrine therapy; up to 1 prior chemo allowed; <=4 prior therapies total. Prior exemestane excluded."
+  },
+  {
+    "nct_id": "NCT02614833",
+    "trial_name": "AIPAC (eftilagimod alpha + paclitaxel)",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": 0,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2020,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: IMP321/eftilagimod alpha (LAG-3 agonist, biological) + paclitaxel vs placebo + paclitaxel as 1L chemo in ER+/PR+ metastatic BC; HER2+ candidates for trastuzumab excluded (so effectively HER2-). No prior chemo for mBC; DFI >12mo from adjuvant chemo. CDK4/6i washout required. Investigational immunomodulator — no canonical drug-class."
+  },
+  {
+    "nct_id": "NCT02747004",
+    "trial_name": "nextMONARCH 1",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": 1,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2018,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope (phase 2 dose-finding/multi-arm): nextMONARCH 1 compared abemaciclib monotherapy at two doses vs abemaciclib + tamoxifen in heavily pretreated HR+/HER2- mBC (>=2 chemo regimens total, 1-2 in metastatic setting; relapsed/progressed on endocrine therapy). Prior CDK4/6i excluded. Drug class does not cleanly map to a canonical post-CDK4/6i label (CDK4/6i-naive heavily pretreated); flagged as investigational."
+  },
+  {
+    "nct_id": "NCT02763566",
+    "trial_name": "MONARCH plus",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "Cohort_A_1L",
+      "Cohort_B_post-endo"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2019,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "confidence": "high",
+    "notes": "MONARCH plus: abemaciclib + NSAI (Cohort A, 1L endocrine-naive in advanced) and abemaciclib + fulvestrant (Cohort B, post-endocrine progression) vs placebo arms in HR+/HER2- ABC. Lead/Cohort A drug class is CDK4/6i + AI; Cohort B is CDK4/6i + fulvestrant. Prior CDK4/6i excluded."
+  }
+]

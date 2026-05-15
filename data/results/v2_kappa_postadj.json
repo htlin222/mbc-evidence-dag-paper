@@ -1,0 +1,84 @@
+{
+  "per_field": {
+    "prior_state.post_endo": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 0.3985,
+      "pabak": 1.0
+    },
+    "biomarker.hr_pos": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 0.6429,
+      "pabak": 1.0
+    },
+    "biomarker.her2_neg": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 0.6491,
+      "pabak": 1.0
+    },
+    "prior_state.post_cdk46i": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 0.6667,
+      "pabak": 1.0
+    },
+    "biomarker.her2_low": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 1.0,
+      "pabak": 1.0
+    },
+    "biomarker.pik3ca_mut": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 1.0,
+      "pabak": 1.0
+    },
+    "biomarker.esr1_mut": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 1.0,
+      "pabak": 1.0
+    },
+    "biomarker.akt_path": {
+      "kappa": 0.0,
+      "agreement_pct": 0.95,
+      "n_pairs": 20,
+      "is_key_field": true,
+      "pre_kappa": 0.0,
+      "pabak": 0.9
+    },
+    "drug_class": {
+      "kappa": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 20,
+      "is_key_field": false,
+      "pre_kappa": 0.8266,
+      "pabak": 1.0
+    }
+  },
+  "n_validation": 20,
+  "mean_key_field_kappa_post": 0.875,
+  "min_key_field_kappa_post": 0.0,
+  "mean_key_field_pabak_post": 0.9875,
+  "min_key_field_pabak_post": 0.9,
+  "adjudication_rules_applied": 17,
+  "passes_gate_07_post_adjudication_cohen": false,
+  "passes_gate_07_post_adjudication_pabak": true
+}

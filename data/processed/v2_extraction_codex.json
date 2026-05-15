@@ -1,0 +1,662 @@
+[
+  {
+    "nct_id": "NCT01905592",
+    "trial_name": "BRAVO",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": null,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": true,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "PARPi (olaparib)",
+    "year_pc": 2018,
+    "guideline_target_node": "previously-treated|gBRCA|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "HER2-negative germline BRCA trial includes HR-positive and HR-negative patients; niraparib mapped to closest canonical PARPi class."
+  },
+  {
+    "nct_id": "NCT02344472",
+    "trial_name": "DETECT V / CHEVENDO",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": false,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2025,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: HER2-positive HR-positive metastatic breast cancer."
+  },
+  {
+    "nct_id": "NCT02482753",
+    "trial_name": "ACE",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2018,
+    "guideline_target_node": "post-endo|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Chidamide plus exemestane has no specific canonical HDAC-inhibitor class; prior endocrine therapy is required but may be adjuvant or advanced/metastatic."
+  },
+  {
+    "nct_id": "NCT02763566",
+    "trial_name": "MONARCH plus",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2019,
+    "guideline_target_node": "first-line|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Two cohorts include abemaciclib plus NSAI and abemaciclib plus fulvestrant; lead NSAI class used."
+  },
+  {
+    "nct_id": "NCT03096847",
+    "trial_name": "Ribociclib + Letrozole Phase IIIb",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2018,
+    "guideline_target_node": "first-line|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Prior advanced/metastatic therapy criteria are maximum limits only; prior endocrine therapy or chemotherapy is not required."
+  },
+  {
+    "nct_id": "NCT03927456",
+    "trial_name": "SHR6390 + Fulvestrant",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2021,
+    "guideline_target_node": "post-endo|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Prior endocrine therapy is required but the eligibility text does not specify the prior endocrine setting; one prior chemotherapy line for advanced/metastatic disease is allowed."
+  },
+  {
+    "nct_id": "NCT03966898",
+    "trial_name": "SHR6390 + AI",
+    "prior_state": {
+      "post_endo": false,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2022,
+    "guideline_target_node": "first-line|all|HR+/HER2-",
+    "confidence": "high",
+    "notes": "No prior systemic anti-cancer therapy for advanced HR-positive disease."
+  },
+  {
+    "nct_id": "NCT04263298",
+    "trial_name": "FAMILY",
+    "prior_state": {
+      "post_endo": false,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": 1,
+      "endo_resistance_window_months": 24,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "endocrine therapy alone",
+    "year_pc": 2025,
+    "guideline_target_node": "post-chemo|all|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Maintenance after first-line chemotherapy; endocrine therapy for advanced disease is excluded."
+  },
+  {
+    "nct_id": "NCT04494425",
+    "trial_name": "DB-06",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 24,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": true,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "HER2-ADC (T-DXd)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|HER2-low|HR+/HER2-",
+    "confidence": "high",
+    "notes": "HER2-low or HER2 IHC greater than 0 and less than 1+ HR-positive disease; no prior chemotherapy for advanced/metastatic breast cancer."
+  },
+  {
+    "nct_id": "NCT04571437",
+    "trial_name": "B-001",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "chemotherapy single agent",
+    "year_pc": 2021,
+    "guideline_target_node": "first-line|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Experimental arm adds metronomic capecitabine to letrozole; mapped to closest chemotherapy canonical class."
+  },
+  {
+    "nct_id": "NCT04576455",
+    "trial_name": "acelERA Breast Cancer",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2022,
+    "guideline_target_node": "previously-treated|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Eligibility requires progression after one or two systemic therapy lines in the locally advanced/metastatic setting but does not specify endocrine therapy in the displayed text."
+  },
+  {
+    "nct_id": "NCT04711252",
+    "trial_name": "SERENA-4",
+    "prior_state": {
+      "post_endo": false,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2026,
+    "guideline_target_node": "first-line|all|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Previously untreated with systemic anti-cancer therapy for locoregionally recurrent or metastatic ER-positive disease; adjuvant AI recurrence within 12 months is excluded."
+  },
+  {
+    "nct_id": "NCT04975308",
+    "trial_name": "EMBER-3",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Multi-arm trial includes imlunestrant monotherapy and imlunestrant plus abemaciclib; lead imlunestrant class used. Prior CDK4/6 inhibitor is expected if approved and reimbursed, not universally required."
+  },
+  {
+    "nct_id": "NCT05054751",
+    "trial_name": "GB491 + Fulvestrant",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2022,
+    "guideline_target_node": "post-endo|all|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Prior endocrine therapy is required but may be adjuvant or advanced/metastatic; GB491 class inferred from exclusion of other CDK4/6 inhibitors."
+  },
+  {
+    "nct_id": "NCT05169567",
+    "trial_name": "postMONARCH",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-CDK46i|all|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Prior CDK4/6 inhibitor plus endocrine therapy required; prior chemotherapy for metastatic breast cancer is excluded."
+  },
+  {
+    "nct_id": "NCT05205200",
+    "trial_name": "ENIGMA",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2025,
+    "guideline_target_node": "first-line|SNF-2|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "SNF-2 HR-positive/HER2-negative metastatic trial using PD-L1 antibody, CDK4/6 inhibitor, chemotherapy, and endocrine components; no previous chemotherapy or targeted therapy for metastatic disease."
+  },
+  {
+    "nct_id": "NCT05654623",
+    "trial_name": "VERITAC-2",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2025,
+    "guideline_target_node": "post-CDK46i|all|HR+/HER2-",
+    "confidence": "high",
+    "notes": "One line of CDK4/6 inhibitor therapy in combination with endocrine therapy for recurrent/metastatic disease is required; prior chemotherapy for advanced/metastatic disease is excluded."
+  },
+  {
+    "nct_id": "NCT05860465",
+    "trial_name": "SPH4336 + Endocrine Therapy",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": null,
+      "her2_neg": null,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2026,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Eligibility text is too sparse for biomarker and prior-state extraction; HR-positive/HER2-negative and post-CDK4/6 endocrine setting appear in the title, not the eligibility text."
+  },
+  {
+    "nct_id": "NCT06561022",
+    "trial_name": "abemaSNF1/3",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2025,
+    "guideline_target_node": "post-CDK46i|SNF1/3|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "SNF1 or SNF3 subtype-directed phase 2 regimen includes fluzoparib, everolimus, fulvestrant, and abemaciclib; no exact canonical regimen class beyond investigational."
+  },
+  {
+    "nct_id": "NCT06635447",
+    "trial_name": "CAPItrue",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": true,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2026,
+    "guideline_target_node": "post-endo|AKTpath|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Requires prior endocrine therapy containing regimen with adjuvant or locally advanced/metastatic progression paths; PIK3CA/AKT1/PTEN alteration criterion is noted as applicable under Protocol Version 2.0."
+  }
+]

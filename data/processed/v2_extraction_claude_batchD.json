@@ -1,0 +1,683 @@
+[
+  {
+    "nct_id": "NCT05169567",
+    "trial_name": "postMONARCH",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Abemaciclib+fulvestrant vs placebo+fulvestrant after progression on prior CDK4/6i+ET (advanced or adjuvant). Postmenopausal or OFS. No prior MBC chemo; no prior fulvestrant/SERD/PI3K/mTOR/AKTi."
+  },
+  {
+    "nct_id": "NCT05205200",
+    "trial_name": "ENIGMA (BCTOP-L-M02)",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "SNF-2 subtype"
+    ],
+    "drug_class": "investigational (other)",
+    "year_pc": 2025,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: SNF-2 molecular-subtype-restricted IIT of PD-L1 antibody (SHR-1316) + CDK4/6i + nab-paclitaxel + endocrine therapy; novel immunotherapy combo with no canonical drug-class match."
+  },
+  {
+    "nct_id": "NCT05207709",
+    "trial_name": "HARMONIA",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "HER2-enriched (PAM50) subtype",
+      "Basal-like (PAM50) subtype"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|HER2-E-PAM50|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Head-to-head ribociclib vs palbociclib (+ letrozole or fulvestrant) in HR+/HER2- with PAM50 HER2-enriched or basal-like intrinsic subtype. CDK4/6i-naive. Biomarker-stratified design (intrinsic subtype)."
+  },
+  {
+    "nct_id": "NCT05257395",
+    "trial_name": "XZP-3287 (birociclib) + AI",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "post"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2025,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Phase III XZP-3287 (CDK4/6i) + letrozole/anastrozole vs placebo+AI, first-line in postmenopausal HR+/HER2- MBC. No prior systemic therapy for MBC; CDK4/6i- and mTORi-naive; excludes recurrence within 12 mo of (neo)adjuvant endocrine therapy."
+  },
+  {
+    "nct_id": "NCT05365178",
+    "trial_name": "TQB3616 + fulvestrant 1L",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2025,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Phase III TQB3616 (CDK2/4/6i) + fulvestrant vs placebo + fulvestrant in 'previously untreated' HR+/HER2- ABC. Pre/postmenopausal allowed; detailed prior-therapy exclusions not in available eligibility excerpt."
+  },
+  {
+    "nct_id": "NCT05375461",
+    "trial_name": "TQB3616 + fulvestrant (previously treated)",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2024,
+    "guideline_target_node": "2L|any|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "TQB3616 (CDK2/4/6i) + fulvestrant vs placebo + fulvestrant in previously treated HR+/HER2- ABC. Allows up to 1 prior line of rescue chemotherapy OR endocrine therapy in the metastatic/recurrence setting; prior CDK4/6i status not specified."
+  },
+  {
+    "nct_id": "NCT05439499",
+    "trial_name": "FCN-437c + AI ± goserelin",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2024,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "FCN-437c (CDK4/6i) + letrozole or anastrozole ± goserelin vs placebo+AI±goserelin, first-line HR+/HER2- ABC. No prior systemic therapy for MBC; adjuvant ET allowed if DFS>12 mo; brief AI/goserelin <=28 d prior allowed."
+  },
+  {
+    "nct_id": "NCT05501886",
+    "trial_name": "VIKTORIA-1",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "PIK3CA wild-type",
+      "PIK3CA mutant"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Gedatolisib (pan-PI3K/mTOR) + fulvestrant ± palbociclib vs SOC (alpelisib+fulvestrant or fulvestrant) after PD on CDK4/6i + nonsteroidal AI. <=2 prior endocrine lines; no prior chemo/ADC for advanced disease; no prior PI3K/AKT/mTOR. Stratified by PIK3CA status."
+  },
+  {
+    "nct_id": "NCT05646862",
+    "trial_name": "INAVO121",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": true,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "PIK3CA mutant"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Inavolisib + fulvestrant vs alpelisib + fulvestrant in PIK3CA-mutated HR+/HER2- MBC post CDK4/6i+ET. <=2 prior systemic lines in mBC; <=1 line chemo in mBC permitted; no prior PI3K/AKT/mTOR. Excludes adjuvant-CDK4/6i relapses with PD>12 mo post-completion if no MBC treatment received."
+  },
+  {
+    "nct_id": "NCT05654623",
+    "trial_name": "VERITAC-2",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2025,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Vepdegestrant (ARV-471) PROTAC ER degrader monotherapy vs fulvestrant after 1 prior CDK4/6i+ET line and <=1 additional endocrine line. Endocrine duration >=6 mo required. No prior chemo for adv/MBC; no prior fulvestrant/elacestrant/SERD/SERCA/CERAN/mTOR/PI3K/AKT/PARPi. ESR1mut pre-specified subgroup."
+  },
+  {
+    "nct_id": "NCT05744687",
+    "trial_name": "SPH4336 + letrozole 1L",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Phase II/III SPH4336 (CDK4/6i) + letrozole vs placebo + letrozole, first-line HR+/HER2- LA/MBC. No prior systemic therapy in advanced setting; CDK4/6i-naive; pre/peri-menopausal require goserelin."
+  },
+  {
+    "nct_id": "NCT05851014",
+    "trial_name": "GB491 + letrozole 1L",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": true,
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Phase III GB491 (CDK4/6i) + letrozole vs placebo + letrozole, first-line HR+/HER2- LA/MBC. No prior systemic antitumor therapy; CDK4/6i-naive; no prior chemo for locoregional/metastatic disease."
+  },
+  {
+    "nct_id": "NCT05860465",
+    "trial_name": "SPH4336 post-CDK4/6i",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Phase II/III SPH4336 (CDK4/6i) + endocrine therapy (letrozole or fulvestrant) vs placebo + ET in HR+/HER2- LA/MBC that progressed on prior CDK4/6i + ET. Population/title indicates post-CDK4/6i; detailed inclusion language sparse in eligibility excerpt."
+  },
+  {
+    "nct_id": "NCT06018337",
+    "trial_name": "DYNASTY-Breast02",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": 0,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": true,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "HER2 IHC 1+ vs 2+/ISH-"
+    ],
+    "drug_class": "HER2-ADC (other)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-ET|HER2-low|HR+/HER2-",
+    "confidence": "high",
+    "notes": "DB-1303/BNT323 (trastuzumab pamirtecan; novel HER2 ADC) vs investigator's choice chemo (capecitabine/paclitaxel/nab-paclitaxel) in HER2-low (IHC1+ or 2+/ISH-), HR+ MBC after progression on ET. Either PD on CDK4/6i+ET within 6 mo of 1L, or >=2 prior endocrine lines +/- targeted therapy. No prior chemo for MBC."
+  },
+  {
+    "nct_id": "NCT06105632",
+    "trial_name": "FOURLIGHT-1",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": true,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Phase 2 PF-07220060 (CDK4-selective inhibitor) + fulvestrant vs investigator's choice (fulvestrant or everolimus+exemestane) after PD on prior CDK4/6i + NSAI. No prior chemo in advanced setting; no prior everolimus or investigational agents."
+  },
+  {
+    "nct_id": "NCT06343948",
+    "trial_name": "PANKU-Breast01 (BL-B01D1)",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": 1,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": false,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-chemo|any|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Phase III BL-B01D1 (EGFR x HER3 bispecific ADC with topoisomerase-I payload) vs physician's-choice chemo (eribulin/vinorelbine/gemcitabine/capecitabine) in HR+/HER2- MBC after 1-2 prior chemo lines and prior endocrine, CDK4/6i, and taxanes. Novel target (EGFR/HER3 ADC) so canonical class = investigational (other)."
+  },
+  {
+    "nct_id": "NCT06561022",
+    "trial_name": "SNF-precision (abemaSNF1/3)",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "SNF1 subtype",
+      "SNF3 subtype"
+    ],
+    "drug_class": "investigational (other)",
+    "year_pc": 2025,
+    "guideline_target_node": null,
+    "confidence": "low",
+    "notes": "Out of scope: SNF1/SNF3 molecular-subtype-restricted precision treatment trial (fluzoparib, everolimus, fulvestrant, abemaciclib in subtype-tailored arms) after CDK4/6i progression. Multi-arm design with no single canonical drug-class assignment."
+  },
+  {
+    "nct_id": "NCT06635447",
+    "trial_name": "CAPItrue",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": 12,
+      "menopausal_status": "any"
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [
+      "AKT-pathway altered"
+    ],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2026,
+    "guideline_target_node": "post-ET|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Phase IIIb single-arm 2-cohort Chinese bridging study of capivasertib + fulvestrant in HR+/HER2- LA/MBC after recurrence/progression on prior endocrine therapy ((neo)adjuvant within 12 mo, or LA/MBC ET). Mirrors CAPItello-291 with AKT-pathway subgroup."
+  },
+  {
+    "nct_id": "NCT06929325",
+    "trial_name": "Albumin-bound sirolimus + fulvestrant",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": false,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": null,
+      "post_cdk46i_metastatic": false
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "investigational (other)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "confidence": "medium",
+    "notes": "Phase III IV albumin-bound sirolimus (nab-sirolimus, mTOR inhibitor) + fulvestrant vs placebo + fulvestrant in HR+/HER2- LA/MBC after 1-2 prior systemic lines including >=1 ET + CDK4/6i. Excludes prior PI3K/AKT/mTOR, fulvestrant, oral SERD/PROTAC. Combination (mTORi + fulvestrant) does not match canonical 'everolimus + exemestane'; tagged investigational (other)."
+  },
+  {
+    "nct_id": "NCT06954961",
+    "trial_name": "D-0502 vs fulvestrant",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "post_chemo_metastatic_min": null,
+      "endo_resistance_window_months": null,
+      "menopausal_status": null
+    },
+    "excluded": {
+      "post_cdk46i": null,
+      "post_chemo_metastatic_any": null,
+      "post_endo_metastatic_any": false,
+      "post_cdk46i_metastatic": null
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "hrd_status": null
+    },
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2026,
+    "guideline_target_node": "post-ET|any|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Phase III oral SERD D-0502 vs fulvestrant in previously treated ER+/HER2- LA/MBC after recurrence on/after adjuvant endocrine therapy or progression after 1-2 lines of systemic endocrine therapy. Excludes prior SERD/SERCA. Prior CDK4/6i not explicitly addressed."
+  }
+]
