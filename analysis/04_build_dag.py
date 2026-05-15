@@ -49,6 +49,8 @@ def _canonical_biomarker(rec: dict) -> str:
         parts.append("ESR1mut")
     if bm.get("akt_path") is True:
         parts.append("AKTpath")
+    if bm.get("brca_germline") is True:
+        parts.append("gBRCAmut")
     return "/".join(parts) if parts else "ANY"
 
 

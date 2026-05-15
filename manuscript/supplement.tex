@@ -1,0 +1,130 @@
+% Supplementary material (separate PDF or appended after main text).
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\title{\textbf{Supplementary Material} \\
+A Computable Map of Treatment-Sequencing Evidence in HR+/HER2- Metastatic Breast Cancer}
+\author{H.-T.\ Lin}
+\date{\today}
+\begin{document}
+\maketitle
+
+\section*{Supplementary Table S1. Reporting Transparency Checklist}
+\noindent
+This study reports a graph-theoretic computational analysis of clinical trials
+and guidelines. No standard reporting guideline (TRIPOD, STROBE, PRISMA, CONSORT,
+STARD) is a perfect fit. We adopt a custom transparency checklist that combines
+PRISMA-2020 reporting items (relevant to evidence synthesis) with a graph-encoding
+addendum specific to the present method.
+
+\begin{longtable}{p{5.6cm}p{3.0cm}p{6.0cm}}
+\toprule
+\textbf{Item} & \textbf{Reported in} & \textbf{Notes} \\
+\midrule
+\endhead
+1. Title identifies study as evidence-synthesis & Title & ``treatment-sequencing evidence'' \\
+2. Structured abstract & Abstract & 300-word JCO CCI structure \\
+3. Rationale & Introduction & Composition across non-overlapping trials \\
+4. Objectives & Introduction & EFDPR + ODI \\
+5. Eligibility criteria for trials & Methods 2.1, 2.2 & 16-trial pilot drawn from ESMO/ASCO reference lists \\
+6. Information sources & Methods 2.1 & ClinicalTrials.gov v2 + ESMO 2024 \\
+7. Search strategy & Methods 2.1 & Per-NCT fetch list (Supplementary Table S2) \\
+8. Selection process & Methods 2.2 & Hand-curated against canonical primary publications \\
+9. Data extraction process & Methods 2.2 & Schema v1.0 (frozen) \\
+10. Data items & Methods 2.2 & Schema fields per Table S2 \\
+11. Risk-of-bias assessment & Discussion & Reviewer-cycle-disclosed corpus-selection bias \\
+12. Effect measures & Methods 2.5 & EFDPR; ODI \\
+13. Synthesis methods & Methods 2.5 & Concordance algorithm \\
+14. Reporting bias assessment & Limitations & Pilot-scale only \\
+15. Certainty assessment & Discussion & Pre-registered tolerance levels \\
+16. Study selection results & Results 3.1 & 16/16 trials retrieved \\
+17. Study characteristics & Table S2 & Hand-curated schema fills \\
+18. Risk of bias & Limitations & Disclosed \\
+19. Results of individual studies & DAG edges & Trial primary endpoint per edge \\
+20. Results of syntheses & Results 3.2--3.5 & EFDPR, ODI, sensitivity \\
+21. Reporting biases & Discussion & Reviewer-cycle history \\
+22. Certainty of evidence & Discussion & Pre-registered exact test failed to reject \\
+23. Discussion & Discussion & Three caveats + three positives + outlook \\
+24. Limitations & Discussion & Pilot scale, hand-curation, single guideline \\
+25. Implications & Discussion & Outlook \\
+26. Registration and protocol & Methods 2.6, prereg & \texttt{docs/prereg.md} \\
+27. Support & Funding statement & No specific funding \\
+28. Competing interests & Conflicts statement & None declared \\
+29. Availability of data, code, materials & Statements & MIT licence, GitHub URL, Zenodo DOI at release \\
+\midrule
+G1. Graph node space & Methods 2.3 & (prior-state, biomarker) tuples \\
+G2. Graph edge construction & Methods 2.3 & Trial $\to$ edge from required-state node to post-trial-state node \\
+G3. Guideline-tree encoding & Methods 2.4 & 16-node encoding in Supplementary Table S3 \\
+G4. Concordance algorithm & Methods 2.5 & State-superset + biomarker tolerance + drug match + temporal precedence \\
+G5. Tolerance levels & Methods 2.5 & Strict / ESCAT / liberal, all pre-registered \\
+G6. Reproducibility (seed + commit hash) & Methods 2.7 & Seed 20260516; \texttt{v1.0.0} commit \\
+\bottomrule
+\end{longtable}
+
+\section*{Supplementary Table S2. Structured Trial Extractions}
+
+The hand-curated schema v1.0 mapping for each of the 16 pivotal trials is
+released as the machine-readable file \texttt{data/processed/trials\_structured.json}
+in the repository. Each record contains the fields listed in Methods 2.2,
+the source primary publication, and the canonical ClinicalTrials.gov NCT
+identifier. The Round 1 internal review identified two NCT-misidentification
+errors in the original draft (NCT03997123 was incorrectly labelled as
+postMONARCH; NCT04032080 was incorrectly labelled as INAVO120); these were
+corrected to NCT05169567 (postMONARCH) and NCT04191499 (INAVO120), with TROPiCS-02
+(NCT03901339) and OlympiAD (NCT02000622) added to the corpus.
+
+\section*{Supplementary Table S3. ESMO HR+/HER2- mBC Decision-Tree Encoding}
+
+The hand-curated 16-node encoding of the ESMO 2024 update HR+/HER2- subset
+is released as \texttt{data/processed/esmo\_decision\_tree.json}. Each node
+records: node identifier, patient sub-state, biomarker profile, recommended
+drug classes with strength-of-recommendation grade, cited pivotal trials, and
+year of decision-tree introduction.
+
+\section*{Supplementary Table S4. ODI Biomarker-Token Vocabulary}
+
+The operational-token vocabulary used to compute the operationalization
+discordance index is released as \texttt{analysis/06\_compute\_odi.py}. Each
+biomarker variable (HER2-low, ESR1mut, PIK3CAmut, AKT-pathway, prior-CDK4/6i)
+maps to a per-trial set of operational tokens drawn from the canonical primary
+publication.
+
+\section*{Supplementary Text 1. Pre-registration deviations}
+
+The following pre-registration deviations are reported in the spirit of the
+pre-registration commitment in \texttt{docs/prereg.md}:
+
+\begin{itemize}
+\item \textbf{Corpus expansion from prototype (6 trials) to pilot (16 trials).}
+  The pilot expansion was anticipated in the prereg and is not a deviation.
+  Trial selection was based on the ESMO/ASCO mBC guideline reference lists; a
+  systematic search of ClinicalTrials.gov for HR+/HER2- mBC pivotal trials is
+  deferred to the production-scale extension.
+\item \textbf{Trial-identification corrections.} The original draft erroneously
+  mapped NCT03997123 to postMONARCH and NCT04032080 to INAVO120; the corrections
+  are NCT05169567 and NCT04191499, both verified against ClinicalTrials.gov
+  briefTitle and condition fields. TROPiCS-02 and OlympiAD were added during
+  the same correction pass to cover decision nodes G14 (post-CDK4/6i+post-chemo
+  sacituzumab) and G16 (gBRCAm PARPi) that the prereg's narrative implied but
+  the prototype did not include.
+\item \textbf{Secondary outcomes S2, S3 reported descriptively.} The prereg
+  commits to a Benjamini-Hochberg correction at $q = 0.05$ across S1, S2, S3.
+  In the present pilot S1 (ODI) is reported as a per-biomarker mean Jaccard
+  distance; S2 (temporal lag) and S3 (subgroup coverage) are reported
+  descriptively because the small corpus precludes a meaningful formal test.
+\item \textbf{Primary CI: Clopper-Pearson alongside bootstrap.} The prereg
+  specified a 1,000-iteration bootstrap CI. We additionally report the
+  Clopper-Pearson exact CI, which is the recommended primary CI in this
+  small-$n$ regime and which is reported alongside the bootstrap CI in Table 2.
+\item \textbf{NCCN sensitivity analysis deferred.} The prereg flagged NCCN
+  as a sensitivity-analysis source; this was deferred to the production-scale
+  extension and is disclosed as a deviation.
+\end{itemize}
+
+\end{document}

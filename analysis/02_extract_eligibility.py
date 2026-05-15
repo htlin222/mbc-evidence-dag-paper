@@ -69,10 +69,12 @@ STRUCTURED: dict[str, dict] = {
     },
     "NCT04305496": {  # CAPItello-291
         "trial_name": "CAPItello-291",
-        "prior_state": {"post_endo": True, "post_cdk46i": False},  # all-comers, CDK4/6i not required
+        # CAPItello-291 enrolled post-endo population with prior CDK4/6i
+        # permitted (51% had prior CDK4/6i per primary publication).
+        "prior_state": {"post_endo": True, "post_cdk46i": None},  # all-comers for CDK4/6i
         "excluded":    {},
         "biomarker":   {"hr_pos": True, "her2_neg": True},  # all-comers
-        "subgroup_readouts": ["AKTpath"],  # registrational AKT-pathway subgroup
+        "subgroup_readouts": ["AKTpath", "post-CDK46i_subgroup"],
         "drug_class":  "AKTi + fulvestrant",
         "year_pc":     2022,
         "guideline_target_node": "post-CDK46i|AKTpath|HR+/HER2-",
@@ -97,9 +99,13 @@ STRUCTURED: dict[str, dict] = {
     },
     "NCT02246621": {  # MONALEESA-3
         "trial_name": "MONALEESA-3",
-        "prior_state": {"post_endo": None, "post_cdk46i": False},  # mixed: 1L and 2L
+        # MONALEESA-3 enrolled both treatment-naive (1L) and post-endo (2L);
+        # we encode post_endo=True as the modal stratum because the registrational
+        # subgroup analyses split by line of therapy.
+        "prior_state": {"post_endo": True, "post_cdk46i": False},
         "excluded":    {"post_cdk46i": True},
         "biomarker":   {"hr_pos": True, "her2_neg": True},
+        "subgroup_readouts": ["first-line_subgroup", "post-endo_subgroup"],
         "drug_class":  "CDK4/6i + fulvestrant",
         "year_pc":     2018,
         "guideline_target_node": "post-endo|HR+/HER2-",
@@ -141,7 +147,7 @@ STRUCTURED: dict[str, dict] = {
         "year_pc":     2022,
         "guideline_target_node": "post-chemo|HER2-low|HR+/HER2-",
     },
-    "NCT03997123": {  # postMONARCH
+    "NCT05169567": {  # postMONARCH (CORRECTED NCT — Round 1 review caught wrong ID)
         "trial_name": "postMONARCH",
         "prior_state": {"post_endo": True, "post_cdk46i": True},
         "excluded":    {"post_chemo_metastatic_any": True},
@@ -150,14 +156,34 @@ STRUCTURED: dict[str, dict] = {
         "year_pc":     2024,
         "guideline_target_node": "post-CDK46i|HR+/HER2-",
     },
-    "NCT04032080": {  # INAVO120
+    "NCT04191499": {  # INAVO120 (CORRECTED NCT — Round 1 review caught wrong ID)
         "trial_name": "INAVO120",
-        "prior_state": {"post_endo": True, "post_cdk46i": None, "endo_resistance_window_months": 12},
+        # INAVO120 enrolled patients with endocrine-resistance window <=12mo
+        # and PIK3CA-mutated tumors; prior CDK4/6i in metastatic was excluded.
+        "prior_state": {"post_endo": True, "post_cdk46i": False, "endo_resistance_window_months": 12},
         "excluded":    {"post_cdk46i_metastatic": True},
         "biomarker":   {"hr_pos": True, "her2_neg": True, "pik3ca_mut": True},
-        "drug_class":  "PI3Ki + CDK4/6i + fulvestrant",
+        "drug_class":  "PI3Ki triplet (inavolisib + CDK4/6i + fulv)",
         "year_pc":     2023,
         "guideline_target_node": "post-endo|PIK3CAmut|HR+/HER2-",
+    },
+    "NCT03901339": {  # TROPiCS-02 (added Round 1)
+        "trial_name": "TROPiCS-02",
+        "prior_state": {"post_endo": True, "post_cdk46i": True, "post_chemo_metastatic_min": 2},
+        "excluded":    {},
+        "biomarker":   {"hr_pos": True, "her2_neg": True},
+        "drug_class":  "Sacituzumab govitecan",
+        "year_pc":     2022,
+        "guideline_target_node": "post-CDK46i+post-chemo|HR+/HER2-",
+    },
+    "NCT02000622": {  # OlympiAD (added Round 1)
+        "trial_name": "OlympiAD",
+        "prior_state": {"post_endo": None, "post_chemo_metastatic_min": 0},
+        "excluded":    {},
+        "biomarker":   {"hr_pos": None, "her2_neg": True, "brca_germline": True},
+        "drug_class":  "PARPi (olaparib)",
+        "year_pc":     2017,
+        "guideline_target_node": "gBRCAmut|HER2-",
     },
 }
 

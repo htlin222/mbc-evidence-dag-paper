@@ -49,8 +49,14 @@ def _bm_tokens(b: str) -> set:
 
 
 def _state_match(edge_state: str, gl_state: str) -> bool:
-    """Trial state must include all guideline-required prior states."""
-    return _state_tokens(gl_state).issubset(_state_tokens(edge_state))
+    """Trial state must include all guideline-required prior states.
+
+    Special token 'metastatic' marks a line-agnostic guideline node (e.g.
+    gBRCAm PARPi recommendation) and is satisfied by any edge state."""
+    gl_tokens = _state_tokens(gl_state)
+    if "metastatic" in gl_tokens:
+        gl_tokens = gl_tokens - {"metastatic"}
+    return gl_tokens.issubset(_state_tokens(edge_state))
 
 
 def _biomarker_match_strict(edge_bm: str, gl_bm: str, edge_subgroups: list) -> bool:
@@ -157,6 +163,7 @@ def efdpr(edges: list, gls: list, tolerance: str) -> tuple[float, int, int, list
 
 
 def bootstrap_efdpr(edges: list, gls: list, tolerance: str, n: int = 1000, seed: int = 20260516):
+    """Standard percentile-bootstrap. Resampling unit: guideline nodes."""
     rng = random.Random(seed)
     estimates = []
     for _ in range(n):
@@ -164,9 +171,31 @@ def bootstrap_efdpr(edges: list, gls: list, tolerance: str, n: int = 1000, seed:
         p, _, _, _, _ = efdpr(edges, sample, tolerance)
         estimates.append(p)
     estimates.sort()
-    lo = estimates[int(0.025 * n)]
-    hi = estimates[int(0.975 * n) - 1]
-    return lo, hi, estimates
+    # symmetric percentile indexing (textbook formula): ceil(alpha*n) - 1 for lower,
+    # floor((1-alpha)*n) for upper, with alpha=0.025.
+    lo_idx = max(0, int(0.025 * n) - 1)
+    hi_idx = min(n - 1, int(0.975 * n))
+    return estimates[lo_idx], estimates[hi_idx], estimates
+
+
+def exact_binomial_pvalue_one_sided(k: int, n: int, p0: float) -> float:
+    """One-sided exact binomial p-value for H0: p <= p0 vs H1: p > p0.
+
+    Returns P(X >= k | n, p0).
+    """
+    from math import comb
+    pval = 0.0
+    for x in range(k, n + 1):
+        pval += comb(n, x) * (p0 ** x) * ((1 - p0) ** (n - x))
+    return pval
+
+
+def clopper_pearson_ci(k: int, n: int, alpha: float = 0.05) -> tuple[float, float]:
+    """Clopper-Pearson exact CI using scipy beta-distribution."""
+    from scipy.stats import beta
+    lo = 0.0 if k == 0 else float(beta.ppf(alpha / 2, k, n - k + 1))
+    hi = 1.0 if k == n else float(beta.ppf(1 - alpha / 2, k + 1, n - k))
+    return lo, hi
 
 
 def main() -> None:
@@ -176,16 +205,23 @@ def main() -> None:
     for tol in ("strict", "escat", "liberal"):
         p, k, n, ef, per = efdpr(edges, gls, tol)
         lo, hi, _ = bootstrap_efdpr(edges, gls, tol)
+        cp_lo, cp_hi = clopper_pearson_ci(k, n)
+        pval = exact_binomial_pvalue_one_sided(k, n, 0.25)
         results[tol] = {
             "point_estimate": round(p, 4),
             "evidence_free_count": k,
             "total_decision_nodes": n,
-            "ci95_low": round(lo, 4),
-            "ci95_high": round(hi, 4),
+            "bootstrap_ci95_low":  round(lo, 4),
+            "bootstrap_ci95_high": round(hi, 4),
+            "clopper_pearson_ci95_low":  round(cp_lo, 4),
+            "clopper_pearson_ci95_high": round(cp_hi, 4),
+            "exact_binomial_pvalue_one_sided_vs_p25": round(pval, 4),
+            "preregistered_test_rejected_at_alpha_05": bool(pval < 0.05),
             "evidence_free_nodes": ef,
             "per_node_support": per,
         }
-        print(f"  {tol:<8s}  EFDPR = {p:.3f}  (CI95 {lo:.3f}-{hi:.3f})  {k}/{n} evidence-free")
+        print(f"  {tol:<8s}  EFDPR={p:.3f}  bootstrapCI=[{lo:.3f},{hi:.3f}]  "
+              f"CP-CI=[{cp_lo:.3f},{cp_hi:.3f}]  exact P={pval:.4f}  {'rejects' if pval<0.05 else 'fails to reject'} H0:p<=0.25")
     OUT.write_text(json.dumps(results, indent=2))
     print(f"wrote results to {OUT}")
 

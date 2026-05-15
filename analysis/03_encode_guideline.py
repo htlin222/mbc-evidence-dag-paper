@@ -165,24 +165,34 @@ DECISION_NODES = [
     },
     {
         "node_id": "G14",
-        "state":   "post-2L",
-        "biomarker": "HR+/HER2-/no-actionable",
+        "state":   "post-CDK46i+post-chemo",
+        "biomarker": "HR+/HER2-",
         "recommended_classes": [
-            {"class": "chemotherapy single agent", "grade": "II-B"},
-            {"class": "sacituzumab govitecan", "grade": "II-B"},
+            {"class": "Sacituzumab govitecan", "grade": "I-A"},
         ],
-        "cited_trials": [],  # no included pivotal trial in our corpus targets this
+        "cited_trials": ["NCT03901339"],  # TROPiCS-02
         "year": 2023,
     },
     {
         "node_id": "G15",
-        "state":   "post-CDK46i",
-        "biomarker": "HR+/HER2-/PIK3CAmut+endo-resistant",
+        "state":   "post-endo",
+        "biomarker": "HR+/HER2-/PIK3CAmut",
         "recommended_classes": [
-            {"class": "PI3Ki + CDK4/6i + fulvestrant (triplet)", "grade": "II-B"},
+            {"class": "PI3Ki triplet (inavolisib + CDK4/6i + fulv)", "grade": "I-A"},
         ],
-        "cited_trials": ["NCT04032080"],
+        "cited_trials": ["NCT04191499"],  # INAVO120 (corrected)
         "year": 2024,
+    },
+    {
+        "node_id": "G16",
+        "state":   "metastatic",  # gBRCAm setting, line-agnostic
+        "biomarker": "gBRCAmut/HER2-",
+        "recommended_classes": [
+            {"class": "PARPi (olaparib)", "grade": "I-A"},
+            {"class": "PARPi (talazoparib)", "grade": "I-A"},
+        ],
+        "cited_trials": ["NCT02000622"],  # OlympiAD; EMBRACA omitted from this pilot
+        "year": 2018,
     },
 ]
 

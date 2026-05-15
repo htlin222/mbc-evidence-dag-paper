@@ -57,7 +57,8 @@
     "source_state": "post-endo",
     "biomarker": "HR+/HER2-",
     "subgroup_readouts": [
-      "AKTpath"
+      "AKTpath",
+      "post-CDK46i_subgroup"
     ],
     "drug_class": "AKTi + fulvestrant",
     "year_pc": 2022,
@@ -90,11 +91,14 @@
   {
     "nct_id": "NCT02246621",
     "trial_name": "MONALEESA-3",
-    "source_node": "first-line|HR+/HER2-",
-    "target_node": "first-line|after:CDK4/6i + fulvestrant|HR+/HER2-",
-    "source_state": "first-line",
+    "source_node": "post-endo|HR+/HER2-",
+    "target_node": "post-endo|after:CDK4/6i + fulvestrant|HR+/HER2-",
+    "source_state": "post-endo",
     "biomarker": "HR+/HER2-",
-    "subgroup_readouts": [],
+    "subgroup_readouts": [
+      "first-line_subgroup",
+      "post-endo_subgroup"
+    ],
     "drug_class": "CDK4/6i + fulvestrant",
     "year_pc": 2018,
     "guideline_target_node": "post-endo|HR+/HER2-"
@@ -150,7 +154,7 @@
     "guideline_target_node": "post-chemo|HER2-low|HR+/HER2-"
   },
   {
-    "nct_id": "NCT03997123",
+    "nct_id": "NCT05169567",
     "trial_name": "postMONARCH",
     "source_node": "post-endo+post-CDK46i|HR+/HER2-",
     "target_node": "post-endo+post-CDK46i|after:CDK4/6i + fulvestrant (post-CDK4/6i)|HR+/HER2-",
@@ -162,15 +166,39 @@
     "guideline_target_node": "post-CDK46i|HR+/HER2-"
   },
   {
-    "nct_id": "NCT04032080",
+    "nct_id": "NCT04191499",
     "trial_name": "INAVO120",
     "source_node": "post-endo|HR+/HER2-/PIK3CAmut",
-    "target_node": "post-endo|after:PI3Ki + CDK4/6i + fulvestrant|HR+/HER2-/PIK3CAmut",
+    "target_node": "post-endo|after:PI3Ki triplet (inavolisib + CDK4/6i + fulv)|HR+/HER2-/PIK3CAmut",
     "source_state": "post-endo",
     "biomarker": "HR+/HER2-/PIK3CAmut",
     "subgroup_readouts": [],
-    "drug_class": "PI3Ki + CDK4/6i + fulvestrant",
+    "drug_class": "PI3Ki triplet (inavolisib + CDK4/6i + fulv)",
     "year_pc": 2023,
     "guideline_target_node": "post-endo|PIK3CAmut|HR+/HER2-"
+  },
+  {
+    "nct_id": "NCT03901339",
+    "trial_name": "TROPiCS-02",
+    "source_node": "post-endo+post-CDK46i+post-chemo|HR+/HER2-",
+    "target_node": "post-endo+post-CDK46i+post-chemo|after:Sacituzumab govitecan|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "Sacituzumab govitecan",
+    "year_pc": 2022,
+    "guideline_target_node": "post-CDK46i+post-chemo|HR+/HER2-"
+  },
+  {
+    "nct_id": "NCT02000622",
+    "trial_name": "OlympiAD",
+    "source_node": "first-line|HER2-/gBRCAmut",
+    "target_node": "first-line|after:PARPi (olaparib)|HER2-/gBRCAmut",
+    "source_state": "first-line",
+    "biomarker": "HER2-/gBRCAmut",
+    "subgroup_readouts": [],
+    "drug_class": "PARPi (olaparib)",
+    "year_pc": 2017,
+    "guideline_target_node": "gBRCAmut|HER2-"
   }
 ]

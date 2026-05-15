@@ -1,23 +1,24 @@
 {
   "strict": {
-    "point_estimate": 0.4667,
-    "evidence_free_count": 7,
-    "total_decision_nodes": 15,
-    "ci95_low": 0.2667,
-    "ci95_high": 0.7333,
+    "point_estimate": 0.3125,
+    "evidence_free_count": 5,
+    "total_decision_nodes": 16,
+    "bootstrap_ci95_low": 0.125,
+    "bootstrap_ci95_high": 0.5625,
+    "clopper_pearson_ci95_low": 0.1102,
+    "clopper_pearson_ci95_high": 0.5866,
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.3698,
+    "preregistered_test_rejected_at_alpha_05": false,
     "evidence_free_nodes": [
       "G5",
       "G6",
       "G7",
       "G9",
-      "G13",
-      "G14",
-      "G15"
+      "G13"
     ],
     "per_node_support": {
       "G1": [
         "NCT01958021",
-        "NCT02246621",
         "NCT02513394",
         "NCT02675231",
         "NCT02763566"
@@ -39,7 +40,7 @@
       ],
       "G9": [],
       "G10": [
-        "NCT03997123"
+        "NCT05169567"
       ],
       "G11": [
         "NCT04494425"
@@ -48,29 +49,38 @@
         "NCT03734029"
       ],
       "G13": [],
-      "G14": [],
-      "G15": []
+      "G14": [
+        "NCT03901339"
+      ],
+      "G15": [
+        "NCT02437318",
+        "NCT04191499"
+      ],
+      "G16": [
+        "NCT02000622"
+      ]
     }
   },
   "escat": {
-    "point_estimate": 0.4667,
-    "evidence_free_count": 7,
-    "total_decision_nodes": 15,
-    "ci95_low": 0.2667,
-    "ci95_high": 0.7333,
+    "point_estimate": 0.3125,
+    "evidence_free_count": 5,
+    "total_decision_nodes": 16,
+    "bootstrap_ci95_low": 0.125,
+    "bootstrap_ci95_high": 0.5625,
+    "clopper_pearson_ci95_low": 0.1102,
+    "clopper_pearson_ci95_high": 0.5866,
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.3698,
+    "preregistered_test_rejected_at_alpha_05": false,
     "evidence_free_nodes": [
       "G5",
       "G6",
       "G7",
       "G9",
-      "G13",
-      "G14",
-      "G15"
+      "G13"
     ],
     "per_node_support": {
       "G1": [
         "NCT01958021",
-        "NCT02246621",
         "NCT02513394",
         "NCT02675231",
         "NCT02763566"
@@ -92,7 +102,7 @@
       ],
       "G9": [],
       "G10": [
-        "NCT03997123"
+        "NCT05169567"
       ],
       "G11": [
         "NCT04494425"
@@ -101,28 +111,37 @@
         "NCT03734029"
       ],
       "G13": [],
-      "G14": [],
-      "G15": []
+      "G14": [
+        "NCT03901339"
+      ],
+      "G15": [
+        "NCT02437318",
+        "NCT04191499"
+      ],
+      "G16": [
+        "NCT02000622"
+      ]
     }
   },
   "liberal": {
-    "point_estimate": 0.4,
-    "evidence_free_count": 6,
-    "total_decision_nodes": 15,
-    "ci95_low": 0.2,
-    "ci95_high": 0.6667,
+    "point_estimate": 0.25,
+    "evidence_free_count": 4,
+    "total_decision_nodes": 16,
+    "bootstrap_ci95_low": 0.0625,
+    "bootstrap_ci95_high": 0.5,
+    "clopper_pearson_ci95_low": 0.0727,
+    "clopper_pearson_ci95_high": 0.5238,
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.595,
+    "preregistered_test_rejected_at_alpha_05": false,
     "evidence_free_nodes": [
       "G6",
       "G7",
       "G9",
-      "G13",
-      "G14",
-      "G15"
+      "G13"
     ],
     "per_node_support": {
       "G1": [
         "NCT01958021",
-        "NCT02246621",
         "NCT02513394",
         "NCT02675231",
         "NCT02763566"
@@ -146,7 +165,7 @@
       ],
       "G9": [],
       "G10": [
-        "NCT03997123"
+        "NCT05169567"
       ],
       "G11": [
         "NCT04494425"
@@ -155,8 +174,16 @@
         "NCT03734029"
       ],
       "G13": [],
-      "G14": [],
-      "G15": []
+      "G14": [
+        "NCT03901339"
+      ],
+      "G15": [
+        "NCT02437318",
+        "NCT04191499"
+      ],
+      "G16": [
+        "NCT02000622"
+      ]
     }
   }
 }

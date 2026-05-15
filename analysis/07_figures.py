@@ -96,8 +96,8 @@ def fig2_efdpr() -> None:
     labels = ["strict", "ESCAT-aligned", "liberal"]
     keys   = ["strict", "escat", "liberal"]
     points = [EFDPR[k]["point_estimate"] for k in keys]
-    los    = [EFDPR[k]["ci95_low"] for k in keys]
-    his    = [EFDPR[k]["ci95_high"] for k in keys]
+    los    = [EFDPR[k]["bootstrap_ci95_low"] for k in keys]
+    his    = [EFDPR[k]["bootstrap_ci95_high"] for k in keys]
     errs   = [[p - lo for p, lo in zip(points, los)],
               [hi - p for p, hi in zip(points, his)]]
     xs = np.arange(len(keys))
@@ -186,16 +186,17 @@ def _biomarker(rec: dict) -> str:
 
 def write_tab_efdpr() -> None:
     lines = [
-        r"\begin{tabular}{lcccc}\toprule",
-        r"Tolerance & EFDPR & 95\% CI & Evidence-free nodes / total & Threshold rejected? \\ \midrule",
+        r"\begin{tabular}{lccccc}\toprule",
+        r"Tolerance & EFDPR & Bootstrap 95\% CI & Clopper-Pearson 95\% CI & Exact $P$ vs $p_0=0.25$ & Reject H$_0$? \\ \midrule",
     ]
     for tol_key, tol_label in [("strict", "Strict"), ("escat", "ESCAT-aligned"), ("liberal", "Liberal")]:
         r = EFDPR[tol_key]
-        rej = "yes" if r["ci95_low"] > 0.25 else ("no" if r["ci95_high"] < 0.25 else "marginal")
+        rej = "yes" if r["preregistered_test_rejected_at_alpha_05"] else "no"
         lines.append(
             rf"{tol_label} & {r['point_estimate']:.3f} & "
-            rf"[{r['ci95_low']:.3f}, {r['ci95_high']:.3f}] & "
-            rf"{r['evidence_free_count']}/{r['total_decision_nodes']} & {rej} \\"
+            rf"[{r['bootstrap_ci95_low']:.3f}, {r['bootstrap_ci95_high']:.3f}] & "
+            rf"[{r['clopper_pearson_ci95_low']:.3f}, {r['clopper_pearson_ci95_high']:.3f}] & "
+            rf"{r['exact_binomial_pvalue_one_sided_vs_p25']:.3f} & {rej} \\"
         )
     lines.append(r"\bottomrule\end{tabular}")
     (MAN / "tab_efdpr.tex").write_text("\n".join(lines) + "\n")

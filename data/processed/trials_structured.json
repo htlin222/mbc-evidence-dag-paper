@@ -98,7 +98,7 @@
     "trial_name": "CAPItello-291",
     "prior_state": {
       "post_endo": true,
-      "post_cdk46i": false
+      "post_cdk46i": null
     },
     "excluded": {},
     "biomarker": {
@@ -106,7 +106,8 @@
       "her2_neg": true
     },
     "subgroup_readouts": [
-      "AKTpath"
+      "AKTpath",
+      "post-CDK46i_subgroup"
     ],
     "drug_class": "AKTi + fulvestrant",
     "year_pc": 2022,
@@ -166,7 +167,7 @@
   "NCT02246621": {
     "trial_name": "MONALEESA-3",
     "prior_state": {
-      "post_endo": null,
+      "post_endo": true,
       "post_cdk46i": false
     },
     "excluded": {
@@ -176,6 +177,10 @@
       "hr_pos": true,
       "her2_neg": true
     },
+    "subgroup_readouts": [
+      "first-line_subgroup",
+      "post-endo_subgroup"
+    ],
     "drug_class": "CDK4/6i + fulvestrant",
     "year_pc": 2018,
     "guideline_target_node": "post-endo|HR+/HER2-",
@@ -272,7 +277,7 @@
     "primary_completion_year_api": "2022",
     "eligibility_text_len": 2063
   },
-  "NCT03997123": {
+  "NCT05169567": {
     "trial_name": "postMONARCH",
     "prior_state": {
       "post_endo": true,
@@ -288,17 +293,17 @@
     "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
     "year_pc": 2024,
     "guideline_target_node": "post-CDK46i|HR+/HER2-",
-    "nct_id": "NCT03997123",
-    "brief_title": "Capivasertib+Paclitaxel as First Line Treatment for Patients With Locally Advanced or Metastatic TNBC",
-    "start_year": "2019",
-    "primary_completion_year_api": "2026",
-    "eligibility_text_len": 3826
+    "nct_id": "NCT05169567",
+    "brief_title": "Abemaciclib (LY2835219) Plus Fulvestrant Compared to Placebo Plus Fulvestrant in Previously Treated Breast Cancer",
+    "start_year": "2022",
+    "primary_completion_year_api": "2024",
+    "eligibility_text_len": 1619
   },
-  "NCT04032080": {
+  "NCT04191499": {
     "trial_name": "INAVO120",
     "prior_state": {
       "post_endo": true,
-      "post_cdk46i": null,
+      "post_cdk46i": false,
       "endo_resistance_window_months": 12
     },
     "excluded": {
@@ -309,13 +314,55 @@
       "her2_neg": true,
       "pik3ca_mut": true
     },
-    "drug_class": "PI3Ki + CDK4/6i + fulvestrant",
+    "drug_class": "PI3Ki triplet (inavolisib + CDK4/6i + fulv)",
     "year_pc": 2023,
     "guideline_target_node": "post-endo|PIK3CAmut|HR+/HER2-",
-    "nct_id": "NCT04032080",
-    "brief_title": "LY3023414 and Prexasertib in Metastatic Triple-negative Breast Cancer",
+    "nct_id": "NCT04191499",
+    "brief_title": "A Study Evaluating the Efficacy and Safety of Inavolisib + Palbociclib + Fulvestrant vs Placebo + Palbociclib + Fulvestrant in Participants With PIK3CA-Mutant, Hormone Receptor-Positive, HER2-Negative, Locally Advanced or Metastatic Breast Cancer",
+    "start_year": "2020",
+    "primary_completion_year_api": "2023",
+    "eligibility_text_len": 2808
+  },
+  "NCT03901339": {
+    "trial_name": "TROPiCS-02",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": 2
+    },
+    "excluded": {},
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "Sacituzumab govitecan",
+    "year_pc": 2022,
+    "guideline_target_node": "post-CDK46i+post-chemo|HR+/HER2-",
+    "nct_id": "NCT03901339",
+    "brief_title": "Study of Sacituzumab Govitecan-hziy Versus Treatment of Physician's Choice in Participants With HR+/HER2- Metastatic Breast Cancer",
     "start_year": "2019",
-    "primary_completion_year_api": "2022",
-    "eligibility_text_len": 4190
+    "primary_completion_year_api": "2023",
+    "eligibility_text_len": 2006
+  },
+  "NCT02000622": {
+    "trial_name": "OlympiAD",
+    "prior_state": {
+      "post_endo": null,
+      "post_chemo_metastatic_min": 0
+    },
+    "excluded": {},
+    "biomarker": {
+      "hr_pos": null,
+      "her2_neg": true,
+      "brca_germline": true
+    },
+    "drug_class": "PARPi (olaparib)",
+    "year_pc": 2017,
+    "guideline_target_node": "gBRCAmut|HER2-",
+    "nct_id": "NCT02000622",
+    "brief_title": "Assessment of the Efficacy and Safety of Olaparib Monotherapy Versus Physicians Choice Chemotherapy in the Treatment of Metastatic Breast Cancer Patients With Germline BRCA1/2 Mutations.",
+    "start_year": "2014",
+    "primary_completion_year_api": "2016",
+    "eligibility_text_len": 1356
   }
 }

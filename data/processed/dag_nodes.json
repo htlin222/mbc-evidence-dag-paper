@@ -5,6 +5,11 @@
     "biomarker": "HR+/HER2-"
   },
   {
+    "node_id": "first-line|HER2-/gBRCAmut",
+    "state": "first-line",
+    "biomarker": "HER2-/gBRCAmut"
+  },
+  {
     "node_id": "first-line|HR+/HER2-",
     "state": "first-line",
     "biomarker": "HR+/HER2-"
@@ -13,6 +18,11 @@
     "node_id": "post-chemo|HR+/HER2-/HER2-low",
     "state": "post-chemo",
     "biomarker": "HR+/HER2-/HER2-low"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i+post-chemo|HR+/HER2-",
+    "state": "post-endo+post-CDK46i+post-chemo",
+    "biomarker": "HR+/HER2-"
   },
   {
     "node_id": "post-endo+post-CDK46i|HR+/HER2-",

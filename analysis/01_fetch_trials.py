@@ -39,8 +39,10 @@ NCT_IDS = [
     "NCT02675231",  # MONARCH-3 (abemaciclib + AI, first-line)
     "NCT02763566",  # MONALEESA-7 (ribociclib in premenopausal, first-line)
     "NCT03734029",  # DESTINY-Breast04 (T-DXd, HER2-low, post-chemo)
-    "NCT03997123",  # postMONARCH (abemaciclib post-CDK4/6i, post-endocrine)
-    "NCT04032080",  # INAVO120 (inavolisib + palbo + fulv, PIK3CAmut, post-endocrine)
+    "NCT05169567",  # postMONARCH (abemaciclib + fulv after CDK4/6i progression)
+    "NCT04191499",  # INAVO120 (inavolisib + palbo + fulv, PIK3CAmut, endo-resistant)
+    "NCT03901339",  # TROPiCS-02 (sacituzumab govitecan, post-endocrine + post-CDK4/6i)
+    "NCT02000622",  # OlympiAD (olaparib, gBRCA mutated metastatic breast cancer)
 ]
 
 
