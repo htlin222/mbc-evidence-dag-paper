@@ -467,8 +467,8 @@
   {
     "nct_id": "NCT04305496",
     "trial_name": "CAPItello-291",
-    "source_node": "post-endo|HR+/HER2-/AKTpath",
-    "source_state": "post-endo",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/AKTpath",
+    "source_state": "post-endo+post-CDK46i",
     "biomarker": "HR+/HER2-/AKTpath",
     "subgroup_readouts": [
       "AKTpath",
@@ -482,8 +482,8 @@
   {
     "nct_id": "NCT04494425",
     "trial_name": "DESTINY-Breast06",
-    "source_node": "post-endo|HR+/HER2-/HER2-low",
-    "source_state": "post-endo",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/HER2-low",
+    "source_state": "post-endo+post-CDK46i",
     "biomarker": "HR+/HER2-/HER2-low",
     "subgroup_readouts": [
       "HER2-low",
@@ -574,16 +574,14 @@
   {
     "nct_id": "NCT04964934",
     "trial_name": "SERENA-6",
-    "source_node": "post-endo+post-CDK46i|HR+/HER2-/ESR1mut",
-    "source_state": "post-endo+post-CDK46i",
+    "source_node": "post-endo|HR+/HER2-/ESR1mut",
+    "source_state": "post-endo",
     "biomarker": "HR+/HER2-/ESR1mut",
-    "subgroup_readouts": [
-      "ESR1mut"
-    ],
+    "subgroup_readouts": [],
     "drug_class": "SERD oral + CDK4/6i",
-    "year_pc": 2025,
-    "guideline_target_node": "1L|ESR1mut|HR+/HER2-",
-    "provenance": null
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|ESR1mut|HR+/HER2-",
+    "provenance": "v2_round1_added"
   },
   {
     "nct_id": "NCT04975308",
@@ -843,18 +841,6 @@
     "drug_class": "PI3Ki + fulvestrant",
     "year_pc": 2020,
     "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
-    "provenance": "v2_round1_added"
-  },
-  {
-    "nct_id": "NCT04964934",
-    "trial_name": "SERENA-6",
-    "source_node": "post-endo|HR+/HER2-/ESR1mut",
-    "source_state": "post-endo",
-    "biomarker": "HR+/HER2-/ESR1mut",
-    "subgroup_readouts": [],
-    "drug_class": "SERD oral + CDK4/6i",
-    "year_pc": 2024,
-    "guideline_target_node": "post-endo|ESR1mut|HR+/HER2-",
     "provenance": "v2_round1_added"
   }
 ]

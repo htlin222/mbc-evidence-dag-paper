@@ -1557,7 +1557,7 @@
     "trial_name": "CAPItello-291",
     "prior_state": {
       "post_endo": true,
-      "post_cdk46i": null,
+      "post_cdk46i": true,
       "post_chemo_metastatic_min": null,
       "endo_resistance_window_months": 12,
       "menopausal_status": "any"
@@ -1586,14 +1586,14 @@
     "year_pc": 2023,
     "guideline_target_node": "post-endo|AKTpath|HR+/HER2-",
     "confidence": "high",
-    "notes": "Capivasertib + fulvestrant vs placebo + fulvestrant after AI; up to 2 prior endo lines and 1 prior chemo allowed in advanced setting; prior fulvestrant/SERDs and AKT/PI3K/mTOR inhibitors excluded. AKT-pathway (PIK3CA/AKT1/PTEN) subgroup pre-specified."
+    "notes": "Capivasertib + fulvestrant vs placebo + fulvestrant after AI; up to 2 prior endo lines and 1 prior chemo allowed in advanced setting; prior fulvestrant/SERDs and AKT/PI3K/mTOR inhibitors excluded. AKT-pathway (PIK3CA/AKT1/PTEN) subgroup pre-specified.; v2 round-2 adjudicated post_cdk46i=True per clinical reviewer: the guideline-cited indication is the post-CDK4/6i subgroup readout"
   },
   {
     "nct_id": "NCT04494425",
     "trial_name": "DESTINY-Breast06",
     "prior_state": {
       "post_endo": true,
-      "post_cdk46i": null,
+      "post_cdk46i": true,
       "post_chemo_metastatic_min": null,
       "endo_resistance_window_months": null,
       "menopausal_status": null
@@ -1623,7 +1623,7 @@
     "year_pc": 2024,
     "guideline_target_node": "post-endo|HER2-low|HR+/HER2-",
     "confidence": "high",
-    "notes": "T-DXd vs investigator chemo in HER2-low or HER2 IHC >0<1+ (ultralow) HR+ mBC; no prior chemo for advanced disease. Progression within 6 mo of 1L ET+CDK4/6i or after >=2 prior endocrine lines."
+    "notes": "T-DXd vs investigator chemo in HER2-low or HER2 IHC >0<1+ (ultralow) HR+ mBC; no prior chemo for advanced disease. Progression within 6 mo of 1L ET+CDK4/6i or after >=2 prior endocrine lines.; v2 round-2 adjudicated post_cdk46i=True per clinical reviewer: the guideline-cited indication is the post-CDK4/6i subgroup readout"
   },
   {
     "nct_id": "NCT04539496",
@@ -1900,35 +1900,21 @@
     "trial_name": "SERENA-6",
     "prior_state": {
       "post_endo": true,
-      "post_cdk46i": true,
-      "post_chemo_metastatic_min": null,
-      "endo_resistance_window_months": null,
-      "menopausal_status": "any"
+      "post_cdk46i": false
     },
-    "excluded": {
-      "post_cdk46i": null,
-      "post_chemo_metastatic_any": null,
-      "post_endo_metastatic_any": false,
-      "post_cdk46i_metastatic": null
-    },
+    "excluded": {},
     "biomarker": {
       "hr_pos": true,
       "her2_neg": true,
-      "her2_low": null,
-      "pik3ca_mut": null,
-      "esr1_mut": true,
-      "akt_path": null,
-      "brca_germline": null,
-      "hrd_status": null
+      "esr1_mut": true
     },
-    "subgroup_readouts": [
-      "ESR1mut"
-    ],
+    "subgroup_readouts": [],
     "drug_class": "SERD oral + CDK4/6i",
-    "year_pc": 2025,
-    "guideline_target_node": "1L|ESR1mut|HR+/HER2-",
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|ESR1mut|HR+/HER2-",
     "confidence": "high",
-    "notes": "ctDNA-guided early switch trial: patients on 1L AI + CDK4/6i for >=6 mo without progression but with emergent ESR1 mutation are randomized to switch to AZD9833 (camizestrant) + CDK4/6i vs continue AI + CDK4/6i. ESR1mut is a mandatory enrollment biomarker."
+    "notes": "Added v2 round 1 to correct prior NCT04711252 vs SERENA-6 confusion; ctDNA-detected ESR1mut early switch within first-line CDK4/6i",
+    "provenance": "v2_round1_added"
   },
   {
     "nct_id": "NCT04975308",
@@ -2734,27 +2720,6 @@
     "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
     "confidence": "high",
     "notes": "Added v2 round 1 after clinical reviewer flagged missing pivotal trial for post-CDK4/6i PIK3CAmut (G7); alpelisib in post-CDK4/6i PIK3CAmut population",
-    "provenance": "v2_round1_added"
-  },
-  {
-    "nct_id": "NCT04964934",
-    "trial_name": "SERENA-6",
-    "prior_state": {
-      "post_endo": true,
-      "post_cdk46i": false
-    },
-    "excluded": {},
-    "biomarker": {
-      "hr_pos": true,
-      "her2_neg": true,
-      "esr1_mut": true
-    },
-    "subgroup_readouts": [],
-    "drug_class": "SERD oral + CDK4/6i",
-    "year_pc": 2024,
-    "guideline_target_node": "post-endo|ESR1mut|HR+/HER2-",
-    "confidence": "high",
-    "notes": "Added v2 round 1 to correct prior NCT04711252 vs SERENA-6 confusion; ctDNA-detected ESR1mut early switch within first-line CDK4/6i",
     "provenance": "v2_round1_added"
   }
 ]

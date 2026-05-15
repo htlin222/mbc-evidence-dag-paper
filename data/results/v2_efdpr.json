@@ -3,21 +3,20 @@
     "label": "primary_all",
     "n_nodes": 25,
     "strict": {
-      "point_estimate": 0.48,
-      "evidence_free_count": 12,
+      "point_estimate": 0.4,
+      "evidence_free_count": 10,
       "total_nodes": 25,
       "clopper_pearson_ci95": [
-        0.278,
-        0.6869
+        0.2113,
+        0.6133
       ],
       "bootstrap_ci95": [
-        0.28,
-        0.68
+        0.2,
+        0.6
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.0107,
-      "rejects_h0_at_alpha_05": true,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.0713,
+      "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G9",
         "G12",
         "G13",
@@ -27,8 +26,7 @@
         "G21",
         "G22",
         "G24",
-        "G25",
-        "G26"
+        "G25"
       ],
       "per_node_support": {
         "G1": [
@@ -55,7 +53,9 @@
         "G7": [
           "NCT03056755"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G9": [],
         "G10": [
           "NCT03147287",
@@ -85,25 +85,26 @@
         ],
         "G24": [],
         "G25": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     },
     "escat": {
-      "point_estimate": 0.48,
-      "evidence_free_count": 12,
+      "point_estimate": 0.4,
+      "evidence_free_count": 10,
       "total_nodes": 25,
       "clopper_pearson_ci95": [
-        0.278,
-        0.6869
+        0.2113,
+        0.6133
       ],
       "bootstrap_ci95": [
-        0.28,
-        0.68
+        0.2,
+        0.6
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.0107,
-      "rejects_h0_at_alpha_05": true,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.0713,
+      "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G9",
         "G12",
         "G13",
@@ -113,8 +114,7 @@
         "G21",
         "G22",
         "G24",
-        "G25",
-        "G26"
+        "G25"
       ],
       "per_node_support": {
         "G1": [
@@ -142,7 +142,9 @@
         "G7": [
           "NCT03056755"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G9": [],
         "G10": [
           "NCT03147287",
@@ -172,25 +174,26 @@
         ],
         "G24": [],
         "G25": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     },
     "liberal": {
-      "point_estimate": 0.48,
-      "evidence_free_count": 12,
+      "point_estimate": 0.4,
+      "evidence_free_count": 10,
       "total_nodes": 25,
       "clopper_pearson_ci95": [
-        0.278,
-        0.6869
+        0.2113,
+        0.6133
       ],
       "bootstrap_ci95": [
-        0.28,
-        0.68
+        0.2,
+        0.6
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.0107,
-      "rejects_h0_at_alpha_05": true,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.0713,
+      "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G9",
         "G12",
         "G13",
@@ -200,8 +203,7 @@
         "G21",
         "G22",
         "G24",
-        "G25",
-        "G26"
+        "G25"
       ],
       "per_node_support": {
         "G1": [
@@ -229,7 +231,9 @@
         "G7": [
           "NCT03056755"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G9": [],
         "G10": [
           "NCT03147287",
@@ -259,7 +263,9 @@
         ],
         "G24": [],
         "G25": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     }
   },
@@ -267,21 +273,20 @@
     "label": "esmo_only",
     "n_nodes": 16,
     "strict": {
-      "point_estimate": 0.375,
-      "evidence_free_count": 6,
+      "point_estimate": 0.3125,
+      "evidence_free_count": 5,
       "total_nodes": 16,
       "clopper_pearson_ci95": [
-        0.152,
-        0.6457
+        0.1102,
+        0.5866
       ],
       "bootstrap_ci95": [
-        0.125,
-        0.625
+        0.0625,
+        0.5625
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.1897,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.3698,
       "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G9",
         "G12",
         "G13",
@@ -313,7 +318,9 @@
         "G7": [
           "NCT03056755"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G9": [],
         "G10": [
           "NCT03147287",
@@ -332,21 +339,20 @@
       }
     },
     "escat": {
-      "point_estimate": 0.375,
-      "evidence_free_count": 6,
+      "point_estimate": 0.3125,
+      "evidence_free_count": 5,
       "total_nodes": 16,
       "clopper_pearson_ci95": [
-        0.152,
-        0.6457
+        0.1102,
+        0.5866
       ],
       "bootstrap_ci95": [
-        0.125,
-        0.625
+        0.0625,
+        0.5625
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.1897,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.3698,
       "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G9",
         "G12",
         "G13",
@@ -379,7 +385,9 @@
         "G7": [
           "NCT03056755"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G9": [],
         "G10": [
           "NCT03147287",
@@ -398,21 +406,20 @@
       }
     },
     "liberal": {
-      "point_estimate": 0.375,
-      "evidence_free_count": 6,
+      "point_estimate": 0.3125,
+      "evidence_free_count": 5,
       "total_nodes": 16,
       "clopper_pearson_ci95": [
-        0.152,
-        0.6457
+        0.1102,
+        0.5866
       ],
       "bootstrap_ci95": [
-        0.125,
-        0.625
+        0.0625,
+        0.5625
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.1897,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.3698,
       "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G9",
         "G12",
         "G13",
@@ -445,7 +452,9 @@
         "G7": [
           "NCT03056755"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G9": [],
         "G10": [
           "NCT03147287",
@@ -468,25 +477,23 @@
     "label": "asco_only",
     "n_nodes": 15,
     "strict": {
-      "point_estimate": 0.3333,
-      "evidence_free_count": 5,
+      "point_estimate": 0.2,
+      "evidence_free_count": 3,
       "total_nodes": 15,
       "clopper_pearson_ci95": [
-        0.1182,
-        0.6162
+        0.0433,
+        0.4809
       ],
       "bootstrap_ci95": [
-        0.0667,
-        0.6
+        0.0,
+        0.4
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.3135,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.7639,
       "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G12",
         "G17",
-        "G25",
-        "G26"
+        "G25"
       ],
       "per_node_support": {
         "G1": [
@@ -510,7 +517,9 @@
         "G6": [
           "NCT04305496"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G11": [
           "NCT04494425"
         ],
@@ -526,29 +535,29 @@
           "NCT03901339"
         ],
         "G25": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     },
     "escat": {
-      "point_estimate": 0.3333,
-      "evidence_free_count": 5,
+      "point_estimate": 0.2,
+      "evidence_free_count": 3,
       "total_nodes": 15,
       "clopper_pearson_ci95": [
-        0.1182,
-        0.6162
+        0.0433,
+        0.4809
       ],
       "bootstrap_ci95": [
-        0.0667,
-        0.6
+        0.0,
+        0.4
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.3135,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.7639,
       "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G12",
         "G17",
-        "G25",
-        "G26"
+        "G25"
       ],
       "per_node_support": {
         "G1": [
@@ -573,7 +582,9 @@
         "G6": [
           "NCT04305496"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G11": [
           "NCT04494425"
         ],
@@ -589,29 +600,29 @@
           "NCT03901339"
         ],
         "G25": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     },
     "liberal": {
-      "point_estimate": 0.3333,
-      "evidence_free_count": 5,
+      "point_estimate": 0.2,
+      "evidence_free_count": 3,
       "total_nodes": 15,
       "clopper_pearson_ci95": [
-        0.1182,
-        0.6162
+        0.0433,
+        0.4809
       ],
       "bootstrap_ci95": [
-        0.0667,
-        0.6
+        0.0,
+        0.4
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.3135,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.7639,
       "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G12",
         "G17",
-        "G25",
-        "G26"
+        "G25"
       ],
       "per_node_support": {
         "G1": [
@@ -636,7 +647,9 @@
         "G6": [
           "NCT04305496"
         ],
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G11": [
           "NCT04494425"
         ],
@@ -652,7 +665,9 @@
           "NCT03901339"
         ],
         "G25": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     }
   },
@@ -660,29 +675,29 @@
     "label": "nccn_only",
     "n_nodes": 10,
     "strict": {
-      "point_estimate": 0.6,
-      "evidence_free_count": 6,
+      "point_estimate": 0.4,
+      "evidence_free_count": 4,
       "total_nodes": 10,
       "clopper_pearson_ci95": [
-        0.2624,
-        0.8784
+        0.1216,
+        0.7376
       ],
       "bootstrap_ci95": [
-        0.3,
-        0.9
+        0.1,
+        0.7
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.0197,
-      "rejects_h0_at_alpha_05": true,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.2241,
+      "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G12",
         "G21",
         "G22",
-        "G24",
-        "G26"
+        "G24"
       ],
       "per_node_support": {
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G11": [
           "NCT04494425"
         ],
@@ -699,33 +714,35 @@
           "NCT03901339"
         ],
         "G24": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     },
     "escat": {
-      "point_estimate": 0.6,
-      "evidence_free_count": 6,
+      "point_estimate": 0.4,
+      "evidence_free_count": 4,
       "total_nodes": 10,
       "clopper_pearson_ci95": [
-        0.2624,
-        0.8784
+        0.1216,
+        0.7376
       ],
       "bootstrap_ci95": [
-        0.3,
-        0.9
+        0.1,
+        0.7
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.0197,
-      "rejects_h0_at_alpha_05": true,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.2241,
+      "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G12",
         "G21",
         "G22",
-        "G24",
-        "G26"
+        "G24"
       ],
       "per_node_support": {
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G11": [
           "NCT04494425"
         ],
@@ -742,33 +759,35 @@
           "NCT03901339"
         ],
         "G24": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     },
     "liberal": {
-      "point_estimate": 0.6,
-      "evidence_free_count": 6,
+      "point_estimate": 0.4,
+      "evidence_free_count": 4,
       "total_nodes": 10,
       "clopper_pearson_ci95": [
-        0.2624,
-        0.8784
+        0.1216,
+        0.7376
       ],
       "bootstrap_ci95": [
-        0.3,
-        0.9
+        0.1,
+        0.7
       ],
-      "exact_binomial_pvalue_one_sided_vs_p25": 0.0197,
-      "rejects_h0_at_alpha_05": true,
+      "exact_binomial_pvalue_one_sided_vs_p25": 0.2241,
+      "rejects_h0_at_alpha_05": false,
       "evidence_free_nodes": [
-        "G8",
         "G12",
         "G21",
         "G22",
-        "G24",
-        "G26"
+        "G24"
       ],
       "per_node_support": {
-        "G8": [],
+        "G8": [
+          "NCT04494425"
+        ],
         "G11": [
           "NCT04494425"
         ],
@@ -785,7 +804,9 @@
           "NCT03901339"
         ],
         "G24": [],
-        "G26": []
+        "G26": [
+          "NCT04305496"
+        ]
       }
     }
   }
