@@ -1,0 +1,405 @@
+[
+  {
+    "node_id": "G1",
+    "state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "CDK4/6i + AI",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT01958021",
+      "NCT01740427",
+      "NCT02246621"
+    ],
+    "year": 2018,
+    "source": "ESMO+ASCO"
+  },
+  {
+    "node_id": "G2",
+    "state": "first-line+pre-menopausal",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "CDK4/6i + endocrine (pre-menopausal)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02278120"
+    ],
+    "year": 2019,
+    "source": "ESMO+ASCO"
+  },
+  {
+    "node_id": "G3",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "CDK4/6i + fulvestrant",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT01942135",
+      "NCT02107703",
+      "NCT02422615"
+    ],
+    "year": 2016,
+    "source": "ESMO+ASCO"
+  },
+  {
+    "node_id": "G4",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "recommended_classes": [
+      {
+        "class": "PI3Ki + fulvestrant",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02437318"
+    ],
+    "year": 2020,
+    "source": "ESMO+ASCO"
+  },
+  {
+    "node_id": "G5",
+    "state": "post-CDK46i",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "recommended_classes": [
+      {
+        "class": "SERD oral",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT03778931"
+    ],
+    "year": 2023,
+    "source": "ESMO+ASCO"
+  },
+  {
+    "node_id": "G6",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/AKTpath",
+    "recommended_classes": [
+      {
+        "class": "AKTi + fulvestrant",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT04305496"
+    ],
+    "year": 2024,
+    "source": "ESMO+ASCO"
+  },
+  {
+    "node_id": "G7",
+    "state": "post-CDK46i",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "recommended_classes": [
+      {
+        "class": "PI3Ki + fulvestrant",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT02437318"
+    ],
+    "year": 2022,
+    "source": "ESMO"
+  },
+  {
+    "node_id": "G8",
+    "state": "post-CDK46i",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "recommended_classes": [
+      {
+        "class": "HER2-ADC (T-DXd)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT04494425",
+      "NCT03734029"
+    ],
+    "year": 2024,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "G9",
+    "state": "post-CDK46i",
+    "biomarker": "HR+/HER2-/no-actionable",
+    "recommended_classes": [
+      {
+        "class": "everolimus + exemestane",
+        "grade": "II-B"
+      },
+      {
+        "class": "chemotherapy",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2022,
+    "source": "ESMO"
+  },
+  {
+    "node_id": "G10",
+    "state": "post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+        "grade": "II-C"
+      }
+    ],
+    "cited_trials": [
+      "NCT05169567"
+    ],
+    "year": 2024,
+    "source": "ESMO"
+  },
+  {
+    "node_id": "G11",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "recommended_classes": [
+      {
+        "class": "HER2-ADC (T-DXd)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT04494425"
+    ],
+    "year": 2024,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "G12",
+    "state": "post-chemo",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "recommended_classes": [
+      {
+        "class": "HER2-ADC (T-DXd)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT03734029"
+    ],
+    "year": 2022,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "G13",
+    "state": "post-CDK46i+post-endo",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "everolimus + exemestane",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2018,
+    "source": "ESMO"
+  },
+  {
+    "node_id": "G14",
+    "state": "post-CDK46i+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "Sacituzumab govitecan",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT03901339"
+    ],
+    "year": 2023,
+    "source": "ESMO"
+  },
+  {
+    "node_id": "G15",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "recommended_classes": [
+      {
+        "class": "PI3Ki triplet (inavolisib + CDK4/6i + fulv)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT04191499"
+    ],
+    "year": 2024,
+    "source": "ESMO"
+  },
+  {
+    "node_id": "G16",
+    "state": "metastatic",
+    "biomarker": "gBRCAmut/HER2-",
+    "recommended_classes": [
+      {
+        "class": "PARPi (olaparib)",
+        "grade": "I-A"
+      },
+      {
+        "class": "PARPi (talazoparib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02000622"
+    ],
+    "year": 2018,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "G17",
+    "state": "first-line+visceral-crisis",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "chemotherapy single agent",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2022,
+    "source": "ASCO"
+  },
+  {
+    "node_id": "G19",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "recommended_classes": [
+      {
+        "class": "SERD oral + CDK4/6i",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2024,
+    "source": "ASCO"
+  },
+  {
+    "node_id": "G20",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "TROP2-ADC (sacituzumab govitecan)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT03901339"
+    ],
+    "year": 2023,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "G21",
+    "state": "post-chemo",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "recommended_classes": [
+      {
+        "class": "TROP2-ADC (datopotamab deruxtecan)",
+        "grade": "I-A"
+      },
+      {
+        "class": "HER2-ADC (T-DXd)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT05104866"
+    ],
+    "year": 2025,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "G22",
+    "state": "first-line+indolent",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "endocrine therapy alone",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2020,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "G23",
+    "state": "post-endo+post-CDK46i+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "TROP2-ADC (sacituzumab govitecan)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT03901339"
+    ],
+    "year": 2023,
+    "source": "ASCO+NCCN"
+  },
+  {
+    "node_id": "G24",
+    "state": "first-line+indolent+post-menopausal",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "endocrine therapy alone",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2018,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "G25",
+    "state": "post-CDK46i+post-endo+post-mTORi",
+    "biomarker": "HR+/HER2-",
+    "recommended_classes": [
+      {
+        "class": "chemotherapy single agent",
+        "grade": "II-C"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2022,
+    "source": "ASCO"
+  },
+  {
+    "node_id": "G26",
+    "state": "post-CDK46i",
+    "biomarker": "HR+/HER2-/AKTpath",
+    "recommended_classes": [
+      {
+        "class": "AKTi + fulvestrant",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT04305496"
+    ],
+    "year": 2024,
+    "source": "ASCO+NCCN"
+  }
+]

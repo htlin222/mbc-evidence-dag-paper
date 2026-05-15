@@ -1,0 +1,832 @@
+[
+  {
+    "nct_id": "NCT01740427",
+    "trial_name": "PALOMA-2",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01783444",
+    "trial_name": "BOLERO-6",
+    "source_node": "first-line|HR+",
+    "source_state": "first-line",
+    "biomarker": "HR+",
+    "subgroup_readouts": [],
+    "drug_class": "everolimus + exemestane",
+    "year_pc": 2018,
+    "guideline_target_node": "post-NSAI|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01942135",
+    "trial_name": "PALOMA-3",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2014,
+    "guideline_target_node": "post-endo|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01958021",
+    "trial_name": "MONALEESA-2",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02000622",
+    "trial_name": "OlympiAD",
+    "source_node": "post-endo|HER2-/gBRCAmut",
+    "source_state": "post-endo",
+    "biomarker": "HER2-/gBRCAmut",
+    "subgroup_readouts": [
+      "HR+_subgroup",
+      "TNBC_subgroup"
+    ],
+    "drug_class": "PARPi (olaparib)",
+    "year_pc": 2016,
+    "guideline_target_node": "metastatic|gBRCA|HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02107703",
+    "trial_name": "MONARCH 2",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2017,
+    "guideline_target_node": "post-endo|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02246621",
+    "trial_name": "MONARCH 3",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2017,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02278120",
+    "trial_name": "MONALEESA-7",
+    "source_node": "first-line+pre-menopausal|HR+/HER2-",
+    "source_state": "first-line+pre-menopausal",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
+    "year_pc": 2017,
+    "guideline_target_node": "first-line|pre-menopausal|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02340221",
+    "trial_name": "SANDPIPER",
+    "source_node": "post-endo|HR+/HER2-/PIK3CAmut/AKTpath",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "PIK3CAmut_subgroup"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2021,
+    "guideline_target_node": "post-AI|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02422615",
+    "trial_name": "MONALEESA-3",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2017,
+    "guideline_target_node": "first-or-second-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02437318",
+    "trial_name": "SOLAR-1",
+    "source_node": "post-endo|HR+/HER2-/PIK3CAmut/AKTpath",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "PIK3CAmut_cohort",
+      "PIK3CAwt_cohort"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2018,
+    "guideline_target_node": "post-AI|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02763566",
+    "trial_name": "MONARCH plus",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "Cohort_A_1L",
+      "Cohort_B_post-endo"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2019,
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02767661",
+    "trial_name": "MECCA",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "chemotherapy single agent",
+    "year_pc": 2023,
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02894398",
+    "trial_name": "INGE-B",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2023,
+    "guideline_target_node": "1L+|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02941926",
+    "trial_name": "COMPLEEMENT-1",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2019,
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03079011",
+    "trial_name": "PADA-1",
+    "source_node": "first-line|HR+/HER2-/ESR1mut",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2021,
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03096847",
+    "trial_name": "CompLEEment study",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2018,
+    "guideline_target_node": "1L+|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03147287",
+    "trial_name": "PACE",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2022,
+    "guideline_target_node": "post-CDK46i|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03176238",
+    "trial_name": "EVEREXES",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "everolimus + exemestane",
+    "year_pc": 2019,
+    "guideline_target_node": "post-NSAI|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03337724",
+    "trial_name": "IPATunity130",
+    "source_node": "post-endo|HER2-/PIK3CAmut/AKTpath",
+    "source_state": "post-endo",
+    "biomarker": "HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "AKTpath",
+      "HR+_subgroup",
+      "TNBC_subgroup"
+    ],
+    "drug_class": "AKTi + chemotherapy",
+    "year_pc": 2023,
+    "guideline_target_node": "1L-chemo|AKTpath|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03425838",
+    "trial_name": "SONIA",
+    "source_node": "first-line|HR+",
+    "source_state": "first-line",
+    "biomarker": "HR+",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2023,
+    "guideline_target_node": "1L_vs_2L|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03439046",
+    "trial_name": "BioItaLEE",
+    "source_node": "first-line|HR+/HER2-/PIK3CAmut",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "subgroup_readouts": [
+      "PIK3CAmut"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2023,
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03671330",
+    "trial_name": "Ribociclib China study",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "premenopausal_cohort",
+      "postmenopausal_cohort"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2022,
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03734029",
+    "trial_name": "DESTINY-Breast04",
+    "source_node": "post-endo+post-chemo|HER2-/HER2-low",
+    "source_state": "post-endo+post-chemo",
+    "biomarker": "HER2-/HER2-low",
+    "subgroup_readouts": [
+      "HR+_subgroup",
+      "HR-_subgroup"
+    ],
+    "drug_class": "HER2-ADC (T-DXd)",
+    "year_pc": 2022,
+    "guideline_target_node": "post-chemo|HER2-low|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03778931",
+    "trial_name": "EMERALD",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/ESR1mut",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2021,
+    "guideline_target_node": "post-CDK46i|ESR1mut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03822468",
+    "trial_name": "AMALEE",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2021,
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03839823",
+    "trial_name": "RIGHT Choice",
+    "source_node": "first-line+pre-menopausal|HR+/HER2-",
+    "source_state": "first-line+pre-menopausal",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
+    "year_pc": 2022,
+    "guideline_target_node": "1L|visceral-crisis|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03901339",
+    "trial_name": "TROPiCS-02",
+    "source_node": "post-endo+post-CDK46i+post-chemo|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "HER2-low_subgroup"
+    ],
+    "drug_class": "TROP2-ADC (sacituzumab govitecan)",
+    "year_pc": 2023,
+    "guideline_target_node": "post-chemo|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03927456",
+    "trial_name": "SHR6390 + Fulvestrant (DAWNA-1-like)",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2021,
+    "guideline_target_node": "post-endo|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03966898",
+    "trial_name": "SHR6390 + Letrozole/Anastrozole (DAWNA-2-like)",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2022,
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04047758",
+    "trial_name": "Palbociclib + AI in HR+/HER2- locally advanced BC (China)",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2021,
+    "guideline_target_node": "1L|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04059484",
+    "trial_name": "AMEERA-3",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2022,
+    "guideline_target_node": "post-endo|HR+/HER2-|secondary-endo-resistant",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04072952",
+    "trial_name": "ARV-471 phase 1/2 (vepdegestrant) +/- palbociclib",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2024,
+    "guideline_target_node": "post-CDK46i|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04191499",
+    "trial_name": "INAVO120",
+    "source_node": "first-line|HR+/HER2-/PIK3CAmut/AKTpath",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "PIK3CA-mutant"
+    ],
+    "drug_class": "PI3Ki triplet (inavolisib + CDK4/6i + fulv)",
+    "year_pc": 2023,
+    "guideline_target_node": "1L|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04214288",
+    "trial_name": "SERENA-2",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2022,
+    "guideline_target_node": "post-endo|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04263298",
+    "trial_name": "FAMILY",
+    "source_node": "post-chemo|HR+/HER2-",
+    "source_state": "post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "endocrine therapy alone",
+    "year_pc": 2025,
+    "guideline_target_node": "post-chemo|HR+/HER2-|maintenance",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04305496",
+    "trial_name": "CAPItello-291",
+    "source_node": "post-endo|HR+/HER2-/AKTpath",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/AKTpath",
+    "subgroup_readouts": [
+      "AKTpath"
+    ],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2023,
+    "guideline_target_node": "post-endo|AKTpath|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04494425",
+    "trial_name": "DESTINY-Breast06",
+    "source_node": "post-endo|HR+/HER2-/HER2-low",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "subgroup_readouts": [
+      "HER2-low",
+      "HER2-ultralow"
+    ],
+    "drug_class": "HER2-ADC (T-DXd)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|HER2-low|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04546009",
+    "trial_name": "persevERA",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04571437",
+    "trial_name": "B-001",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "endocrine therapy alone",
+    "year_pc": 2021,
+    "guideline_target_node": "1L|HR+/HER2-|endocrine-sensitive",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04576455",
+    "trial_name": "acelERA",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2022,
+    "guideline_target_node": "post-endo|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04639986",
+    "trial_name": "EVER-132-002 (Asian SG study)",
+    "source_node": "post-endo+post-chemo|HR+/HER2-",
+    "source_state": "post-endo+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "TROP2-ADC (sacituzumab govitecan)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-chemo|HR+/HER2-|heavily-pretreated",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04650581",
+    "trial_name": "FINER",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2025,
+    "guideline_target_node": "post-CDK46i|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04711252",
+    "trial_name": "SERENA-4",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04964934",
+    "trial_name": "SERENA-6",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/ESR1mut",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2025,
+    "guideline_target_node": "1L|ESR1mut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04975308",
+    "trial_name": "EMBER-3",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05054751",
+    "trial_name": "GB491 (lerociclib) + fulvestrant phase III",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2022,
+    "guideline_target_node": "post-endo|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05104866",
+    "trial_name": "TROPION-Breast01",
+    "source_node": "post-endo+post-chemo|HR+/HER2-",
+    "source_state": "post-endo+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-chemo|HR+/HER2-|endocrine-refractory",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05169567",
+    "trial_name": "postMONARCH",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05207709",
+    "trial_name": "HARMONIA",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "HER2-enriched (PAM50) subtype",
+      "Basal-like (PAM50) subtype"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|HER2-E-PAM50|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05257395",
+    "trial_name": "XZP-3287 (birociclib) + AI",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2025,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05365178",
+    "trial_name": "TQB3616 + fulvestrant 1L",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2025,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05375461",
+    "trial_name": "TQB3616 + fulvestrant (previously treated)",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2024,
+    "guideline_target_node": "2L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05439499",
+    "trial_name": "FCN-437c + AI \u00b1 goserelin",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2024,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05501886",
+    "trial_name": "VIKTORIA-1",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "PIK3CA wild-type",
+      "PIK3CA mutant"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05646862",
+    "trial_name": "INAVO121",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/PIK3CAmut",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "subgroup_readouts": [
+      "PIK3CA mutant"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05654623",
+    "trial_name": "VERITAC-2",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2025,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05744687",
+    "trial_name": "SPH4336 + letrozole 1L",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05851014",
+    "trial_name": "GB491 + letrozole 1L",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05860465",
+    "trial_name": "SPH4336 post-CDK4/6i",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06018337",
+    "trial_name": "DYNASTY-Breast02",
+    "source_node": "post-endo|HR+/HER2-/HER2-low",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "subgroup_readouts": [
+      "HER2 IHC 1+ vs 2+/ISH-"
+    ],
+    "drug_class": "HER2-ADC (other)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-ET|HER2-low|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06105632",
+    "trial_name": "FOURLIGHT-1",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2026,
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06635447",
+    "trial_name": "CAPItrue",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "AKT-pathway altered"
+    ],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2026,
+    "guideline_target_node": "post-ET|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06954961",
+    "trial_name": "D-0502 vs fulvestrant",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2026,
+    "guideline_target_node": "post-ET|any|HR+/HER2-",
+    "provenance": null
+  }
+]
