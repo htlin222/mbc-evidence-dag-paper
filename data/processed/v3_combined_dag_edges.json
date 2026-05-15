@@ -1,0 +1,3057 @@
+[
+  {
+    "nct_id": "NCT01154140",
+    "trial_name": "PROFILE 1014",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 1st-gen (crizotinib)",
+    "year_pc": 2013,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01774721",
+    "trial_name": "ARCHER 1050",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+    "year_pc": 2016,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01801111",
+    "trial_name": "AF-002JG / NP28673-ish (alectinib post-crizotinib JP I/II)",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2014,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-crizotinib|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01802632",
+    "trial_name": "AURA",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2015,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01828099",
+    "trial_name": "ASCEND-4",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2016,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01828112",
+    "trial_name": "ASCEND-5",
+    "source_node": "post-ALKTKI+post-chemo|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI+post-chemo",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2016,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-crizotinib|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01853826",
+    "trial_name": "Afatinib (Giotrif) NSCLC trial",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L-or-post-chemo|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01951469",
+    "trial_name": "Gefitinib +/- chemo for EGFR-mut NSCLC brain mets",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L-CNS|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01953913",
+    "trial_name": "Afatinib safety NSCLC (BIBW 2992)",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01955421",
+    "trial_name": "Erlotinib 100 vs Gefitinib 250 EGFR-mut",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2016,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01970865",
+    "trial_name": "Lorlatinib (PF-06463922) phase I/II",
+    "source_node": "post-ALKTKI|ALK-rearranged/ALK-resistance-mut/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/ALK-resistance-mut/NSCLC",
+    "subgroup_readouts": [
+      "alk_resistance_subgroup"
+    ],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-ALK-TKI|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02040870",
+    "trial_name": "ASCEND-Chinese (LDK378 post-crizotinib)",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-crizotinib|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02075840",
+    "trial_name": "ALEX",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02094261",
+    "trial_name": "AURA2",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2015,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-T790M|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02094573",
+    "trial_name": "Brigatinib post-crizotinib phase 2 (AP26113-13-201)",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2016,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-crizotinib|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02108964",
+    "trial_name": "EGF816 (nazartinib) phase I/II",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02151981",
+    "trial_name": "AURA3",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFRTKI|EGFR-T790M|NSCLC",
+    "provenance": "nsclc_v3_round1_corrected"
+  },
+  {
+    "nct_id": "NCT02186301",
+    "trial_name": "TIGER-1",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02274337",
+    "trial_name": "AC0010 (avitinib) phase I/II",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02296125",
+    "trial_name": "FLAURA",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02322281",
+    "trial_name": "TIGER-3",
+    "source_node": "post-EGFRTKI+post-chemo|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI+post-chemo",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI-and-platinum|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02330367",
+    "trial_name": "AC0010 (avitinib) T790M+ phase I/II",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-T790M|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02336451",
+    "trial_name": "ASCEND-7",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "CNS|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02411448",
+    "trial_name": "RELAY",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "Ramucirumab + EGFR TKI",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02438722",
+    "trial_name": "S1403",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02442349",
+    "trial_name": "AURA17",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2016,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-T790M|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02474355",
+    "trial_name": "ASTRIS",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-T790M|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02504346",
+    "trial_name": "AZD9291 EGFR-mut post-TKI translational study",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02588261",
+    "trial_name": "SOLAR (ASP8273 vs erlotinib/gefitinib)",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02604342",
+    "trial_name": "ALUR",
+    "source_node": "post-ALKTKI+post-chemo|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI+post-chemo",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-crizotinib|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02633189",
+    "trial_name": "BEVERLY",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "Bevacizumab + EGFR TKI",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02725918",
+    "trial_name": "Pemetrexed +/- cisplatin post-1L EGFR TKI",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "Platinum doublet chemotherapy",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02737501",
+    "trial_name": "ALTA-1L",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02811354",
+    "trial_name": "PLASMA (AZD9291 by ctDNA T790M)",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup",
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-T790M|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02824458",
+    "trial_name": "Gefitinib +/- Apatinib in EGFRm NSCLC",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02838420",
+    "trial_name": "ALESIA",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02856893",
+    "trial_name": "APPLE",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02893332",
+    "trial_name": "SINDAS",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02930954",
+    "trial_name": "Gefitinib + chemo/anti-angiogenesis Bim-del/low-EGFR",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02959749",
+    "trial_name": "Osimertinib vs docetaxel-bevacizumab 3L T790M",
+    "source_node": "post-EGFRTKI+post-chemo|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI+post-chemo",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2017,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02972333",
+    "trial_name": "Osimertinib in BM T790M+",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02981108",
+    "trial_name": "HS-10296 (almonertinib) ph1/2 post-TKI",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02997501",
+    "trial_name": "ADELOS",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03046992",
+    "trial_name": "YH25448 (lazertinib) phase 1/2",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03052608",
+    "trial_name": "CROWN",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03126799",
+    "trial_name": "AvaTa",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "Bevacizumab + EGFR TKI",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03133546",
+    "trial_name": "BOOSTER",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03239340",
+    "trial_name": "ELIOS",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03267654",
+    "trial_name": "Gefitinib vs chemo/anti-angio Bim-del/low-EGFR ph2",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03300115",
+    "trial_name": "AC0010 (avitinib) phase 2 T790M",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03341494",
+    "trial_name": "Gefitinib +/- thalidomide",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2019,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03386955",
+    "trial_name": "BPI-7711 ph1/2a (rezivertinib)",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03399669",
+    "trial_name": "Gefitinib beyond progression",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2018,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03410108",
+    "trial_name": "J-ALTA",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-ALK-TKI|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03452592",
+    "trial_name": "Alflutinib (furmonertinib) ph2b T790M",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03457337",
+    "trial_name": "S-1 + gefitinib vs gefitinib 1L",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03460275",
+    "trial_name": "1L osimertinib Chinese ph2",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03502850",
+    "trial_name": "ASK120067 (limertinib) ph1/2",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03515837",
+    "trial_name": "KEYNOTE-789",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "Platinum doublet + PD-1/PD-L1",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03521154",
+    "trial_name": "LAURA",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-CRT|EGFR-mut|stage-III-NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03535740",
+    "trial_name": "ALTA-2",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [
+      "alk_resistance_subgroup"
+    ],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-ALK-TKI|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03543683",
+    "trial_name": "Osimertinib + aspirin post-1st-gen T790M",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03596866",
+    "trial_name": "ALTA-3",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-crizotinib|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03727867",
+    "trial_name": "EGFR-TKI + early SBRT primary tumor",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 1st-gen (gefitinib/erlotinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03787992",
+    "trial_name": "FLAG",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03802240",
+    "trial_name": "ORIENT-31",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "Platinum doublet + PD-1/PD-L1",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03804580",
+    "trial_name": "FIOL",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03812809",
+    "trial_name": "BPI-7711 ph2b T790M",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03823807",
+    "trial_name": "SH-1028 (rezivertinib) ph2",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03849768",
+    "trial_name": "AENEAS (HS-10296 vs gefitinib 1L)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03856411",
+    "trial_name": "Toripalimab +/- chemo 1L NSCLC",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "Platinum doublet + PD-1/PD-L1",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "1L|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03856697",
+    "trial_name": "Abivertinib vs gefitinib (first-line EGFRm NSCLC)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03861156",
+    "trial_name": "D-0316 in T790M+ EGFR NSCLC after 1st/2nd-gen TKI",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-1st/2nd-gen-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03865511",
+    "trial_name": "MELROSE",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03866499",
+    "trial_name": "BPI-7711 vs gefitinib (first-line EGFRm NSCLC)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03909334",
+    "trial_name": "Osimertinib +/- ramucirumab (first-line EGFRm NSCLC)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "Ramucirumab + EGFR TKI",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03909971",
+    "trial_name": "Lorlatinib in ALK TKI-treated NSCLC (China)",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [
+      "post_crizotinib",
+      "post_2g_alk_tki"
+    ],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-ALK-TKI|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03924050",
+    "trial_name": "Toripalimab + pemetrexed/platinum after EGFR-TKI failure",
+    "source_node": "post-osimertinib|EGFR-mut/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup",
+      "post_osimertinib_subgroup"
+    ],
+    "drug_class": "Platinum doublet + PD-1/PD-L1",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03940703",
+    "trial_name": "INSIGHT 2",
+    "source_node": "post-osimertinib|EGFR-mut/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "met_amplified",
+      "post_osimertinib_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut/MET-amp|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03991403",
+    "trial_name": "Atezolizumab + carbo/paclitaxel/bev in EGFR/ALK NSCLC",
+    "source_node": "post-osimertinib+post-ALKTKI|EGFR-mut/ALK-rearranged/NSCLC",
+    "source_state": "post-osimertinib+post-ALKTKI",
+    "biomarker": "EGFR-mut/ALK-rearranged/NSCLC",
+    "subgroup_readouts": [
+      "egfr_subgroup",
+      "alk_subgroup"
+    ],
+    "drug_class": "Anti-VEGF + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-TKI|EGFR-mut-or-ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04027647",
+    "trial_name": "Dacomitinib (first-line EGFRm NSCLC, dose titration)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04028778",
+    "trial_name": "FL-ALTER (gefitinib +/- anlotinib first-line)",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "Bevacizumab + EGFR TKI",
+    "year_pc": 2020,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04035486",
+    "trial_name": "FLAURA2",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04143607",
+    "trial_name": "ASK120067 vs gefitinib (first-line EGFRm NSCLC)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04181060",
+    "trial_name": "Osimertinib +/- bevacizumab (first-line EGFRm NSCLC)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "Bevacizumab + EGFR TKI",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04239833",
+    "trial_name": "SH-1028 vs gefitinib (first-line EGFRm NSCLC)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04248829",
+    "trial_name": "LASER301",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04335292",
+    "trial_name": "OCELOT",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04358562",
+    "trial_name": "Gefitinib + anlotinib in uncleared ctDNA EGFRm after gefitinib",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "ctdna_uncleared",
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "Bevacizumab + EGFR TKI",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut-ctDNA-uncleared|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04410796",
+    "trial_name": "Osimertinib +/- chemotherapy with cfDNA-detectable EGFRm",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "cfdna_detectable_egfr"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + chemotherapy",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut-cfDNA-positive|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04425187",
+    "trial_name": "Gefitinib + bevacizumab in L858R NSCLC",
+    "source_node": "first-line|EGFR-mut/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_l858r"
+    ],
+    "drug_class": "Bevacizumab + EGFR TKI",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-L858R|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04487080",
+    "trial_name": "MARIPOSA",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + bispecific (amivantamab + lazertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04592666",
+    "trial_name": "APPEAL",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + chemotherapy",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-1st/2nd-gen-EGFR-TKI|T790M+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04619004",
+    "trial_name": "HERTHENA-Lung01",
+    "source_node": "post-osimertinib|EGFR-mut/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "HER3-ADC (patritumab deruxtecan)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": "nsclc_v3_round1_corrected"
+  },
+  {
+    "nct_id": "NCT04695925",
+    "trial_name": "TOP (osimertinib +/- chemo in EGFR/TP53 co-mut NSCLC)",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "tp53_co_mutated"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + chemotherapy",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-and-TP53-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04797806",
+    "trial_name": "SAINT",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "egfr_concomitant_mut"
+    ],
+    "drug_class": "Bevacizumab + EGFR TKI",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-concomitant-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04811001",
+    "trial_name": "CAPLAND",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04870190",
+    "trial_name": "ATTACK",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "brain_metastases"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-1st/2nd-gen-EGFR-TKI|EGFR-mut-CNS|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04951635",
+    "trial_name": "Almonertinib maintenance post-CRT (Stage III unresectable)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "stage_III_unresectable",
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "maintenance-post-CRT|Stage-III-EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04951648",
+    "trial_name": "Almonertinib vs platinum chemo (uncommon EGFR first-line)",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "egfr_uncommon_mut"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-uncommon-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04988295",
+    "trial_name": "MARIPOSA-2",
+    "source_node": "post-osimertinib|EGFR-mut/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "post_osimertinib_subgroup"
+    ],
+    "drug_class": "Amivantamab + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04997382",
+    "trial_name": "CLASSIC5",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [
+      "post_alectinib"
+    ],
+    "drug_class": "Platinum doublet + PD-1/PD-L1",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-alectinib|ALK+|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05003037",
+    "trial_name": "Surufatinib + toripalimab + chemo (NSCLC two-cohort)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup",
+      "post_osimertinib_subgroup",
+      "wild_type_cohort"
+    ],
+    "drug_class": "Anti-VEGF + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut-T790M|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05132413",
+    "trial_name": "NCT05132413 (SHR-1701 + bevacizumab + chemo post-TKI)",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "Anti-VEGF + chemotherapy",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05132777",
+    "trial_name": "NCT05132777 (JMT101 + osimertinib in EGFR ex20ins)",
+    "source_node": "post-chemo|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "post-chemo",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-platinum|EGFR-ex20ins|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05184712",
+    "trial_name": "HARMONi-A (AK112)",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "Anti-VEGF + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05200481",
+    "trial_name": "MP-ALK",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05204628",
+    "trial_name": "NCT05204628 (XZP-3621 vs crizotinib)",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05215548",
+    "trial_name": "NCT05215548 (Primary tumor resection + afatinib for stage IV NSCLC)",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05256290",
+    "trial_name": "NCT05256290 (BDTX-1535 / silevertinib)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_c797s",
+      "egfr_other_mut"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-C797S/non-classical|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05257512",
+    "trial_name": "NCT05257512 (SY-3505 phase I/II)",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [
+      "alk_post_alectinib"
+    ],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-ALK-TKI|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05261399",
+    "trial_name": "SAFFRON",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "met_amplification"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut+MET-high|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05271916",
+    "trial_name": "NCT05271916 (dacomitinib + anlotinib 1L L858R)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-L858R|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05334277",
+    "trial_name": "FOCUS-C",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "ctdna_uncleared"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + chemotherapy",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut+ctDNA-uncleared|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05351788",
+    "trial_name": "NCT05351788 (SKB264 combination phase II)",
+    "source_node": "first-line|NSCLC",
+    "source_state": "first-line",
+    "biomarker": "NSCLC",
+    "subgroup_readouts": [
+      "egfr_wt_cohort",
+      "egfr_mut_cohort"
+    ],
+    "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05382728",
+    "trial_name": "FLETEO",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05388669",
+    "trial_name": "PALOMA-3",
+    "source_node": "post-osimertinib+post-chemo|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib+post-chemo",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + bispecific (amivantamab + lazertinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05394831",
+    "trial_name": "NCT05394831 (JIN-A02 phase 1/2)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-T790M/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "subgroup_readouts": [
+      "egfr_c797s",
+      "t790m_subgroup"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-C797S/T790M|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05466149",
+    "trial_name": "NCT05466149 (furmonertinib EGFR ex20ins post-platinum)",
+    "source_node": "post-chemo|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "post-chemo",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-platinum|EGFR-ex20ins|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05498389",
+    "trial_name": "NCT05498389 (EMB-01 + osimertinib)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/EGFR-ex20ins/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r",
+      "t790m_subgroup",
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + bispecific (amivantamab + lazertinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05668988",
+    "trial_name": "WU-KONG28",
+    "source_node": "first-line|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-ex20ins|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05712902",
+    "trial_name": "WU-KONG6",
+    "source_node": "post-chemo|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "post-chemo",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2022,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-platinum|EGFR-ex20ins|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05767866",
+    "trial_name": "NCT05767866 (YK-029A phase 1/2)",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex20ins/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup",
+      "egfr_ex20ins",
+      "egfr_other_mut"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-T790M/ex20ins/rare|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05767892",
+    "trial_name": "NCT05767892 (YK-029A 1L ex20ins phase 3)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-ex20ins|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05816252",
+    "trial_name": "MK-2870-003 (SKB264 phase II)",
+    "source_node": "first-line|NSCLC",
+    "source_state": "first-line",
+    "biomarker": "NSCLC",
+    "subgroup_readouts": [
+      "egfr_wt_cohort",
+      "egfr_mut_cohort"
+    ],
+    "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05821933",
+    "trial_name": "NCT05821933 (RC108 + furmonertinib +/- toripalimab)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/EGFR-ex20ins/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "met_expression"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut+MET|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05869162",
+    "trial_name": "NCT05869162 (SY-3505 post 2nd-gen ALK TKI)",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [
+      "alk_post_2gen_tki"
+    ],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-ALK-TKI-2gen|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05870319",
+    "trial_name": "NCT05870319 (SKB264 phase III EGFR post-TKI)",
+    "source_node": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05955391",
+    "trial_name": "NCT05955391 (TGRX-326 phase II)",
+    "source_node": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "source_state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [
+      "alk_post_2gen_tki"
+    ],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2024,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-ALK-TKI-2gen|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05973773",
+    "trial_name": "REZILIENT3",
+    "source_node": "first-line|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen + chemotherapy",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-ex20ins|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05994131",
+    "trial_name": "NCT05994131 (IN10018 + furmonertinib)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line-or-post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06082635",
+    "trial_name": "NCT06082635 (TGRX-326 phase III)",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06092086",
+    "trial_name": "NCT06092086 (lorlatinib 1L China)",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06254599",
+    "trial_name": "NCT06254599 (SY-3505 vs crizotinib 1L)",
+    "source_node": "first-line|NSCLC",
+    "source_state": "first-line",
+    "biomarker": "NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 3rd-gen (lorlatinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06319950",
+    "trial_name": "NCT06319950 (high-dose furmonertinib vs osimertinib, brain mets)",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [
+      "brain_metastases"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut+brain-mets|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06355609",
+    "trial_name": "WUKONG-32-RW",
+    "source_node": "first-line|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "co_mut_TP53",
+      "co_mut_PIK3CA"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut+co-mutation|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06391944",
+    "trial_name": "NCT06391944 (JMT101 + osimertinib EGFR common-mut multi-cohort)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line-or-post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06396065",
+    "trial_name": "HARMONi-A (AK112 EGFR-TKI failed)",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "Anti-VEGF + chemotherapy",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06417814",
+    "trial_name": "TROPION-Lung15",
+    "source_node": "post-osimertinib|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r",
+      "egfr_other_mut"
+    ],
+    "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06521034",
+    "trial_name": "Helpful (FHND-9041 first-in-human)",
+    "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "t790m_subgroup",
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2021,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line-or-post-EGFR-TKI|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06569420",
+    "trial_name": "NCT06569420 (SAF-189s vs crizotinib 1L ALK)",
+    "source_node": "first-line|ALK-rearranged/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|ALK-rearranged|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06674343",
+    "trial_name": "NCT06674343 (Furmonertinib 160mg 1L classical EGFR)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06706713",
+    "trial_name": "NCT06706713 (BEBT-109 EGFR ex20ins)",
+    "source_node": "post-chemo|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "post-chemo",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex20ins"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-platinum|EGFR-ex20ins|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06735391",
+    "trial_name": "NCT06735391 (JMT101 + osimertinib 1L EGFR-sensitive)",
+    "source_node": "first-line|EGFR-mut/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2026,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06759857",
+    "trial_name": "FHND9041 (vs afatinib)",
+    "source_node": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "subgroup_readouts": [
+      "egfr_ex19del",
+      "egfr_l858r"
+    ],
+    "drug_class": "EGFR TKI 3rd-gen (osimertinib)",
+    "year_pc": 2025,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-mut|NSCLC",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01740427",
+    "trial_name": "PALOMA-2",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "tumor": "mBC",
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01783444",
+    "trial_name": "BOLERO-6",
+    "source_node": "first-line|HR+",
+    "source_state": "first-line",
+    "biomarker": "HR+",
+    "subgroup_readouts": [],
+    "drug_class": "everolimus + exemestane",
+    "year_pc": 2018,
+    "tumor": "mBC",
+    "guideline_target_node": "post-NSAI|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01942135",
+    "trial_name": "PALOMA-3",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2014,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT01958021",
+    "trial_name": "MONALEESA-2",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "tumor": "mBC",
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02000622",
+    "trial_name": "OlympiAD",
+    "source_node": "post-endo|HER2-/gBRCAmut",
+    "source_state": "post-endo",
+    "biomarker": "HER2-/gBRCAmut",
+    "subgroup_readouts": [
+      "HR+_subgroup",
+      "TNBC_subgroup"
+    ],
+    "drug_class": "PARPi (olaparib)",
+    "year_pc": 2016,
+    "tumor": "mBC",
+    "guideline_target_node": "metastatic|gBRCA|HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02107703",
+    "trial_name": "MONARCH 2",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2017,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02246621",
+    "trial_name": "MONARCH 3",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2017,
+    "tumor": "mBC",
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02278120",
+    "trial_name": "MONALEESA-7",
+    "source_node": "first-line+pre-menopausal|HR+/HER2-",
+    "source_state": "first-line+pre-menopausal",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
+    "year_pc": 2017,
+    "tumor": "mBC",
+    "guideline_target_node": "first-line|pre-menopausal|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02340221",
+    "trial_name": "SANDPIPER",
+    "source_node": "post-endo|HR+/HER2-/PIK3CAmut/AKTpath",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "PIK3CAmut_subgroup"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2021,
+    "tumor": "mBC",
+    "guideline_target_node": "post-AI|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02422615",
+    "trial_name": "MONALEESA-3",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2017,
+    "tumor": "mBC",
+    "guideline_target_node": "first-or-second-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02437318",
+    "trial_name": "SOLAR-1",
+    "source_node": "post-endo|HR+/HER2-/PIK3CAmut/AKTpath",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "PIK3CAmut_cohort",
+      "PIK3CAwt_cohort"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2018,
+    "tumor": "mBC",
+    "guideline_target_node": "post-AI|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02763566",
+    "trial_name": "MONARCH plus",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "Cohort_A_1L",
+      "Cohort_B_post-endo"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2019,
+    "tumor": "mBC",
+    "guideline_target_node": "first-line|all-comers|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02767661",
+    "trial_name": "MECCA",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "chemotherapy single agent",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02894398",
+    "trial_name": "INGE-B",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "1L+|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT02941926",
+    "trial_name": "COMPLEEMENT-1",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2019,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03079011",
+    "trial_name": "PADA-1",
+    "source_node": "first-line|HR+/HER2-/ESR1mut",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2021,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03096847",
+    "trial_name": "CompLEEment study",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2018,
+    "tumor": "mBC",
+    "guideline_target_node": "1L+|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03147287",
+    "trial_name": "PACE",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03176238",
+    "trial_name": "EVEREXES",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "everolimus + exemestane",
+    "year_pc": 2019,
+    "tumor": "mBC",
+    "guideline_target_node": "post-NSAI|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03337724",
+    "trial_name": "IPATunity130",
+    "source_node": "post-endo|HER2-/PIK3CAmut/AKTpath",
+    "source_state": "post-endo",
+    "biomarker": "HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "AKTpath",
+      "HR+_subgroup",
+      "TNBC_subgroup"
+    ],
+    "drug_class": "AKTi + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "1L-chemo|AKTpath|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03425838",
+    "trial_name": "SONIA",
+    "source_node": "first-line|HR+",
+    "source_state": "first-line",
+    "biomarker": "HR+",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "1L_vs_2L|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03439046",
+    "trial_name": "BioItaLEE",
+    "source_node": "first-line|HR+/HER2-/PIK3CAmut",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "subgroup_readouts": [
+      "PIK3CAmut"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03671330",
+    "trial_name": "Ribociclib China study",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "premenopausal_cohort",
+      "postmenopausal_cohort"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03734029",
+    "trial_name": "DESTINY-Breast04",
+    "source_node": "post-endo+post-chemo|HER2-/HER2-low",
+    "source_state": "post-endo+post-chemo",
+    "biomarker": "HER2-/HER2-low",
+    "subgroup_readouts": [
+      "HR+_subgroup",
+      "HR-_subgroup"
+    ],
+    "drug_class": "HER2-ADC (T-DXd)",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "post-chemo|HER2-low|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03778931",
+    "trial_name": "EMERALD",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/ESR1mut",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2021,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|ESR1mut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03822468",
+    "trial_name": "AMALEE",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2021,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03839823",
+    "trial_name": "RIGHT Choice",
+    "source_node": "first-line+pre-menopausal|HR+/HER2-",
+    "source_state": "first-line+pre-menopausal",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|visceral-crisis|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03901339",
+    "trial_name": "TROPiCS-02",
+    "source_node": "post-endo+post-CDK46i+post-chemo|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "HER2-low_subgroup"
+    ],
+    "drug_class": "TROP2-ADC (sacituzumab govitecan)",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "post-chemo|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03927456",
+    "trial_name": "SHR6390 + Fulvestrant (DAWNA-1-like)",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2021,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|HR+/HER2-|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03966898",
+    "trial_name": "SHR6390 + Letrozole/Anastrozole (DAWNA-2-like)",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|endocrine-naive|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04047758",
+    "trial_name": "Palbociclib + AI in HR+/HER2- locally advanced BC (China)",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2021,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04059484",
+    "trial_name": "AMEERA-3",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|HR+/HER2-|secondary-endo-resistant",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04072952",
+    "trial_name": "ARV-471 phase 1/2 (vepdegestrant) +/- palbociclib",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04191499",
+    "trial_name": "INAVO120",
+    "source_node": "first-line|HR+/HER2-/PIK3CAmut/AKTpath",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "subgroup_readouts": [
+      "PIK3CA-mutant"
+    ],
+    "drug_class": "PI3Ki triplet (inavolisib + CDK4/6i + fulv)",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04214288",
+    "trial_name": "SERENA-2",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04263298",
+    "trial_name": "FAMILY",
+    "source_node": "post-chemo|HR+/HER2-",
+    "source_state": "post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "endocrine therapy alone",
+    "year_pc": 2025,
+    "tumor": "mBC",
+    "guideline_target_node": "post-chemo|HR+/HER2-|maintenance",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04305496",
+    "trial_name": "CAPItello-291",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/AKTpath",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/AKTpath",
+    "subgroup_readouts": [
+      "AKTpath",
+      "post-CDK46i_subgroup"
+    ],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2023,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|AKTpath|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04494425",
+    "trial_name": "DESTINY-Breast06",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/HER2-low",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "subgroup_readouts": [
+      "HER2-low",
+      "HER2-ultralow",
+      "post-CDK46i_subgroup"
+    ],
+    "drug_class": "HER2-ADC (T-DXd)",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|HER2-low|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04546009",
+    "trial_name": "persevERA",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04571437",
+    "trial_name": "B-001",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "endocrine therapy alone",
+    "year_pc": 2021,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|HR+/HER2-|endocrine-sensitive",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04576455",
+    "trial_name": "acelERA",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04639986",
+    "trial_name": "EVER-132-002 (Asian SG study)",
+    "source_node": "post-endo+post-chemo|HR+/HER2-",
+    "source_state": "post-endo+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "TROP2-ADC (sacituzumab govitecan)",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-chemo|HR+/HER2-|heavily-pretreated",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04650581",
+    "trial_name": "FINER",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2025,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04711252",
+    "trial_name": "SERENA-4",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT04964934",
+    "trial_name": "SERENA-6",
+    "source_node": "post-endo|HR+/HER2-/ESR1mut",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|ESR1mut|HR+/HER2-",
+    "provenance": "v2_round1_added"
+  },
+  {
+    "nct_id": "NCT04975308",
+    "trial_name": "EMBER-3",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|HR+/HER2-|post-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05054751",
+    "trial_name": "GB491 (lerociclib) + fulvestrant phase III",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2022,
+    "tumor": "mBC",
+    "guideline_target_node": "post-endo|HR+/HER2-|any-menopausal",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05104866",
+    "trial_name": "TROPION-Breast01",
+    "source_node": "post-endo+post-chemo|HR+/HER2-",
+    "source_state": "post-endo+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "HER2-low_subgroup"
+    ],
+    "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "post-chemo|HR+/HER2-|endocrine-refractory",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05169567",
+    "trial_name": "postMONARCH",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05207709",
+    "trial_name": "HARMONIA",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "HER2-enriched (PAM50) subtype",
+      "Basal-like (PAM50) subtype"
+    ],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|HER2-E-PAM50|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05257395",
+    "trial_name": "XZP-3287 (birociclib) + AI",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2025,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05365178",
+    "trial_name": "TQB3616 + fulvestrant 1L",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2025,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05375461",
+    "trial_name": "TQB3616 + fulvestrant (previously treated)",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "2L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05439499",
+    "trial_name": "FCN-437c + AI \u00b1 goserelin",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2024,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05501886",
+    "trial_name": "VIKTORIA-1",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "PIK3CA wild-type",
+      "PIK3CA mutant"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05646862",
+    "trial_name": "INAVO121",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/PIK3CAmut",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "subgroup_readouts": [
+      "PIK3CA mutant"
+    ],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05654623",
+    "trial_name": "VERITAC-2",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2025,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05744687",
+    "trial_name": "SPH4336 + letrozole 1L",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05851014",
+    "trial_name": "GB491 + letrozole 1L",
+    "source_node": "first-line|HR+/HER2-",
+    "source_state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "1L|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT05860465",
+    "trial_name": "SPH4336 post-CDK4/6i",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06018337",
+    "trial_name": "DYNASTY-Breast02",
+    "source_node": "post-endo|HR+/HER2-/HER2-low",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "subgroup_readouts": [
+      "HER2 IHC 1+ vs 2+/ISH-"
+    ],
+    "drug_class": "HER2-ADC (other)",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-ET|HER2-low|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06105632",
+    "trial_name": "FOURLIGHT-1",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06635447",
+    "trial_name": "CAPItrue",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [
+      "AKT-pathway altered"
+    ],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-ET|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT06954961",
+    "trial_name": "D-0502 vs fulvestrant",
+    "source_node": "post-endo|HR+/HER2-",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral",
+    "year_pc": 2026,
+    "tumor": "mBC",
+    "guideline_target_node": "post-ET|any|HR+/HER2-",
+    "provenance": null
+  },
+  {
+    "nct_id": "NCT03056755",
+    "trial_name": "BYLieve",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/PIK3CAmut",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "subgroup_readouts": [],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2020,
+    "tumor": "mBC",
+    "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
+    "provenance": "v2_round1_added"
+  }
+]

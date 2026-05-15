@@ -1,0 +1,391 @@
+[
+  {
+    "node_id": "N1",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del-or-L858R/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "EGFR TKI 3rd-gen (osimertinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02296125"
+    ],
+    "year": 2018,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N2",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "EGFR TKI 3rd-gen + chemotherapy",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT04035486"
+    ],
+    "year": 2024,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N3",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "EGFR TKI 3rd-gen + bispecific (amivantamab + lazertinib)",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT04487080"
+    ],
+    "year": 2024,
+    "source": "ASCO+NCCN"
+  },
+  {
+    "node_id": "N4",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "EGFR TKI 2nd-gen (afatinib/dacomitinib)",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT01774721"
+    ],
+    "year": 2017,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N5",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "Bevacizumab + EGFR TKI",
+        "grade": "II-B"
+      },
+      {
+        "class": "Ramucirumab + EGFR TKI",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2020,
+    "source": "ESMO"
+  },
+  {
+    "node_id": "N6",
+    "state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "EGFR TKI 3rd-gen (osimertinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02151981"
+    ],
+    "year": 2017,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N7",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "Amivantamab + chemotherapy",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT04988295"
+    ],
+    "year": 2023,
+    "source": "ESMO+NCCN"
+  },
+  {
+    "node_id": "N8",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "HER3-ADC (patritumab deruxtecan)",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT04619004"
+    ],
+    "year": 2023,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "N9",
+    "state": "post-osimertinib+post-chemo",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "TROP2-ADC (datopotamab deruxtecan)",
+        "grade": "II-C"
+      }
+    ],
+    "cited_trials": [
+      "NCT04656652"
+    ],
+    "year": 2023,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "N10",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "Platinum doublet chemotherapy",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2020,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N11",
+    "state": "first-line",
+    "biomarker": "EGFR-ex20ins/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "Amivantamab + chemotherapy",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2024,
+    "source": "ESMO+NCCN"
+  },
+  {
+    "node_id": "N12",
+    "state": "post-chemo",
+    "biomarker": "EGFR-ex20ins/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "investigational (other)",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2022,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "N13",
+    "state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02075840"
+    ],
+    "year": 2017,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N14",
+    "state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02737501"
+    ],
+    "year": 2020,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N15",
+    "state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "ALK TKI 3rd-gen (lorlatinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT03052608"
+    ],
+    "year": 2020,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N16",
+    "state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "ALK TKI 1st-gen (crizotinib)",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT01154140"
+    ],
+    "year": 2014,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N17",
+    "state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2017,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N18",
+    "state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "ALK TKI 3rd-gen (lorlatinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2018,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N19",
+    "state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/ALK-resistance-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "Platinum doublet chemotherapy",
+        "grade": "II-C"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2022,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "N20",
+    "state": "first-line+brain-mets",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "ALK TKI 3rd-gen (lorlatinib)",
+        "grade": "I-A"
+      },
+      {
+        "class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT03052608",
+      "NCT02075840"
+    ],
+    "year": 2020,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N21",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/MET-amp/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "investigational (other)",
+        "grade": "II-C"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2024,
+    "source": "NCCN"
+  },
+  {
+    "node_id": "N22",
+    "state": "first-line+brain-mets",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "EGFR TKI 3rd-gen (osimertinib)",
+        "grade": "I-A"
+      }
+    ],
+    "cited_trials": [
+      "NCT02296125"
+    ],
+    "year": 2018,
+    "source": "ESMO+ASCO+NCCN"
+  },
+  {
+    "node_id": "N23",
+    "state": "post-osimertinib+post-amivantamab",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "investigational (other)",
+        "grade": "II-C"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2024,
+    "source": "ASCO"
+  },
+  {
+    "node_id": "N24",
+    "state": "post-osimertinib+post-chemo",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "Platinum doublet chemotherapy",
+        "grade": "II-B"
+      }
+    ],
+    "cited_trials": [],
+    "year": 2020,
+    "source": "ASCO+NCCN"
+  },
+  {
+    "node_id": "N25",
+    "state": "first-line+poor-prognosis",
+    "biomarker": "EGFR-mut/NSCLC",
+    "recommended_classes": [
+      {
+        "class": "EGFR TKI 3rd-gen + chemotherapy",
+        "grade": "I-B"
+      }
+    ],
+    "cited_trials": [
+      "NCT04035486"
+    ],
+    "year": 2024,
+    "source": "NCCN"
+  }
+]

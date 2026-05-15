@@ -1,0 +1,284 @@
+[
+  {
+    "node_id": "first-line|ALK-rearranged/NSCLC",
+    "state": "first-line",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "first-line|EGFR-mut/EGFR-L858R/NSCLC",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "first-line|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "first-line|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "first-line|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "first-line|EGFR-mut/NSCLC",
+    "state": "first-line",
+    "biomarker": "EGFR-mut/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "first-line|NSCLC",
+    "state": "first-line",
+    "biomarker": "NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-ALKTKI+post-chemo|ALK-rearranged/NSCLC",
+    "state": "post-ALKTKI+post-chemo",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-ALKTKI|ALK-rearranged/ALK-resistance-mut/NSCLC",
+    "state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/ALK-resistance-mut/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-ALKTKI|ALK-rearranged/NSCLC",
+    "state": "post-ALKTKI",
+    "biomarker": "ALK-rearranged/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-EGFRTKI+post-chemo|EGFR-mut/EGFR-T790M/NSCLC",
+    "state": "post-EGFRTKI+post-chemo",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-EGFRTKI+post-chemo|EGFR-mut/NSCLC",
+    "state": "post-EGFRTKI+post-chemo",
+    "biomarker": "EGFR-mut/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-EGFRTKI|EGFR-mut/EGFR-T790M/EGFR-ex20ins/NSCLC",
+    "state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex20ins/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
+    "state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-EGFRTKI|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-EGFRTKI|EGFR-mut/NSCLC",
+    "state": "post-EGFRTKI",
+    "biomarker": "EGFR-mut/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-chemo|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "state": "post-chemo",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib+post-ALKTKI|EGFR-mut/ALK-rearranged/NSCLC",
+    "state": "post-osimertinib+post-ALKTKI",
+    "biomarker": "EGFR-mut/ALK-rearranged/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib+post-chemo|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "state": "post-osimertinib+post-chemo",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib|EGFR-mut/EGFR-L858R/NSCLC",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/EGFR-ex20ins/NSCLC",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/EGFR-ex20ins/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib|EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib|EGFR-mut/EGFR-T790M/NSCLC",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-T790M/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib|EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "post-osimertinib|EGFR-mut/NSCLC",
+    "state": "post-osimertinib",
+    "biomarker": "EGFR-mut/NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
+    "node_id": "first-line+pre-menopausal|HR+/HER2-",
+    "state": "first-line+pre-menopausal",
+    "biomarker": "HR+/HER2-",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "first-line|HR+",
+    "state": "first-line",
+    "biomarker": "HR+",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "first-line|HR+/HER2-",
+    "state": "first-line",
+    "biomarker": "HR+/HER2-",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "first-line|HR+/HER2-/ESR1mut",
+    "state": "first-line",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "first-line|HR+/HER2-/PIK3CAmut",
+    "state": "first-line",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "first-line|HR+/HER2-/PIK3CAmut/AKTpath",
+    "state": "first-line",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-chemo|HR+/HER2-",
+    "state": "post-chemo",
+    "biomarker": "HR+/HER2-",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i+post-chemo|HR+/HER2-",
+    "state": "post-endo+post-CDK46i+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i|HR+/HER2-",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i|HR+/HER2-/AKTpath",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/AKTpath",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i|HR+/HER2-/ESR1mut",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i|HR+/HER2-/HER2-low",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i|HR+/HER2-/PIK3CAmut",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-chemo|HER2-/HER2-low",
+    "state": "post-endo+post-chemo",
+    "biomarker": "HER2-/HER2-low",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo+post-chemo|HR+/HER2-",
+    "state": "post-endo+post-chemo",
+    "biomarker": "HR+/HER2-",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo|HER2-/PIK3CAmut/AKTpath",
+    "state": "post-endo",
+    "biomarker": "HER2-/PIK3CAmut/AKTpath",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo|HER2-/gBRCAmut",
+    "state": "post-endo",
+    "biomarker": "HER2-/gBRCAmut",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo|HR+/HER2-",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo|HR+/HER2-/ESR1mut",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo|HR+/HER2-/HER2-low",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/HER2-low",
+    "tumor": "mBC"
+  },
+  {
+    "node_id": "post-endo|HR+/HER2-/PIK3CAmut/AKTpath",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut/AKTpath",
+    "tumor": "mBC"
+  }
+]
