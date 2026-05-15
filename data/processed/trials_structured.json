@@ -1,0 +1,321 @@
+{
+  "NCT01942135": {
+    "trial_name": "PALOMA-3",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": false,
+      "post_chemo_metastatic_min": 0
+    },
+    "excluded": {
+      "post_cdk46i": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "her2_low": null
+    },
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2015,
+    "guideline_target_node": "post-endo|HR+/HER2-",
+    "nct_id": "NCT01942135",
+    "brief_title": "Palbociclib (PD-0332991) Combined With Fulvestrant In Hormone Receptor+ HER2-Negative Metastatic Breast Cancer After Endocrine Failure (PALOMA-3)",
+    "start_year": "2013",
+    "primary_completion_year_api": "2014",
+    "eligibility_text_len": 1227
+  },
+  "NCT02107703": {
+    "trial_name": "MONARCH-2",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": false
+    },
+    "excluded": {
+      "post_cdk46i": true,
+      "post_chemo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2017,
+    "guideline_target_node": "post-endo|HR+/HER2-",
+    "nct_id": "NCT02107703",
+    "brief_title": "A Study of Abemaciclib (LY2835219) Combined With Fulvestrant in Women With Hormone Receptor Positive HER2 Negative Breast Cancer",
+    "start_year": "2014",
+    "primary_completion_year_api": "2017",
+    "eligibility_text_len": 4627
+  },
+  "NCT02437318": {
+    "trial_name": "SOLAR-1",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": false
+    },
+    "excluded": {
+      "post_chemo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "pik3ca_mut": true
+    },
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2018,
+    "guideline_target_node": "post-endo|PIK3CAmut|HR+/HER2-",
+    "nct_id": "NCT02437318",
+    "brief_title": "Study Assessing the Efficacy and Safety of Alpelisib Plus Fulvestrant in Men and Postmenopausal Women With Advanced Breast Cancer Which Progressed on or After Aromatase Inhibitor Treatment.",
+    "start_year": "2015",
+    "primary_completion_year_api": "2018",
+    "eligibility_text_len": 2683
+  },
+  "NCT03778931": {
+    "trial_name": "EMERALD",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true
+    },
+    "excluded": {},
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "subgroup_readouts": [
+      "ESR1mut"
+    ],
+    "drug_class": "SERD oral",
+    "year_pc": 2021,
+    "guideline_target_node": "post-CDK46i|ESR1mut|HR+/HER2-",
+    "nct_id": "NCT03778931",
+    "brief_title": "Phase 3 Trial of Elacestrant Versus Standard of Care for the Treatment of ER+/HER2- Advanced Breast Cancer",
+    "start_year": "2019",
+    "primary_completion_year_api": "2021",
+    "eligibility_text_len": 2188
+  },
+  "NCT04305496": {
+    "trial_name": "CAPItello-291",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": false
+    },
+    "excluded": {},
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "subgroup_readouts": [
+      "AKTpath"
+    ],
+    "drug_class": "AKTi + fulvestrant",
+    "year_pc": 2022,
+    "guideline_target_node": "post-CDK46i|AKTpath|HR+/HER2-",
+    "nct_id": "NCT04305496",
+    "brief_title": "Capivasertib+Fulvestrant vs Placebo+Fulvestrant as Treatment for Locally Advanced (Inoperable) or Metastatic HR+/HER2- Breast Cancer",
+    "start_year": "2020",
+    "primary_completion_year_api": "2023",
+    "eligibility_text_len": 5341
+  },
+  "NCT04494425": {
+    "trial_name": "DESTINY-Breast06",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": 0
+    },
+    "excluded": {
+      "post_chemo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": true
+    },
+    "drug_class": "HER2-ADC (T-DXd)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-CDK46i|HER2-low|HR+/HER2-",
+    "nct_id": "NCT04494425",
+    "brief_title": "Study of Trastuzumab Deruxtecan (T-DXd) vs Investigator's Choice Chemotherapy in HER2-low, Hormone Receptor Positive, Metastatic Breast Cancer",
+    "start_year": "2020",
+    "primary_completion_year_api": "2024",
+    "eligibility_text_len": 2207
+  },
+  "NCT01958021": {
+    "trial_name": "MONALEESA-2",
+    "prior_state": {
+      "post_endo": false
+    },
+    "excluded": {
+      "post_endo_metastatic_any": true,
+      "post_chemo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "guideline_target_node": "first-line|HR+/HER2-",
+    "nct_id": "NCT01958021",
+    "brief_title": "Study of Efficacy and Safety of LEE011 in Postmenopausal Women With Advanced Breast Cancer",
+    "start_year": "2013",
+    "primary_completion_year_api": "2016",
+    "eligibility_text_len": 4194
+  },
+  "NCT02246621": {
+    "trial_name": "MONALEESA-3",
+    "prior_state": {
+      "post_endo": null,
+      "post_cdk46i": false
+    },
+    "excluded": {
+      "post_cdk46i": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + fulvestrant",
+    "year_pc": 2018,
+    "guideline_target_node": "post-endo|HR+/HER2-",
+    "nct_id": "NCT02246621",
+    "brief_title": "A Study of Nonsteroidal Aromatase Inhibitors Plus Abemaciclib (LY2835219) in Postmenopausal Women With Breast Cancer",
+    "start_year": "2014",
+    "primary_completion_year_api": "2017",
+    "eligibility_text_len": 2156
+  },
+  "NCT02513394": {
+    "trial_name": "PALOMA-2",
+    "prior_state": {
+      "post_endo": false
+    },
+    "excluded": {
+      "post_endo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "guideline_target_node": "first-line|HR+/HER2-",
+    "nct_id": "NCT02513394",
+    "brief_title": "PALbociclib CoLlaborative Adjuvant Study",
+    "start_year": "2015",
+    "primary_completion_year_api": "2020",
+    "eligibility_text_len": 3436
+  },
+  "NCT02675231": {
+    "trial_name": "MONARCH-3",
+    "prior_state": {
+      "post_endo": false
+    },
+    "excluded": {
+      "post_endo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2017,
+    "guideline_target_node": "first-line|HR+/HER2-",
+    "nct_id": "NCT02675231",
+    "brief_title": "A Study of Abemaciclib (LY2835219) in Women With HR+, HER2+ Locally Advanced or Metastatic Breast Cancer",
+    "start_year": "2016",
+    "primary_completion_year_api": "2019",
+    "eligibility_text_len": 3099
+  },
+  "NCT02763566": {
+    "trial_name": "MONALEESA-7",
+    "prior_state": {
+      "post_endo": false,
+      "menopausal_status": "pre"
+    },
+    "excluded": {
+      "post_endo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
+    "year_pc": 2018,
+    "guideline_target_node": "first-line|pre-menopausal|HR+/HER2-",
+    "nct_id": "NCT02763566",
+    "brief_title": "A Study of Abemaciclib (LY2835219) in Participants With Breast Cancer",
+    "start_year": "2016",
+    "primary_completion_year_api": "2019",
+    "eligibility_text_len": 8617
+  },
+  "NCT03734029": {
+    "trial_name": "DESTINY-Breast04",
+    "prior_state": {
+      "post_chemo_metastatic_min": 1
+    },
+    "excluded": {},
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "her2_low": true
+    },
+    "subgroup_readouts": [
+      "HR+_subgroup"
+    ],
+    "drug_class": "HER2-ADC (T-DXd)",
+    "year_pc": 2022,
+    "guideline_target_node": "post-chemo|HER2-low|HR+/HER2-",
+    "nct_id": "NCT03734029",
+    "brief_title": "Trastuzumab Deruxtecan (DS-8201a) Versus Investigator's Choice for HER2-low Breast Cancer That Has Spread or Cannot be Surgically Removed [DESTINY-Breast04]",
+    "start_year": "2018",
+    "primary_completion_year_api": "2022",
+    "eligibility_text_len": 2063
+  },
+  "NCT03997123": {
+    "trial_name": "postMONARCH",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true
+    },
+    "excluded": {
+      "post_chemo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + fulvestrant (post-CDK4/6i)",
+    "year_pc": 2024,
+    "guideline_target_node": "post-CDK46i|HR+/HER2-",
+    "nct_id": "NCT03997123",
+    "brief_title": "Capivasertib+Paclitaxel as First Line Treatment for Patients With Locally Advanced or Metastatic TNBC",
+    "start_year": "2019",
+    "primary_completion_year_api": "2026",
+    "eligibility_text_len": 3826
+  },
+  "NCT04032080": {
+    "trial_name": "INAVO120",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": null,
+      "endo_resistance_window_months": 12
+    },
+    "excluded": {
+      "post_cdk46i_metastatic": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "pik3ca_mut": true
+    },
+    "drug_class": "PI3Ki + CDK4/6i + fulvestrant",
+    "year_pc": 2023,
+    "guideline_target_node": "post-endo|PIK3CAmut|HR+/HER2-",
+    "nct_id": "NCT04032080",
+    "brief_title": "LY3023414 and Prexasertib in Metastatic Triple-negative Breast Cancer",
+    "start_year": "2019",
+    "primary_completion_year_api": "2022",
+    "eligibility_text_len": 4190
+  }
+}

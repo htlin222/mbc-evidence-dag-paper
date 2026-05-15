@@ -1,0 +1,34 @@
+% Discussion section.
+% Derived from manuscript/discussion.argdown (claim/objection/rebuttal map).
+% Open the rendered SVG at figures/discussion.svg for the argument structure.
+
+% --- Headline restatement ---
+A substantial fraction of ESMO HR+/HER2- metastatic breast cancer decision nodes is not directly supported by any pivotal-trial edge that simultaneously matches patient state, biomarker definition, and temporal precedence; the gap is largest at post-CDK4/6i biomarker-stratified positions. In the pre-registered analysis, the strict-tolerance EFDPR of 0.467 (95\% CI 0.267--0.733) excluded the pre-specified null of 0.25, and the gap persisted under ESCAT-aligned tolerance. These post-CDK4/6i positions are exactly the decisions clinicians face daily and exactly the positions for which guideline committees compose evidence across trials that were not designed to test the composed sequence.
+
+% --- Three caveats ---
+\paragraph{Corpus size sensitivity.}
+The 14-trial / 15-node analysis is a pre-registered pilot, not a systematic-review-level census. The 0.47-wide strict-tolerance confidence interval reflects this. Because pre-registration was committed before any outcome-touching analysis, post-hoc enlargement of the corpus to push the estimate one way or the other would require explicit disclosure as a deviation. Under the most permissive of the three pre-registered tolerance levels (liberal, which accepts registrational biomarker-subgroup readouts as concordant edges), the lower CI bound touches the threshold (0.200), so the rejection of the null is not robust to all tolerance choices. Reporting the three tolerance levels as a planned analysis grid, rather than searching for the one that "works", was the pre-registration's defence against that fragility.
+
+\paragraph{Composition-only citations reflect unavoidable guideline practice.}
+Guideline committees routinely compose recommendations across non-overlapping trials when no single trial covers the exact decision node, particularly in rapidly evolving fields such as HR+/HER2- mBC. ESMO's citation of SOLAR-1 for the post-CDK4/6i PIK3CAmut node, and of CAPItello-291 for the post-CDK4/6i AKT-pathway node, are canonical examples: SOLAR-1 enrolled a post-AI rather than post-CDK4/6i population, and CAPItello-291 permitted but did not require prior CDK4/6i. The framework does not declare these compositions illegitimate; it makes them explicit and counts them. Whether composition is acceptable in a given clinical context is a separate, downstream question that benefits from being able to see, on a single diagram, where composition has been invoked.
+
+\paragraph{Strict matching is a deliberately conservative model.}
+The strict concordance algorithm intentionally over-flags reasonable extrapolations as evidence-free, so that the resulting count is a robust upper bound on directly-supported decisions rather than a clinical judgement about whether a given extrapolation is sound. The framework's tolerance-tiered output (strict / ESCAT-aligned / liberal) quantifies the dependence of EFDPR on extrapolation assumptions, which is, in our view, the more useful clinical artefact.
+
+% --- Three positives ---
+\paragraph{Reproducible by construction.}
+Every analytic choice in this study is materialised as either a JSON file or a Python function and released under the MIT licence in the repository linked in the Code Availability statement. The 14-trial structured-eligibility set is Supplementary Table S2; the 15-node ESMO encoding is Supplementary Table S3; the biomarker-token vocabulary for the ODI computation is Supplementary Table S4. The schema is frozen at v1.0, and the tagged release \texttt{v1.0.0} reproduces every figure and table.
+
+\paragraph{Extensible to other tumour types.}
+The framework's node space, (prior-state, biomarker) tuple, is tumour-agnostic; tumour-specific biomarker tokens enter as additive vocabulary, not as architectural changes. The concordance algorithm is biomarker-agnostic. The same pipeline is planned for application to EGFR-mutant non-small cell lung cancer and to metastatic colorectal cancer with ctDNA-guided decision axes; in each case the only artefacts that need authoring are the structured trial corpus, the structured guideline decision tree, and the per-tumour ESCAT grouping table.
+
+\paragraph{Actionable for guideline committees and trial sponsors.}
+A guideline committee that adopts this framework as a regular guideline-update audit can locate the specific decision nodes that lack supporting evidence chains and prioritise the next pivotal-trial agenda toward them. Trial sponsors can use the list of evidence-free post-CDK4/6i biomarker-stratified nodes to design enrichment trials whose target population matches the guideline-recommended decision point, rather than the convenience population most readily recruited from a single network. The EFDPR overlay adds one column to an artefact (the decision-tree table) that committees already produce.
+
+% --- Limitations ---
+\paragraph{Limitations.}
+Three limitations bound the present study. First, the 14-trial corpus is the documented pilot, not a systematic-review-level census of every HR+/HER2- mBC pivotal trial; a production-grade census, paired with the LLM-extraction validation pipeline, is the natural next step. Second, the primary analysis uses ESMO 2024 as the single guideline source; ASCO and NCCN sensitivity analyses are pre-registered for an expansion but were not run in this pilot. Third, eligibility coding was hand-curated from canonical primary publications; the LLM-extraction pipeline that will replace this for production has its own methodological and validation requirements, which are reported separately.
+
+% --- Outlook ---
+\paragraph{Outlook.}
+The framework, schema, and ESMO encoding are released to enable extension by guideline committees, trial sponsors, and meta-research groups. A community-maintained Treatment Sequencing Evidence Atlas, refreshed at every ESMO and ASCO guideline release, could provide a continuously-updated EFDPR overlay across solid tumours; immediate priorities are the NSCLC and mCRC applications, the LLM-extraction validation paper, and an interactive web viewer that lets a clinician click any guideline decision node and see, in one screen, every trial-DAG edge that supports it and every edge that does not.

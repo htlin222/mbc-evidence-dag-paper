@@ -1,0 +1,75 @@
+===
+title: Discussion — Evidence-free decision points in HR+/HER2- mBC
+mode: strict
+===
+
+# Headline claim
+
+[Headline]: A substantial fraction of ESMO HR+/HER2- metastatic breast cancer decision nodes is not directly supported by any trial-DAG edge that simultaneously matches patient state, biomarker definition, and temporal precedence; the gap is largest at post-CDK4/6i biomarker-stratified positions.
+  + <Empirical evidence>: The pre-registered EFDPR rejected the 0.25 null under strict and ESCAT-aligned concordance.
+  + <Mechanistic explanation>: Post-CDK4/6i biomarker-stratified positions emerged only after first-line CDK4/6i was adopted as standard of care, so the corresponding trials are still maturing.
+  - <Composition is acceptable>: Composing evidence across non-overlapping trials is a legitimate guideline-development practice that should not be penalised.
+  - <Liberal tolerance suffices>: Under liberal tolerance accepting subgroup readouts, the lower CI bound touches the 0.25 threshold, so the rejection is fragile.
+
+<Empirical evidence>
+
+(1) EFDPR under strict concordance was 0.467 (95% CI 0.267 to 0.733).
+(2) The strict 95% CI lower bound 0.267 lies above the pre-registered threshold of 0.25.
+(3) ESCAT-aligned tolerance left EFDPR unchanged at 0.467.
+-----
+(4) [Headline]
+
+# Caveat 1 — Small corpus
+
+[Corpus size matters]: With only 14 pivotal trials and 15 decision nodes, both the EFDPR point estimate and its confidence interval are sensitive to single-edge changes.
+  + <Bootstrap CI wide>: The strict 95% CI spans 0.267 to 0.733, a 0.47 wide interval, reflecting the small denominator.
+  - <Pre-registration prevents post-hoc adjustment>: Because the analysis was pre-registered before any outcome touching, post-hoc widening of the corpus would itself be a deviation requiring disclosure.
+  + <Liberal sensitivity>: Under liberal tolerance the lower CI bound is 0.20, just below the 0.25 threshold, so the corpus is sensitive to tolerance choice.
+
+# Caveat 2 — Composition-only citations are common practice
+
+[Composition is unavoidable]: Guideline committees routinely compose recommendations across non-overlapping trials when no single trial covers the exact decision node, especially in rapidly evolving fields.
+  + <SOLAR-1 example>: ESMO cites SOLAR-1 as supporting post-CDK4/6i PIK3CAmut recommendations, despite SOLAR-1 enrolling a post-AI (not post-CDK4/6i) population.
+  + <CAPItello-291 example>: ESMO cites CAPItello-291 as supporting the post-CDK4/6i AKT-pathway node, although CAPItello-291 enrolled a mixed population in which prior CDK4/6i was permitted but not required.
+  - <Composition introduces uncertainty>: Composing across non-overlapping trials assumes treatment effect transportability across patient subgroups, an assumption rarely tested formally.
+    + <Heterogeneity in post-CDK4/6i biology>: Resistance mechanisms after CDK4/6i progression are distinct from de novo resistance, suggesting treatment-effect transportability is not automatic.
+
+# Caveat 3 — The framework rewards strict matching, not clinical reasoning
+
+[Strict matching is a model]: The strict concordance algorithm is a deliberately conservative model that may over-flag clinically reasonable extrapolations as evidence-free.
+  + <Clinicians extrapolate>: In clinical practice, extending SOLAR-1's PIK3CAmut signal from post-AI to post-CDK4/6i populations is considered a reasonable extrapolation, not an evidence gap.
+  - <Algorithmic transparency>: The framework's value is precisely in making such extrapolations explicit and counting them, not in declaring them illegitimate.
+  - <Tolerance-tiered reporting>: The framework's three-tolerance output (strict / ESCAT / liberal) explicitly quantifies the dependence on extrapolation assumptions.
+
+# Positive 1 — Reproducible by construction
+
+[Reproducibility]: Every analytic choice (state encoding, biomarker token set, concordance algorithm, tolerance grouping) is materialised as a JSON file or a Python function and released under MIT licence.
+  + <Replicable artefacts>: The fourteen-trial structured-eligibility set, the fifteen-node ESMO encoding, and the concordance algorithm are all in the repository at the tagged commit.
+  + <Schema versioning>: The v1.0 schema is frozen; future extensions live in v1.1 and do not retroactively modify v1.0 fields.
+  + <Pre-registration>: The primary outcome and its rejection threshold were committed before any outcome-touching analysis.
+
+# Positive 2 — Extensible across tumour types
+
+[Extensibility]: The same pipeline applies, without architectural change, to other tumour types whose guidelines compose multi-line decision trees across non-overlapping trials.
+  + <Schema reuse>: The (prior-state, biomarker) node space is generic; tumour-specific biomarker tokens are additive.
+  + <Algorithm reuse>: The concordance algorithm is biomarker-agnostic.
+  + <Roadmap>: The same framework is planned for application to EGFR-mutant NSCLC and metastatic CRC with the ctDNA decision axis.
+
+# Positive 3 — Actionable for guideline committees
+
+[Actionable]: A committee that adopts this framework as a regular guideline-update audit can locate the specific decision nodes that lack supporting evidence chains and prioritise the next pivotal-trial agenda toward them.
+  + <Decision-node addressability>: Each guideline node is a labelled object the committee already produces; the EFDPR overlay adds a single column to that artefact.
+  + <Trial sponsor utility>: Sponsors can use the list of evidence-free post-CDK4/6i biomarker-stratified nodes to design enrichment trials whose target population matches the guideline-recommended decision point.
+
+# Limitations
+
+[Limitations]: Three limitations bound the present study.
+  + <Corpus is pilot>: The 14-trial corpus is the documented pilot, not a systematic-review-level census of every HR+/HER2- mBC pivotal trial.
+  + <Single guideline source>: The primary analysis uses ESMO 2024 as the guideline source; ASCO and NCCN sensitivity analyses are planned for an expansion.
+  + <Manual eligibility coding>: Eligibility was hand-curated from primary publications. The LLM-extraction pipeline that will replace this for production is a separate technical contribution and is reported elsewhere.
+
+# Outlook
+
+[Outlook]: The framework is released so that guideline committees, trial sponsors, and meta-research groups can extend it.
+  + <Atlas vision>: A community-maintained Treatment Sequencing Evidence Atlas, updated at every ESMO and ASCO guideline release, could provide a continuously-refreshed EFDPR overlay across solid tumours.
+  + <Next steps>: Immediate priorities are the NSCLC and mCRC applications, an LLM-extraction validation paper with inter-rater agreement, and an interactive web viewer.

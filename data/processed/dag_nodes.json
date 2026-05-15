@@ -1,0 +1,37 @@
+[
+  {
+    "node_id": "first-line+pre-menopausal|HR+/HER2-",
+    "state": "first-line+pre-menopausal",
+    "biomarker": "HR+/HER2-"
+  },
+  {
+    "node_id": "first-line|HR+/HER2-",
+    "state": "first-line",
+    "biomarker": "HR+/HER2-"
+  },
+  {
+    "node_id": "post-chemo|HR+/HER2-/HER2-low",
+    "state": "post-chemo",
+    "biomarker": "HR+/HER2-/HER2-low"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i|HR+/HER2-",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-"
+  },
+  {
+    "node_id": "post-endo+post-CDK46i|HR+/HER2-/HER2-low",
+    "state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/HER2-low"
+  },
+  {
+    "node_id": "post-endo|HR+/HER2-",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-"
+  },
+  {
+    "node_id": "post-endo|HR+/HER2-/PIK3CAmut",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/PIK3CAmut"
+  }
+]

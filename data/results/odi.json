@@ -1,0 +1,198 @@
+{
+  "HER2-low": {
+    "trials": [
+      "DESTINY-Breast04",
+      "DESTINY-Breast06"
+    ],
+    "n_trials": 2,
+    "n_pairs": 1,
+    "odi": 0.2,
+    "pairwise": [
+      {
+        "trial_a": "DESTINY-Breast04",
+        "trial_b": "DESTINY-Breast06",
+        "jaccard_distance": 0.2
+      }
+    ]
+  },
+  "ESR1mut": {
+    "trials": [
+      "EMERALD",
+      "CAPItello-291"
+    ],
+    "n_trials": 2,
+    "n_pairs": 1,
+    "odi": 0.3333,
+    "pairwise": [
+      {
+        "trial_a": "EMERALD",
+        "trial_b": "CAPItello-291",
+        "jaccard_distance": 0.3333
+      }
+    ]
+  },
+  "PIK3CAmut": {
+    "trials": [
+      "SOLAR-1",
+      "INAVO120",
+      "CAPItello-291"
+    ],
+    "n_trials": 3,
+    "n_pairs": 3,
+    "odi": 0.3333,
+    "pairwise": [
+      {
+        "trial_a": "SOLAR-1",
+        "trial_b": "INAVO120",
+        "jaccard_distance": 0.3333
+      },
+      {
+        "trial_a": "SOLAR-1",
+        "trial_b": "CAPItello-291",
+        "jaccard_distance": 0.3333
+      },
+      {
+        "trial_a": "INAVO120",
+        "trial_b": "CAPItello-291",
+        "jaccard_distance": 0.3333
+      }
+    ]
+  },
+  "AKTpath": {
+    "trials": [
+      "CAPItello-291",
+      "SOLAR-1"
+    ],
+    "n_trials": 2,
+    "n_pairs": 1,
+    "odi": 0.6667,
+    "pairwise": [
+      {
+        "trial_a": "CAPItello-291",
+        "trial_b": "SOLAR-1",
+        "jaccard_distance": 0.6667
+      }
+    ]
+  },
+  "prior_CDK4_6i": {
+    "trials": [
+      "EMERALD",
+      "CAPItello-291",
+      "PALOMA-3",
+      "MONARCH-2",
+      "DESTINY-Breast06",
+      "postMONARCH",
+      "INAVO120"
+    ],
+    "n_trials": 7,
+    "n_pairs": 21,
+    "odi": 0.9048,
+    "pairwise": [
+      {
+        "trial_a": "EMERALD",
+        "trial_b": "CAPItello-291",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "EMERALD",
+        "trial_b": "PALOMA-3",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "EMERALD",
+        "trial_b": "MONARCH-2",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "EMERALD",
+        "trial_b": "DESTINY-Breast06",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "EMERALD",
+        "trial_b": "postMONARCH",
+        "jaccard_distance": 0.0
+      },
+      {
+        "trial_a": "EMERALD",
+        "trial_b": "INAVO120",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "CAPItello-291",
+        "trial_b": "PALOMA-3",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "CAPItello-291",
+        "trial_b": "MONARCH-2",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "CAPItello-291",
+        "trial_b": "DESTINY-Breast06",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "CAPItello-291",
+        "trial_b": "postMONARCH",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "CAPItello-291",
+        "trial_b": "INAVO120",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "PALOMA-3",
+        "trial_b": "MONARCH-2",
+        "jaccard_distance": 0.0
+      },
+      {
+        "trial_a": "PALOMA-3",
+        "trial_b": "DESTINY-Breast06",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "PALOMA-3",
+        "trial_b": "postMONARCH",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "PALOMA-3",
+        "trial_b": "INAVO120",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "MONARCH-2",
+        "trial_b": "DESTINY-Breast06",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "MONARCH-2",
+        "trial_b": "postMONARCH",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "MONARCH-2",
+        "trial_b": "INAVO120",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "DESTINY-Breast06",
+        "trial_b": "postMONARCH",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "DESTINY-Breast06",
+        "trial_b": "INAVO120",
+        "jaccard_distance": 1.0
+      },
+      {
+        "trial_a": "postMONARCH",
+        "trial_b": "INAVO120",
+        "jaccard_distance": 1.0
+      }
+    ]
+  }
+}
