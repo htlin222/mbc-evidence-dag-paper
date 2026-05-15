@@ -164,7 +164,71 @@
     "primary_completion_year_api": "2016",
     "eligibility_text_len": 4194
   },
+  "NCT01740427": {
+    "trial_name": "PALOMA-2",
+    "prior_state": {
+      "post_endo": false
+    },
+    "excluded": {
+      "post_endo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2016,
+    "guideline_target_node": "first-line|HR+/HER2-",
+    "nct_id": "NCT01740427",
+    "brief_title": "A Study of Palbociclib (PD-0332991) + Letrozole vs. Letrozole For 1st Line Treatment Of Postmenopausal Women With ER+/HER2- Advanced Breast Cancer (PALOMA-2)",
+    "start_year": "2013",
+    "primary_completion_year_api": "2016",
+    "eligibility_text_len": 900
+  },
   "NCT02246621": {
+    "trial_name": "MONARCH-3",
+    "prior_state": {
+      "post_endo": false
+    },
+    "excluded": {
+      "post_endo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + AI",
+    "year_pc": 2017,
+    "guideline_target_node": "first-line|HR+/HER2-",
+    "nct_id": "NCT02246621",
+    "brief_title": "A Study of Nonsteroidal Aromatase Inhibitors Plus Abemaciclib (LY2835219) in Postmenopausal Women With Breast Cancer",
+    "start_year": "2014",
+    "primary_completion_year_api": "2017",
+    "eligibility_text_len": 2156
+  },
+  "NCT02278120": {
+    "trial_name": "MONALEESA-7",
+    "prior_state": {
+      "post_endo": false,
+      "menopausal_status": "pre"
+    },
+    "excluded": {
+      "post_endo_metastatic_any": true
+    },
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true
+    },
+    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
+    "year_pc": 2018,
+    "guideline_target_node": "first-line|pre-menopausal|HR+/HER2-",
+    "nct_id": "NCT02278120",
+    "brief_title": "Study of Efficacy and Safety in Premenopausal Women With Hormone Receptor Positive, HER2-negative Advanced Breast Cancer",
+    "start_year": "2014",
+    "primary_completion_year_api": "2017",
+    "eligibility_text_len": 1704
+  },
+  "NCT02422615": {
     "trial_name": "MONALEESA-3",
     "prior_state": {
       "post_endo": true,
@@ -184,75 +248,11 @@
     "drug_class": "CDK4/6i + fulvestrant",
     "year_pc": 2018,
     "guideline_target_node": "post-endo|HR+/HER2-",
-    "nct_id": "NCT02246621",
-    "brief_title": "A Study of Nonsteroidal Aromatase Inhibitors Plus Abemaciclib (LY2835219) in Postmenopausal Women With Breast Cancer",
-    "start_year": "2014",
-    "primary_completion_year_api": "2017",
-    "eligibility_text_len": 2156
-  },
-  "NCT02513394": {
-    "trial_name": "PALOMA-2",
-    "prior_state": {
-      "post_endo": false
-    },
-    "excluded": {
-      "post_endo_metastatic_any": true
-    },
-    "biomarker": {
-      "hr_pos": true,
-      "her2_neg": true
-    },
-    "drug_class": "CDK4/6i + AI",
-    "year_pc": 2016,
-    "guideline_target_node": "first-line|HR+/HER2-",
-    "nct_id": "NCT02513394",
-    "brief_title": "PALbociclib CoLlaborative Adjuvant Study",
+    "nct_id": "NCT02422615",
+    "brief_title": "Study of Efficacy and Safety of LEE011 in Men and Postmenopausal Women With Advanced Breast Cancer.",
     "start_year": "2015",
-    "primary_completion_year_api": "2020",
-    "eligibility_text_len": 3436
-  },
-  "NCT02675231": {
-    "trial_name": "MONARCH-3",
-    "prior_state": {
-      "post_endo": false
-    },
-    "excluded": {
-      "post_endo_metastatic_any": true
-    },
-    "biomarker": {
-      "hr_pos": true,
-      "her2_neg": true
-    },
-    "drug_class": "CDK4/6i + AI",
-    "year_pc": 2017,
-    "guideline_target_node": "first-line|HR+/HER2-",
-    "nct_id": "NCT02675231",
-    "brief_title": "A Study of Abemaciclib (LY2835219) in Women With HR+, HER2+ Locally Advanced or Metastatic Breast Cancer",
-    "start_year": "2016",
-    "primary_completion_year_api": "2019",
-    "eligibility_text_len": 3099
-  },
-  "NCT02763566": {
-    "trial_name": "MONALEESA-7",
-    "prior_state": {
-      "post_endo": false,
-      "menopausal_status": "pre"
-    },
-    "excluded": {
-      "post_endo_metastatic_any": true
-    },
-    "biomarker": {
-      "hr_pos": true,
-      "her2_neg": true
-    },
-    "drug_class": "CDK4/6i + endocrine (pre-menopausal)",
-    "year_pc": 2018,
-    "guideline_target_node": "first-line|pre-menopausal|HR+/HER2-",
-    "nct_id": "NCT02763566",
-    "brief_title": "A Study of Abemaciclib (LY2835219) in Participants With Breast Cancer",
-    "start_year": "2016",
-    "primary_completion_year_api": "2019",
-    "eligibility_text_len": 8617
+    "primary_completion_year_api": "2017",
+    "eligibility_text_len": 3249
   },
   "NCT03734029": {
     "trial_name": "DESTINY-Breast04",

@@ -25,24 +25,27 @@ API = "https://clinicaltrials.gov/api/v2/studies/{nct}"
 # update reference list. The freeze date of this list is 2026-05-16; later
 # extensions go into v2 of the corpus, not retroactive edits.
 NCT_IDS = [
-    # Prototype six (validated via direct API fetch in the feasibility study)
-    "NCT01942135",  # PALOMA-3 (palbociclib + fulvestrant, post-endocrine)
-    "NCT02107703",  # MONARCH-2 (abemaciclib + fulvestrant, post-endocrine)
-    "NCT02437318",  # SOLAR-1 (alpelisib + fulvestrant, PIK3CAmut, post-AI)
-    "NCT03778931",  # EMERALD (elacestrant vs SoC, post-CDK4/6i)
-    "NCT04305496",  # CAPItello-291 (capivasertib + fulvestrant, post-AI/CDK4/6i)
-    "NCT04494425",  # DESTINY-Breast06 (T-DXd, HER2-low/ultralow, post-endocrine)
-    # Additional pivotal trials drawn from ESMO/ASCO references
-    "NCT01958021",  # MONALEESA-2 (ribociclib + letrozole, first-line)
-    "NCT02246621",  # MONALEESA-3 (ribociclib + fulvestrant, post-endocrine)
-    "NCT02513394",  # PALOMA-2 (palbociclib + letrozole, first-line)
-    "NCT02675231",  # MONARCH-3 (abemaciclib + AI, first-line)
-    "NCT02763566",  # MONALEESA-7 (ribociclib in premenopausal, first-line)
+    # NCT identifiers verified against ClinicalTrials.gov briefTitle and
+    # conditionsModule. Round 2 review caught 4 NCT-misidentifications in
+    # the previous list (PALOMA-2, MONARCH-3, MONALEESA-3, MONALEESA-7);
+    # this is the corrected canonical list. PALLAS (NCT02513394, adjuvant)
+    # and monarcHER (NCT02675231, HR+/HER2+) are EXCLUDED as out-of-scope.
+    "NCT01942135",  # PALOMA-3       (palbociclib + fulvestrant, post-endocrine)
+    "NCT01958021",  # MONALEESA-2    (ribociclib + letrozole, first-line)
+    "NCT01740427",  # PALOMA-2       (palbociclib + letrozole, first-line)
+    "NCT02000622",  # OlympiAD       (olaparib, gBRCA mBC)
+    "NCT02107703",  # MONARCH-2      (abemaciclib + fulvestrant, post-endocrine)
+    "NCT02246621",  # MONARCH-3      (abemaciclib + NSAI, first-line postmen)
+    "NCT02278120",  # MONALEESA-7    (ribociclib in premenopausal, first-line)
+    "NCT02422615",  # MONALEESA-3    (ribociclib + fulvestrant, 1L and 2L)
+    "NCT02437318",  # SOLAR-1        (alpelisib + fulvestrant, PIK3CAmut, post-AI)
     "NCT03734029",  # DESTINY-Breast04 (T-DXd, HER2-low, post-chemo)
-    "NCT05169567",  # postMONARCH (abemaciclib + fulv after CDK4/6i progression)
-    "NCT04191499",  # INAVO120 (inavolisib + palbo + fulv, PIK3CAmut, endo-resistant)
-    "NCT03901339",  # TROPiCS-02 (sacituzumab govitecan, post-endocrine + post-CDK4/6i)
-    "NCT02000622",  # OlympiAD (olaparib, gBRCA mutated metastatic breast cancer)
+    "NCT03778931",  # EMERALD        (elacestrant vs SoC, post-CDK4/6i)
+    "NCT03901339",  # TROPiCS-02     (sacituzumab govitecan, post-CDK4/6i + post-chemo)
+    "NCT04191499",  # INAVO120       (inavolisib + palbo + fulv, PIK3CAmut, endo-resistant)
+    "NCT04305496",  # CAPItello-291  (capivasertib + fulvestrant, mixed pre/post-CDK4/6i)
+    "NCT04494425",  # DESTINY-Breast06 (T-DXd, HER2-low/ultralow, post-endocrine)
+    "NCT05169567",  # postMONARCH    (abemaciclib + fulv after CDK4/6i progression)
 ]
 
 

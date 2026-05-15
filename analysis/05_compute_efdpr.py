@@ -115,22 +115,32 @@ BIO_MATCHERS = {
 }
 
 
+DRUG_CLASS_EQUIVALENCE = {
+    # explicit equivalence groups; identity is the minimum
+    "CDK4/6i + AI":                                 {"CDK4/6i + AI"},
+    "CDK4/6i + fulvestrant":                        {"CDK4/6i + fulvestrant"},
+    "CDK4/6i + endocrine (pre-menopausal)":         {"CDK4/6i + endocrine (pre-menopausal)"},
+    "CDK4/6i + fulvestrant (post-CDK4/6i)":         {"CDK4/6i + fulvestrant (post-CDK4/6i)"},
+    "PI3Ki + fulvestrant":                          {"PI3Ki + fulvestrant"},
+    "PI3Ki triplet (inavolisib + CDK4/6i + fulv)":  {"PI3Ki triplet (inavolisib + CDK4/6i + fulv)"},
+    "AKTi + fulvestrant":                           {"AKTi + fulvestrant"},
+    "SERD oral":                                    {"SERD oral"},
+    "HER2-ADC (T-DXd)":                             {"HER2-ADC (T-DXd)"},
+    "Sacituzumab govitecan":                        {"Sacituzumab govitecan"},
+    "PARPi (olaparib)":                             {"PARPi (olaparib)", "PARPi (talazoparib)"},
+    "PARPi (talazoparib)":                          {"PARPi (olaparib)", "PARPi (talazoparib)"},
+    "everolimus + exemestane":                      {"everolimus + exemestane"},
+    "chemotherapy":                                 {"chemotherapy", "chemotherapy single agent"},
+    "chemotherapy single agent":                    {"chemotherapy", "chemotherapy single agent"},
+}
+
+
 def _drug_match(edge_class: str, recommended: list) -> bool:
     rec_classes = {r["class"] for r in recommended}
     if edge_class in rec_classes:
         return True
-    for rc in rec_classes:
-        if edge_class.startswith("CDK4/6i") and rc.startswith("CDK4/6i"):
-            return True
-        if edge_class.startswith("HER2-ADC") and rc.startswith("HER2-ADC"):
-            return True
-        if edge_class.startswith("SERD") and rc.startswith("SERD"):
-            return True
-        if edge_class.startswith("AKTi") and rc.startswith("AKTi"):
-            return True
-        if edge_class.startswith("PI3Ki") and rc.startswith("PI3Ki"):
-            return True
-    return False
+    edge_equiv = DRUG_CLASS_EQUIVALENCE.get(edge_class, {edge_class})
+    return bool(edge_equiv & rec_classes)
 
 
 def _temporal_ok(edge_year: int, gl_year: int) -> bool:

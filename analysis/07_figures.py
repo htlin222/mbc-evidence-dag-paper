@@ -82,7 +82,7 @@ def fig1_dag() -> None:
     nx.draw_networkx_edge_labels(g, pos, edge_labels=edge_labels, font_size=5,
                                   bbox=dict(facecolor="white", edgecolor="none",
                                             alpha=0.75, pad=0.3))
-    plt.title("HR+/HER2- mBC pivotal-trial DAG (N=14 trials)", fontsize=10)
+    plt.title(f"HR+/HER2- mBC pivotal-trial DAG (N={len(EDGES)} trials)", fontsize=10)
     plt.axis("off")
     plt.tight_layout()
     out = FIGS / "fig1_dag.pdf"
@@ -205,13 +205,15 @@ def write_tab_efdpr() -> None:
 
 def write_tab_odi() -> None:
     lines = [
-        r"\begin{tabular}{lccc}\toprule",
-        r"Biomarker variable & ODI & Trials compared & Pairs \\ \midrule",
+        r"\begin{tabular}{lcccc}\toprule",
+        r"Biomarker variable & ODI & Bootstrap 95\% CI & Trials & Pairs \\ \midrule",
     ]
     for var, r in sorted(ODI.items(), key=lambda x: -x[1]["odi"]):
         safe_var = var.replace("_", r"\_")
+        ci_str = (rf"[{r['bootstrap_ci95_low']:.3f}, {r['bootstrap_ci95_high']:.3f}]"
+                  if r['bootstrap_ci95_low'] is not None else "n/a")
         lines.append(
-            rf"{safe_var} & {r['odi']:.3f} & {r['n_trials']} & {r['n_pairs']} \\"
+            rf"{safe_var} & {r['odi']:.3f} & {ci_str} & {r['n_trials']} & {r['n_pairs']} \\"
         )
     lines.append(r"\bottomrule\end{tabular}")
     (MAN / "tab_odi.tex").write_text("\n".join(lines) + "\n")

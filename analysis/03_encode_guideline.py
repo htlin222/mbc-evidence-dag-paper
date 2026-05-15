@@ -34,7 +34,7 @@ DECISION_NODES = [
         "recommended_classes": [
             {"class": "CDK4/6i + AI", "grade": "I-A"},
         ],
-        "cited_trials": ["NCT01958021", "NCT02513394", "NCT02675231", "NCT02763566"],
+        "cited_trials": ["NCT01958021", "NCT01740427", "NCT02246621"],  # MONALEESA-2, PALOMA-2, MONARCH-3
         "year": 2018,
     },
     {
@@ -44,7 +44,7 @@ DECISION_NODES = [
         "recommended_classes": [
             {"class": "CDK4/6i + endocrine (pre-menopausal)", "grade": "I-A"},
         ],
-        "cited_trials": ["NCT02763566"],
+        "cited_trials": ["NCT02278120"],  # MONALEESA-7
         "year": 2019,
     },
     {
@@ -54,7 +54,7 @@ DECISION_NODES = [
         "recommended_classes": [
             {"class": "CDK4/6i + fulvestrant", "grade": "I-A"},
         ],
-        "cited_trials": ["NCT01942135", "NCT02107703", "NCT02246621"],
+        "cited_trials": ["NCT01942135", "NCT02107703", "NCT02422615"],  # PALOMA-3, MONARCH-2, MONALEESA-3
         "year": 2016,
     },
     {
@@ -128,7 +128,7 @@ DECISION_NODES = [
         "recommended_classes": [
             {"class": "CDK4/6i + fulvestrant (post-CDK4/6i)", "grade": "II-C"},
         ],
-        "cited_trials": ["NCT03997123"],
+        "cited_trials": ["NCT05169567"],  # postMONARCH (corrected Round 1)
         "year": 2024,
     },
     {
@@ -191,7 +191,11 @@ DECISION_NODES = [
             {"class": "PARPi (olaparib)", "grade": "I-A"},
             {"class": "PARPi (talazoparib)", "grade": "I-A"},
         ],
-        "cited_trials": ["NCT02000622"],  # OlympiAD; EMBRACA omitted from this pilot
+        # OlympiAD (olaparib) is in the corpus; EMBRACA (talazoparib,
+        # NCT01945775) is the parallel registrational trial cited by ESMO
+        # but is not included in this pilot corpus. The pilot lists OlympiAD
+        # only; the production extension will add EMBRACA.
+        "cited_trials": ["NCT02000622"],
         "year": 2018,
     },
 ]

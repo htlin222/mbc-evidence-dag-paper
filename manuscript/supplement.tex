@@ -103,28 +103,64 @@ pre-registration commitment in \texttt{docs/prereg.md}:
 \begin{itemize}
 \item \textbf{Corpus expansion from prototype (6 trials) to pilot (16 trials).}
   The pilot expansion was anticipated in the prereg and is not a deviation.
-  Trial selection was based on the ESMO/ASCO mBC guideline reference lists; a
-  systematic search of ClinicalTrials.gov for HR+/HER2- mBC pivotal trials is
-  deferred to the production-scale extension.
-\item \textbf{Trial-identification corrections.} The original draft erroneously
-  mapped NCT03997123 to postMONARCH and NCT04032080 to INAVO120; the corrections
-  are NCT05169567 and NCT04191499, both verified against ClinicalTrials.gov
-  briefTitle and condition fields. TROPiCS-02 and OlympiAD were added during
-  the same correction pass to cover decision nodes G14 (post-CDK4/6i+post-chemo
-  sacituzumab) and G16 (gBRCAm PARPi) that the prereg's narrative implied but
-  the prototype did not include.
+  Trial selection was based on the ESMO/ASCO mBC guideline reference lists;
+  a systematic ClinicalTrials.gov search is deferred to the production extension.
+\item \textbf{Six NCT-identification corrections across Round 1 and Round 2 of
+  internal review.} Round 1 corrected NCT03997123 (CAPItello-290 TNBC,
+  misnamed postMONARCH) to NCT05169567 (real postMONARCH), and NCT04032080
+  (LY3023414+prexasertib TNBC, misnamed INAVO120) to NCT04191499 (real
+  INAVO120). Round 2 corrected NCT02513394 (PALLAS adjuvant, misnamed PALOMA-2)
+  to NCT01740427 (real PALOMA-2); NCT02675231 (monarcHER HR+/HER2+, misnamed
+  MONARCH-3) was removed as out-of-scope and MONARCH-3 was instead encoded
+  at NCT02246621 (whose previous label, MONALEESA-3, was itself wrong);
+  MONALEESA-3 was added at NCT02422615 (real MONALEESA-3); and NCT02763566
+  (MONARCH plus postmenopausal, misnamed MONALEESA-7) was replaced with
+  NCT02278120 (real MONALEESA-7). All NCT identifications in the present
+  draft were verified against the ClinicalTrials.gov \texttt{briefTitle} and
+  \texttt{conditionsModule} fields at the freeze date 2026-05-16. The full
+  correction history is in the repository commit log.
+\item \textbf{TROPiCS-02 (NCT03901339) and OlympiAD (NCT02000622) added.}
+  Two trials were added during the correction passes to populate
+  decision nodes that the prereg's narrative implied but the prototype
+  did not include: G14 (post-CDK4/6i+post-chemo sacituzumab) and G16
+  (gBRCAm PARPi). EMBRACA (talazoparib, NCT01945775), the parallel
+  registrational trial for the gBRCAm node, is acknowledged in the
+  guideline encoding but not included in this pilot corpus; it is queued
+  for the production extension.
+\item \textbf{Scope deviation: G16 (gBRCAm) is line-agnostic and not strictly
+  HR+/HER2-.} OlympiAD enrolled gBRCAm metastatic breast cancer regardless
+  of HR or HER2 status, so G16 sits outside the prereg's strict HR+/HER2-
+  inclusion. The primary analysis includes G16 with the line-agnostic state
+  token \texttt{metastatic} handled as a wildcard; a 15-node sensitivity
+  analysis (Results 3.5) confirms that the EFDPR finding is robust to G16
+  removal.
 \item \textbf{Secondary outcomes S2, S3 reported descriptively.} The prereg
   commits to a Benjamini-Hochberg correction at $q = 0.05$ across S1, S2, S3.
   In the present pilot S1 (ODI) is reported as a per-biomarker mean Jaccard
-  distance; S2 (temporal lag) and S3 (subgroup coverage) are reported
-  descriptively because the small corpus precludes a meaningful formal test.
+  distance with bootstrap CI; S2 (temporal lag) and S3 (subgroup coverage)
+  are reported descriptively because the small corpus precludes a meaningful
+  formal test.
 \item \textbf{Primary CI: Clopper-Pearson alongside bootstrap.} The prereg
   specified a 1,000-iteration bootstrap CI. We additionally report the
   Clopper-Pearson exact CI, which is the recommended primary CI in this
-  small-$n$ regime and which is reported alongside the bootstrap CI in Table 2.
+  small-$n$ regime; both CIs are reported in Table 2.
+\item \textbf{Pre-registered exact-binomial test added as the formal primary
+  test.} The prereg specified a one-sided exact-binomial test of $H_0:
+  \mathrm{EFDPR} \le 0.25$; an earlier internal draft incorrectly substituted
+  a CI-overlap rule. The current draft reports the exact-binomial test as the
+  primary test, and the CI-overlap rule has been removed.
+\item \textbf{Drug-class equivalence is an explicit table, not a prefix rule.}
+  An earlier internal draft used a prefix-match rule for drug classes that was
+  flagged as over-permissive in internal review; the current draft uses the
+  explicit equivalence table in \texttt{analysis/05\_compute\_efdpr.py}.
 \item \textbf{NCCN sensitivity analysis deferred.} The prereg flagged NCCN
-  as a sensitivity-analysis source; this was deferred to the production-scale
-  extension and is disclosed as a deviation.
+  as a sensitivity-analysis source; this was deferred to the production
+  extension and is disclosed here.
+\item \textbf{Selection bias from guideline-list seeding.} The 16-trial pilot
+  was seeded from the ESMO and ASCO guideline reference lists, which biases
+  inclusion toward trials the guidelines already cite. The production extension
+  will replace this seed with a systematic ClinicalTrials.gov query covering
+  every phase 2/3 HR+/HER2- mBC trial registered between 2015 and 2026.
 \end{itemize}
 
 \end{document}

@@ -7,6 +7,8 @@
     "n_trials": 2,
     "n_pairs": 1,
     "odi": 0.2,
+    "bootstrap_ci95_low": 0.2,
+    "bootstrap_ci95_high": 0.2,
     "pairwise": [
       {
         "trial_a": "DESTINY-Breast04",
@@ -23,6 +25,8 @@
     "n_trials": 2,
     "n_pairs": 1,
     "odi": 0.3333,
+    "bootstrap_ci95_low": 0.3333,
+    "bootstrap_ci95_high": 0.3333,
     "pairwise": [
       {
         "trial_a": "EMERALD",
@@ -40,6 +44,8 @@
     "n_trials": 3,
     "n_pairs": 3,
     "odi": 0.3333,
+    "bootstrap_ci95_low": 0.3333,
+    "bootstrap_ci95_high": 0.3333,
     "pairwise": [
       {
         "trial_a": "SOLAR-1",
@@ -66,6 +72,8 @@
     "n_trials": 2,
     "n_pairs": 1,
     "odi": 0.6667,
+    "bootstrap_ci95_low": 0.6667,
+    "bootstrap_ci95_high": 0.6667,
     "pairwise": [
       {
         "trial_a": "CAPItello-291",
@@ -87,6 +95,8 @@
     "n_trials": 7,
     "n_pairs": 21,
     "odi": 0.9048,
+    "bootstrap_ci95_low": 0.7619,
+    "bootstrap_ci95_high": 1.0,
     "pairwise": [
       {
         "trial_a": "EMERALD",

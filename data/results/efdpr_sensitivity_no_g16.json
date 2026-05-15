@@ -1,0 +1,47 @@
+{
+  "strict": {
+    "point_estimate": 0.3333,
+    "evidence_free_count": 5,
+    "total_decision_nodes": 15,
+    "bootstrap_ci95": [
+      0.1333,
+      0.6
+    ],
+    "clopper_pearson_ci95": [
+      0.1182,
+      0.6162
+    ],
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.3135,
+    "preregistered_test_rejected_at_alpha_05": false
+  },
+  "escat": {
+    "point_estimate": 0.3333,
+    "evidence_free_count": 5,
+    "total_decision_nodes": 15,
+    "bootstrap_ci95": [
+      0.1333,
+      0.6
+    ],
+    "clopper_pearson_ci95": [
+      0.1182,
+      0.6162
+    ],
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.3135,
+    "preregistered_test_rejected_at_alpha_05": false
+  },
+  "liberal": {
+    "point_estimate": 0.2667,
+    "evidence_free_count": 4,
+    "total_decision_nodes": 15,
+    "bootstrap_ci95": [
+      0.0667,
+      0.4667
+    ],
+    "clopper_pearson_ci95": [
+      0.0779,
+      0.551
+    ],
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.5387,
+    "preregistered_test_rejected_at_alpha_05": false
+  }
+}

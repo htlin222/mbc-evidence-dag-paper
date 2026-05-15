@@ -88,7 +88,7 @@ STRUCTURED: dict[str, dict] = {
         "year_pc":     2024,
         "guideline_target_node": "post-CDK46i|HER2-low|HR+/HER2-",
     },
-    "NCT01958021": {  # MONALEESA-2
+    "NCT01958021": {  # MONALEESA-2 (ribociclib + letrozole, postmen 1L)
         "trial_name": "MONALEESA-2",
         "prior_state": {"post_endo": False},
         "excluded":    {"post_endo_metastatic_any": True, "post_chemo_metastatic_any": True},
@@ -97,20 +97,7 @@ STRUCTURED: dict[str, dict] = {
         "year_pc":     2016,
         "guideline_target_node": "first-line|HR+/HER2-",
     },
-    "NCT02246621": {  # MONALEESA-3
-        "trial_name": "MONALEESA-3",
-        # MONALEESA-3 enrolled both treatment-naive (1L) and post-endo (2L);
-        # we encode post_endo=True as the modal stratum because the registrational
-        # subgroup analyses split by line of therapy.
-        "prior_state": {"post_endo": True, "post_cdk46i": False},
-        "excluded":    {"post_cdk46i": True},
-        "biomarker":   {"hr_pos": True, "her2_neg": True},
-        "subgroup_readouts": ["first-line_subgroup", "post-endo_subgroup"],
-        "drug_class":  "CDK4/6i + fulvestrant",
-        "year_pc":     2018,
-        "guideline_target_node": "post-endo|HR+/HER2-",
-    },
-    "NCT02513394": {  # PALOMA-2
+    "NCT01740427": {  # PALOMA-2 (palbociclib + letrozole, postmen 1L)
         "trial_name": "PALOMA-2",
         "prior_state": {"post_endo": False},
         "excluded":    {"post_endo_metastatic_any": True},
@@ -119,7 +106,7 @@ STRUCTURED: dict[str, dict] = {
         "year_pc":     2016,
         "guideline_target_node": "first-line|HR+/HER2-",
     },
-    "NCT02675231": {  # MONARCH-3
+    "NCT02246621": {  # MONARCH-3 (abemaciclib + NSAI, postmen 1L)
         "trial_name": "MONARCH-3",
         "prior_state": {"post_endo": False},
         "excluded":    {"post_endo_metastatic_any": True},
@@ -128,7 +115,7 @@ STRUCTURED: dict[str, dict] = {
         "year_pc":     2017,
         "guideline_target_node": "first-line|HR+/HER2-",
     },
-    "NCT02763566": {  # MONALEESA-7
+    "NCT02278120": {  # MONALEESA-7 (ribociclib + endocrine, premenopausal 1L)
         "trial_name": "MONALEESA-7",
         "prior_state": {"post_endo": False, "menopausal_status": "pre"},
         "excluded":    {"post_endo_metastatic_any": True},
@@ -136,6 +123,20 @@ STRUCTURED: dict[str, dict] = {
         "drug_class":  "CDK4/6i + endocrine (pre-menopausal)",
         "year_pc":     2018,
         "guideline_target_node": "first-line|pre-menopausal|HR+/HER2-",
+    },
+    "NCT02422615": {  # MONALEESA-3 (ribociclib + fulvestrant, 1L + 2L)
+        "trial_name": "MONALEESA-3",
+        # Enrolled both treatment-naive (1L) and post-endo (2L); registrational
+        # subgroup analyses split by line. We encode post_endo=True as the
+        # decision-tree stratum corresponding to the post-AI G3 node; first-line
+        # support is reported as a subgroup readout.
+        "prior_state": {"post_endo": True, "post_cdk46i": False},
+        "excluded":    {"post_cdk46i": True},
+        "biomarker":   {"hr_pos": True, "her2_neg": True},
+        "subgroup_readouts": ["first-line_subgroup", "post-endo_subgroup"],
+        "drug_class":  "CDK4/6i + fulvestrant",
+        "year_pc":     2018,
+        "guideline_target_node": "post-endo|HR+/HER2-",
     },
     "NCT03734029": {  # DESTINY-Breast04
         "trial_name": "DESTINY-Breast04",

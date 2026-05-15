@@ -63,6 +63,24 @@ def _jaccard_distance(a: set, b: set) -> float:
     return 1.0 - len(a & b) / len(a | b)
 
 
+def _bootstrap_ci_odi(names: list, trials_defs: dict, n_iter: int = 1000, seed: int = 20260516):
+    """Pairwise-bootstrap CI for ODI by resampling trial pairs."""
+    import random
+    if len(names) < 2:
+        return None, None
+    pairs = list(combinations(names, 2))
+    rng = random.Random(seed)
+    estimates = []
+    for _ in range(n_iter):
+        sample_pairs = [rng.choice(pairs) for _ in range(len(pairs))]
+        d = [_jaccard_distance(trials_defs[a], trials_defs[b]) for a, b in sample_pairs]
+        estimates.append(sum(d) / len(d))
+    estimates.sort()
+    lo_idx = max(0, int(0.025 * n_iter) - 1)
+    hi_idx = min(n_iter - 1, int(0.975 * n_iter))
+    return estimates[lo_idx], estimates[hi_idx]
+
+
 def main() -> None:
     out = {}
     for variable, trials_defs in DEFINITIONS.items():
@@ -70,20 +88,25 @@ def main() -> None:
         pairs = list(combinations(names, 2))
         if not pairs:
             odi = 0.0
+            ci_lo, ci_hi = None, None
         else:
             d = [_jaccard_distance(trials_defs[a], trials_defs[b]) for a, b in pairs]
             odi = sum(d) / len(d)
+            ci_lo, ci_hi = _bootstrap_ci_odi(names, trials_defs)
         out[variable] = {
             "trials": names,
             "n_trials": len(names),
             "n_pairs": len(pairs),
             "odi": round(odi, 4),
+            "bootstrap_ci95_low":  None if ci_lo is None else round(ci_lo, 4),
+            "bootstrap_ci95_high": None if ci_hi is None else round(ci_hi, 4),
             "pairwise": [
                 {"trial_a": a, "trial_b": b, "jaccard_distance": round(_jaccard_distance(trials_defs[a], trials_defs[b]), 4)}
                 for a, b in pairs
             ],
         }
-        print(f"  {variable:<20s} ODI = {odi:.3f} ({len(names)} trials)")
+        ci_s = f" CI=[{ci_lo:.3f},{ci_hi:.3f}]" if ci_lo is not None else ""
+        print(f"  {variable:<20s} ODI = {odi:.3f}{ci_s} ({len(names)} trials, {len(pairs)} pairs)")
     OUT.write_text(json.dumps(out, indent=2))
     print(f"wrote ODI results to {OUT}")
 
