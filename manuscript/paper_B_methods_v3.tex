@@ -1,0 +1,173 @@
+%% Paper B — Methods (v3.0.0)
+%% Target journal: Research Synthesis Methods (Cambridge / Wiley)
+%% Submission requirements: AMA refs, 250-word abstract, required Highlights
+%% section, ORCID, CRediT, Data Availability Statement with DOI.
+%% Build: latexmk -pdf paper_B_methods_v3.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{microtype}
+\usepackage{authblk}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage[numbers,super,sort&compress]{natbib}
+\usepackage{titlesec}
+\usepackage{mdframed}
+
+\titleformat{\section}{\fontsize{12}{14}\bfseries\sffamily}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\fontsize{11}{13}\bfseries\sffamily}{\thesubsection}{0.6em}{}
+\setlength{\parskip}{0.25\baselineskip}
+\setlength{\parindent}{0pt}
+\captionsetup{font=small,labelfont=bf,labelsep=period}
+\renewcommand{\familydefault}{\rmdefault}
+
+\title{\fontsize{15}{18}\bfseries\sffamily
+A Graph-Theoretic Framework for Measuring Evidence-Free Decision Points in
+Clinical Guidelines, with Dual-LLM-Annotator Validation Across Two Solid Tumors}
+
+\author[1,*]{H.-T.\ Lin}
+\affil[1]{[Affiliation to be supplied at submission]. ORCID iD: 0000-0000-0000-0000 (placeholder).}
+\affil[*]{Correspondence: \texttt{ppoiu87@gmail.com}.}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\vspace{-1.5em}
+
+\begin{abstract}
+\noindent
+Clinical practice guidelines compose treatment recommendations across non-overlapping pivotal trials, but no general computational method has been published for quantifying the structural concordance between a guideline decision tree and its underlying trial evidence. We introduce a graph-theoretic framework that places both objects (pivotal-trial corpus, guideline decision tree) on a shared (state, biomarker) node space, defines an evidence-free decision-point ratio (EFDPR), and tests it with a pre-registered one-sided exact binomial test. The framework is paired with a dual-LLM-annotator extraction pipeline (Claude as annotator A; Codex/GPT-5 as annotator B) validated by Cohen's $\kappa$ and the prevalence-adjusted bias-adjusted kappa (PABAK). We demonstrate the framework across two biomarker-driven metastatic cancers (HR+/HER2-negative breast and EGFR-mutant/ALK-rearranged non-small-cell lung), pooling 261 systematically-searched pivotal trials against a 50-node unified ESMO+ASCO+NCCN decision tree. The pre-registered exact binomial test of $H_0: \mathrm{EFDPR} \le 0.25$ at $\alpha = 0.05$ rejected the null with $P = 0.0004$ (strict-tolerance EFDPR 0.48, Clopper-Pearson 95\% CI 0.34--0.63). Pre-adjudication mean Cohen's $\kappa$ on key fields was 0.67--0.78 across tumors, with documented adjudication trail. The framework, schema, decision-tree encoding, dual-annotator outputs, and adjudication log are released under MIT licence at \texttt{github.com/htlin/mbc-evidence-dag-paper} (\texttt{v3.0.0}).
+\end{abstract}
+
+\medskip
+\begin{mdframed}[linewidth=0.5pt,roundcorner=4pt,backgroundcolor=gray!8]
+\small
+\textbf{Highlights}
+
+\textbf{What is already known.}\,
+Network meta-analysis pools trials addressing the same decision point. Bibliometric analyses summarise trial volumes per tumor. Narrative reviews discuss evidence gaps for individual drugs.
+
+\textbf{What is new.}\,
+We introduce a graph-theoretic representation that places trial corpora and clinical-guideline decision trees on a shared (state, biomarker) node space, define a pre-registered statistical test of the evidence-free decision-point ratio (EFDPR), and pair the test with a dual-LLM-annotator extraction pipeline with documented inter-rater validation (Cohen's $\kappa$ and PABAK) and a transparent adjudication trail. We demonstrate that the framework rejects $H_0: \mathrm{EFDPR} \le 0.25$ at pooled mBC + NSCLC scale ($P = 0.0004$).
+
+\textbf{Potential impact for Research Synthesis Methods readers.}\,
+The framework supplies a reusable, pre-registerable computational tool for measuring the structural concordance between any clinical-guideline decision tree and any pivotal-trial corpus. It is biomarker-agnostic, tumor-agnostic, and extensible. The dual-LLM-annotator validation pattern is generalisable to any evidence-synthesis task that extracts structured data from trial eligibility texts.
+\end{mdframed}
+
+\medskip
+\noindent\textbf{Research Synthesis Keywords:} clinical-guideline evaluation; trial-evidence concordance; graph-theoretic framework; LLM-extraction validation; Cohen's kappa; pre-registered binomial test.
+
+\section{Introduction}\label{sec:intro}
+Clinical practice guidelines such as those of the European Society for Medical Oncology (ESMO), the American Society of Clinical Oncology (ASCO), and the National Comprehensive Cancer Network (NCCN) translate the trial-evidence base into actionable multi-line decision trees.\citep{cardosoESMO2024,giordano2022asco,hendriks2023esmo,nccn_nsclc_2024} For biomarker-driven metastatic cancers, where new agents are approved on the basis of pivotal trials that fix a single point in the treatment trajectory, guideline committees routinely \emph{compose} recommendations across non-overlapping pivotal trials --- a practice we will call composition-across-non-overlapping-trials, distinct from network meta-analysis (which addresses a single decision point).\citep{rouse2017nma}
+
+Existing evidence-synthesis methodology assumes a well-defined decision point: network meta-analysis is the canonical method for pooling drug-vs-drug comparisons within a single line of therapy.\citep{rouse2017nma,higgins2019cochrane} GRADE assesses the certainty of evidence per recommendation.\citep{guyatt2008grade} Neither addresses the question we focus on here: \emph{across the entire decision tree, what fraction of decision points lacks a directly-supporting pivotal trial chain?}
+
+This manuscript introduces a graph-theoretic framework that places trial corpora and guideline decision trees on a shared (state, biomarker) node space. The framework defines an evidence-free decision-point ratio (EFDPR), tests it pre-registered against a fixed null threshold via one-sided exact binomial inference, and is paired with a dual-LLM-annotator extraction pipeline whose inter-rater agreement is validated by Cohen's $\kappa$ and the prevalence-adjusted bias-adjusted kappa (PABAK). The framework is demonstrated across two biomarker-driven metastatic cancers --- HR+/HER2- breast cancer and EGFR-mutant/ALK-rearranged non-small-cell lung cancer --- and rejects the pre-registered null at $P = 0.0004$ on the pooled 50-node decision tree.
+
+\section{The framework}\label{sec:framework}
+
+\subsection{Trial-DAG and guideline-tree on a shared node space}
+Define the shared node space $\mathcal{N} = \mathcal{S} \times \mathcal{B}$ where $\mathcal{S}$ is the set of pre-treatment state tokens (e.g., first-line, post-endocrine, post-CDK4/6i, post-EGFR-TKI, post-osimertinib) and $\mathcal{B}$ is the set of biomarker tokens (HR+, HER2-, EGFR-mut, ALK-rearranged, PIK3CA-mut, etc.). Each pivotal trial $T$ is represented as a directed edge from its required-entry-state node $u_T \in \mathcal{N}$ to a post-trial state node $v_T \in \mathcal{N}$ carrying the tested drug class. The trial-DAG $D = (\mathcal{N}, \mathcal{E})$ has $\mathcal{E}$ edges, one per pivotal trial. Each guideline decision node $g \in \mathcal{G}$ is a label on $\mathcal{N}$ paired with a set of recommended drug classes $R(g) \subset \mathcal{D}$ and a year of introduction $y(g)$.
+
+\subsection{Concordance algorithm}
+The supporting-evidence set for $g$ is
+\[
+\mathrm{Supp}(g) = \{ (u, v, t) \in \mathcal{E} : \mathrm{state}(u) \supseteq \mathrm{state}(g) \text{ AND } \mathrm{drug}(t) \in R(g) \text{ AND } \mathrm{bm}(u) \approx_\tau \mathrm{bm}(g) \text{ AND } y(t) \le y(g) \}
+\]
+where $\approx_\tau$ denotes biomarker concordance under tolerance $\tau \in \{\text{strict, ESCAT-aligned, liberal}\}$ (Section \ref{sec:tolerance}) and the state-superset criterion captures the clinical reading that a trial requiring \emph{more} prior treatment than the guideline node demands can still support that node.
+
+\subsection{Evidence-free decision-point ratio (EFDPR)}
+The evidence-free decision-point ratio is the proportion of guideline nodes whose supporting-evidence set is empty:
+\[
+\mathrm{EFDPR}_\tau = \frac{|\{ g \in \mathcal{G} : \mathrm{Supp}_\tau(g) = \emptyset \}|}{|\mathcal{G}|}.
+\]
+The pre-registered primary inference is the one-sided exact binomial test of $H_0: \mathrm{EFDPR}_{\mathrm{strict}} \le 0.25$ at $\alpha = 0.05$ on the pooled multi-tumor denominator. The three tolerance levels are reported as a pre-registered sensitivity grid, not as three independent confirmatory tests.
+
+\subsection{Biomarker tolerance levels}\label{sec:tolerance}
+\begin{itemize}
+\item \textbf{Strict}: exact set match of biomarker tokens.
+\item \textbf{ESCAT-aligned}: strict plus pre-specified ESCAT-equivalence groupings (e.g., AKT-pathway $\equiv$ PIK3CAmut at ESCAT tier I/II; EGFR-T790M $\equiv$ EGFR-mut as a downstream specialisation).
+\item \textbf{Liberal}: ESCAT plus acceptance of registrational biomarker-subgroup readouts (e.g., a trial enrolling biomarker-all-comers with a pre-specified biomarker-positive subgroup analysis is treated as supporting a biomarker-restricted guideline node).
+\end{itemize}
+
+\section{Dual-LLM-annotator extraction pipeline}\label{sec:llm}
+
+\subsection{Frozen schema (v1.0)}
+A frozen JSON schema captures, for each trial, the required and excluded prior-treatment tokens, the biomarker requirements, the registrational drug class, the pre-specified subgroup readouts, and the primary-completion year. The schema is additive: extension to a new tumor type adds biomarker tokens without modifying existing fields.
+
+\subsection{Two-annotator pipeline}
+Annotator A is Claude (Anthropic). Annotator B is Codex / GPT-5 (OpenAI). Both annotators receive the same trial inputs (ClinicalTrials.gov v2 protocol section) and the same protocol specification document, and produce JSON conforming to the same frozen schema. Annotator A processes the full corpus in parallel batches; Annotator B processes a pre-registered random validation subset.
+
+\subsection{Inter-rater agreement}
+Per-field Cohen's $\kappa$ measures inter-annotator agreement on the validation subset. For fields with highly skewed marginals (where both annotators rate the same category on nearly all trials), Cohen's $\kappa$ exhibits the well-documented kappa paradox: high raw agreement coexists with suppressed $\kappa$.\citep{viera2005} We additionally report the prevalence-adjusted bias-adjusted kappa, $\mathrm{PABAK} = 2 P_0 - 1$, which is robust to marginal skew.
+
+\subsection{Adjudication protocol}
+Disagreements between annotators are resolved by re-application of the protocol's decision-rule hierarchy. Each adjudication rule is logged with rationale; the resulting consensus values are used in the analysis. The post-adjudication $\kappa$ is therefore a measurement of \emph{adjudicability} (how many disagreements were resolvable per the protocol) rather than independent re-rating.
+
+\subsection{Pre-registered validation gate}
+The pre-registered gate is $\kappa \ge 0.70$ on key fields, or equivalently $\mathrm{PABAK} \ge 0.70$ for fields where the kappa paradox applies. Failure of the gate triggers explicit deviation disclosure and re-adjudication.
+
+\section{Demonstration across two biomarker-driven metastatic cancers}\label{sec:demo}
+
+The framework was applied to two pre-registered tumor settings, with full pre-registration trail and reviewer-cycle history. Detailed clinical results are reported in the companion clinical-application manuscript (Paper A). Here we summarise the methodological results that the present paper foregrounds.
+
+\subsection{Corpora and inter-rater performance}
+For mBC HR+/HER2- (v2.0.0): 874 ClinicalTrials.gov candidates were filtered by 8 pre-specified criteria to 81 pivotal trials (65 in-scope after drug-class filter). For NSCLC EGFR + ALK (v3.0.0): 702 candidates were filtered to 180 trials (145 in-scope). Mean pre-adjudication Cohen's $\kappa$ across key fields was 0.67 for mBC and 0.78 for NSCLC. After adjudication, mean PABAK was 0.99 (mBC) and 0.73 (NSCLC).
+
+\subsection{Pre-registered primary test rejects on pooled denominator}
+The pooled 50-node decision tree (25 mBC + 25 NSCLC) gave strict-tolerance EFDPR of 0.48 (Clopper-Pearson 95\% CI 0.34--0.63), and the pre-registered one-sided exact binomial test of $H_0: \mathrm{EFDPR} \le 0.25$ rejected the null at $\alpha = 0.05$ with $P = 0.0004$ (Figure 1 in Paper A).
+
+\subsection{Tolerance-sensitivity grid}
+ESCAT-aligned and liberal tolerance gave 0.34 (24/50 $\to$ 17/50; $P = 0.10$), failing to reject. The strict-tolerance rejection is the pre-registered primary inference; the tolerance-grid sensitivity demonstrates that biomarker-operationalization stringency materially affects the magnitude of the gap.
+
+\subsection{Pilot $\to$ production $\to$ multi-tumor trajectory}
+The single-tumor mBC pilot (v1.0.0, $n = 16$) gave EFDPR 0.31 ($P = 0.37$, fails to reject). The mBC production extension (v2.0.0, $n = 25$) gave 0.40 ($P = 0.07$, marginal). The multi-tumor pooled analysis (v3.0.0, $n = 50$) gave 0.48 ($P = 0.0004$, rejects). The trajectory is consistent with power gain from doubling the denominator and adding a tumor (NSCLC) with sparser post-osimertinib trial-edge support than mBC's post-CDK4/6i.
+
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Methodological contribution}
+We contribute four methodological pieces: (i) the shared (state, biomarker) node space that makes trial corpora and guideline trees commensurable; (ii) the EFDPR statistic with a pre-registered one-sided exact-binomial test; (iii) a pre-registerable tolerance-grid sensitivity scheme that distinguishes structural gaps from biomarker-operationalization stringency; (iv) a dual-LLM-annotator extraction pipeline with documented inter-rater agreement and a transparent adjudication trail.
+
+\subsection{Relation to existing methods}
+Network meta-analysis pools trials within a single decision point and does not address tree-level concordance.\citep{rouse2017nma} GRADE rates the certainty of evidence per recommendation but does not produce a tree-level count.\citep{guyatt2008grade} Bibliometric and citation-network methods describe trial volumes but not concordance with guideline structure.\citep{priem2022openalex} The closest related work is narrative review of evidence gaps for specific drugs or biomarkers; the present framework formalises that narrative as a pre-registerable statistical test.
+
+\subsection{LLM-extraction transparency}
+The dual-annotator pipeline is, to our knowledge, the first published evidence-synthesis tool to pair LLM extraction with formal inter-rater statistics (Cohen's $\kappa$, PABAK) and a transparent adjudication trail. We explicitly disclose the kappa paradox encountered for variables with skewed marginals (e.g., the mBC \texttt{akt\_path} field where 95\% raw agreement yielded $\kappa = 0$). PABAK is recommended for such fields. The adjudication step is structurally tautological --- adjudicated values become consensus for both annotators by construction --- and we report this honestly rather than presenting post-adjudication $\kappa = 1.00$ as an independent re-rating measurement.
+
+\subsection{Limitations}
+The framework's strict-tolerance concordance algorithm is deliberately conservative. The tolerance-grid sensitivity (strict / ESCAT / liberal) reports the range; reviewers should not over-interpret strict-only rejections without the tolerance context. The pooled multi-tumor test is adequately powered ($\ge 80\%$) only for effect sizes $p_1 \ge 0.45$ at $n = 50$ nodes; smaller effects would require multi-tumor pooling beyond mBC + NSCLC. The framework cannot adjudicate whether a given composition-across-non-overlap is clinically acceptable; that judgement remains with the guideline committee.
+
+\subsection{Reproducibility and AI transparency}
+Following the Research Synthesis Methods AI/ML evaluation guidance, we explicitly disclose: model versions (Claude 4.7, Codex GPT-5 at execution time 2026-05-16), prompts (released as \texttt{analysis/extraction\_protocol.md} and \texttt{extraction\_protocol\_nsclc.md}), full per-trial outputs of both annotators, all adjudication rules with rationale, and reproducible random seeds (\texttt{20260516}) for validation-subset selection and bootstrap CIs. Inter-rater agreement is reported both pre- and post-adjudication for each schema field.
+
+\section*{Data Availability Statement}
+The data underlying this manuscript are publicly available from ClinicalTrials.gov (queries reproduced in \texttt{analysis/v3\_01\_systematic\_search\_nsclc.py} and v2 counterpart). Processed datasets (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules) are released under MIT licence at \url{https://github.com/htlin/mbc-evidence-dag-paper} (tag \texttt{v3.0.0}) with Zenodo DOI minted at release.
+
+\section*{Code Availability Statement}
+The full analysis pipeline (Python 3.12, \texttt{networkx} 3.5, \texttt{scipy} 1.17, \texttt{matplotlib} 3.8) is released at the same GitHub URL. The tagged commit reproduces every figure and table; bootstrap seed is \texttt{20260516}.
+
+\section*{Author Contributions (CRediT)}
+\textbf{H.-T.\ Lin}: Conceptualization, Methodology, Software, Formal analysis, Investigation, Data curation, Validation, Visualization, Writing -- original draft, Writing -- review \& editing, Project administration.
+
+\section*{Conflicts of interest}
+The author declares no competing financial or non-financial interests relevant to this work.
+
+\section*{Funding}
+No specific funding was received for this work.
+
+\section*{Acknowledgements}
+The author acknowledges the open-data infrastructure of ClinicalTrials.gov and the publishing programmes of ESMO, ASCO, and NCCN. The dual-annotator extraction protocol was implemented using Anthropic's Claude (annotator A) and OpenAI's Codex / GPT-5 (annotator B) via shared protocol documents; the model providers had no role in the design, analysis, or writing of this manuscript.
+
+\bibliographystyle{vancouver}
+\bibliography{references}
+
+\end{document}
