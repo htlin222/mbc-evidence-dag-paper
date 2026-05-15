@@ -1,0 +1,407 @@
+{
+  "n_systematic": 74,
+  "n_supplementary": 6,
+  "n_total": 80,
+  "trials": [
+    {
+      "nct_id": "NCT02340221",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02115282",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT01905592",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05646862",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05860465",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03734029",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT06635447",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02278120",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02422615",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05654623",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04571437",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03966898",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03096847",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05439499",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT06954961",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05851014",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03079011",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03927456",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT06561022",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04059484",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05054751",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05257395",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT06929325",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04047758",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05375461",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02763566",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03671330",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05501886",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03176238",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05744687",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02482753",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02344472",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT01783444",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04214288",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04576455",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT06105632",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03439046",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04494425",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04732598",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05104866",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04539496",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04975308",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03425838",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03538171",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT06018337",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05205200",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04305496",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03147287",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04650581",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03822468",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03839823",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02107703",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04964934",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02747004",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT01958021",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT06343948",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT01942135",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02246621",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02941926",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02258451",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03337724",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04711252",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04639986",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02614833",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04263298",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02894398",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04546009",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03910712",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT03901339",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02007512",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT04072952",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05207709",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT05365178",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT02767661",
+      "provenance": "systematic_search",
+      "trial_name_hint": null
+    },
+    {
+      "nct_id": "NCT01740427",
+      "provenance": "v1_supplementary",
+      "trial_name_hint": "PALOMA-2"
+    },
+    {
+      "nct_id": "NCT02000622",
+      "provenance": "v1_supplementary",
+      "trial_name_hint": "OlympiAD"
+    },
+    {
+      "nct_id": "NCT02437318",
+      "provenance": "v1_supplementary",
+      "trial_name_hint": "SOLAR-1"
+    },
+    {
+      "nct_id": "NCT03778931",
+      "provenance": "v1_supplementary",
+      "trial_name_hint": "EMERALD"
+    },
+    {
+      "nct_id": "NCT04191499",
+      "provenance": "v1_supplementary",
+      "trial_name_hint": "INAVO120"
+    },
+    {
+      "nct_id": "NCT05169567",
+      "provenance": "v1_supplementary",
+      "trial_name_hint": "postMONARCH"
+    }
+  ]
+}

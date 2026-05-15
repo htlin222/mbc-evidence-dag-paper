@@ -87,17 +87,26 @@ def started_in_window(proto: dict) -> bool:
 
 
 def setting_metastatic(proto: dict) -> bool:
+    """Trial setting must be metastatic/advanced, not adjuvant/neoadjuvant.
+
+    Only check titles and conditions for adj/neoadj rejection, NOT the
+    eligibility text. Eligibility text often mentions 'prior adjuvant
+    therapy' which describes patient history rather than the trial setting,
+    and the previous regex over-rejected on those mentions.
+    """
     cond_mod = proto.get("conditionsModule") or {}
     conds = " | ".join(cond_mod.get("conditions") or [])
-    elig = (proto.get("eligibilityModule") or {}).get("eligibilityCriteria") or ""
     titles = " | ".join([
         (proto.get("identificationModule") or {}).get("briefTitle") or "",
         (proto.get("identificationModule") or {}).get("officialTitle") or "",
     ])
-    text = conds + " || " + titles + " || " + elig[:2000]
-    if ADJ_NEOADJ_RX.search(text):
+    setting_text = conds + " || " + titles
+    if ADJ_NEOADJ_RX.search(setting_text):
         return False
-    return bool(METASTATIC_RX.search(text))
+    # require metastatic mention in title, condition, or eligibility
+    elig = (proto.get("eligibilityModule") or {}).get("eligibilityCriteria") or ""
+    full_text = setting_text + " || " + elig[:2000]
+    return bool(METASTATIC_RX.search(full_text))
 
 
 def is_her2_negative_population(proto: dict) -> bool:
@@ -136,6 +145,19 @@ def eligibility_present(proto: dict) -> bool:
     return len(elig) >= 200
 
 
+def primary_completion_by_2026(proto: dict) -> bool:
+    """For temporal-precedence support of guideline nodes, the trial must
+    have a primary readout no later than 2026. Trials with completion
+    dates in 2027+ cannot support any guideline node introduced before
+    2027 under the temporal-precedence rule.
+    """
+    status = proto.get("statusModule") or {}
+    pc_y = year_of(status.get("primaryCompletionDateStruct"))
+    if pc_y is None:
+        return False
+    return pc_y <= 2026
+
+
 FILTERS = [
     ("F1_phase23",           is_phase23),
     ("F2_interventional",    is_interventional),
@@ -143,7 +165,8 @@ FILTERS = [
     ("F4_setting_metastatic", setting_metastatic),
     ("F5_her2_neg_pop",      is_her2_negative_population),
     ("F6_eligibility",       eligibility_present),
-    ("F7_enrolment_ge_50",   enrolment_count_ok),
+    ("F7_enrolment_ge_200",  enrolment_count_ok),
+    ("F8_primary_completion_by_2026", primary_completion_by_2026),
 ]
 
 
