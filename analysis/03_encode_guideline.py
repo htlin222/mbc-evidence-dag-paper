@@ -79,7 +79,12 @@ DECISION_NODES = [
     },
     {
         "node_id": "G6",
-        "state":   "post-CDK46i",
+        # ESMO 2024 places capivasertib+fulvestrant at the post-endocrine
+        # decision point with prior CDK4/6i permitted but not required;
+        # CAPItello-291 enrolled exactly this mixed pre/post-CDK4/6i population.
+        # Round 3 clinical reviewer flagged the previous "post-CDK46i" coding
+        # as over-narrow.
+        "state":   "post-endo",
         "biomarker": "HR+/HER2-/AKTpath",
         "recommended_classes": [
             {"class": "AKTi + fulvestrant", "grade": "I-B"},

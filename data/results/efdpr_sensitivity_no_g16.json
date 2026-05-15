@@ -30,18 +30,18 @@
     "preregistered_test_rejected_at_alpha_05": false
   },
   "liberal": {
-    "point_estimate": 0.2667,
-    "evidence_free_count": 4,
+    "point_estimate": 0.2,
+    "evidence_free_count": 3,
     "total_decision_nodes": 15,
     "bootstrap_ci95": [
-      0.0667,
-      0.4667
+      0.0,
+      0.4
     ],
     "clopper_pearson_ci95": [
-      0.0779,
-      0.551
+      0.0433,
+      0.4809
     ],
-    "exact_binomial_pvalue_one_sided_vs_p25": 0.5387,
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.7639,
     "preregistered_test_rejected_at_alpha_05": false
   }
 }

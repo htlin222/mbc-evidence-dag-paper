@@ -120,17 +120,16 @@
     }
   },
   "liberal": {
-    "point_estimate": 0.25,
-    "evidence_free_count": 4,
+    "point_estimate": 0.1875,
+    "evidence_free_count": 3,
     "total_decision_nodes": 16,
-    "bootstrap_ci95_low": 0.0625,
-    "bootstrap_ci95_high": 0.5,
-    "clopper_pearson_ci95_low": 0.0727,
-    "clopper_pearson_ci95_high": 0.5238,
-    "exact_binomial_pvalue_one_sided_vs_p25": 0.595,
+    "bootstrap_ci95_low": 0.0,
+    "bootstrap_ci95_high": 0.4375,
+    "clopper_pearson_ci95_low": 0.0405,
+    "clopper_pearson_ci95_high": 0.4565,
+    "exact_binomial_pvalue_one_sided_vs_p25": 0.8029,
     "preregistered_test_rejected_at_alpha_05": false,
     "evidence_free_nodes": [
-      "G6",
       "G7",
       "G9",
       "G13"
@@ -153,7 +152,9 @@
       "G5": [
         "NCT03778931"
       ],
-      "G6": [],
+      "G6": [
+        "NCT04305496"
+      ],
       "G7": [],
       "G8": [
         "NCT04494425"

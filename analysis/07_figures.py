@@ -34,56 +34,54 @@ ODI = json.loads((ROOT / "data" / "results" / "odi.json").read_text())
 
 
 def fig1_dag() -> None:
-    g = nx.DiGraph()
-    for n in NODES:
-        g.add_node(n["node_id"], state=n["state"], biomarker=n["biomarker"])
+    """Tabular DAG view: state on x-axis (treatment-line distance), biomarker
+    on y-axis. Trials shown as labelled edges from source state to drug class."""
+    import matplotlib.patches as mpatches
+    state_order = [
+        "first-line",
+        "first-line+pre-menopausal",
+        "post-endo",
+        "post-endo+post-CDK46i",
+        "post-chemo",
+        "post-endo+post-CDK46i+post-chemo",
+    ]
+    biomarker_order = sorted({n["biomarker"] for n in NODES})
+    fig, ax = plt.subplots(figsize=(11, 6.0))
+    # Lay out each unique (state, biomarker) source node on the grid.
+    state_to_x = {s: i for i, s in enumerate(state_order)}
+    bm_to_y = {b: i for i, b in enumerate(biomarker_order)}
+    # Group edges by source node so we can stack trial labels.
+    by_source: dict[tuple[str, str], list[dict]] = {}
     for e in EDGES:
-        g.add_edge(e["source_node"], e["target_node"], trial=e["trial_name"], year=e["year_pc"])
-    # Layout: order nodes by treatment-line distance
-    order = ["first-line", "first-line+pre-menopausal", "post-endo", "post-endo+post-CDK46i",
-             "post-endo+post-CDK46i+post-chemo", "post-CDK46i", "post-chemo"]
-
-    def state_rank(state: str) -> int:
-        for i, prefix in enumerate(order):
-            if state == prefix:
-                return i
-        # fallback: by token count
-        return len(state.split("+"))
-    pos = {}
-    # group nodes by state on horizontal axis
-    states = sorted({n["state"] for n in NODES}, key=state_rank)
-    biomarkers = sorted({n["biomarker"] for n in NODES})
-    for n in NODES:
-        x = state_rank(n["state"])
-        y = biomarkers.index(n["biomarker"])
-        pos[n["node_id"]] = (x, y)
-    # add target nodes (not in NODES list) with synthetic positions
-    for e in EDGES:
-        if e["target_node"] not in pos:
-            sx, sy = pos[e["source_node"]]
-            pos[e["target_node"]] = (sx + 0.45, sy + 0.18)
-    plt.figure(figsize=(11, 5.6))
-    nx.draw_networkx_edges(g, pos, alpha=0.35, arrows=True, arrowsize=10,
-                           edge_color="#1f77b4", connectionstyle="arc3,rad=0.12")
-    nx.draw_networkx_nodes(g, pos, nodelist=[n["node_id"] for n in NODES],
-                            node_size=520, node_color="#cce5ff",
-                            edgecolors="#1f77b4", linewidths=1.2)
-    target_only = [n for n in g.nodes() if n not in {x["node_id"] for x in NODES}]
-    nx.draw_networkx_nodes(g, pos, nodelist=target_only,
-                            node_size=160, node_color="#eeeeee",
-                            edgecolors="#999999", linewidths=0.6)
-    # short labels
-    short = {n["node_id"]: n["state"].replace("+post-", "+").replace("post-", "")
-             + "\n" + n["biomarker"].replace("HR+/HER2-", "HR+H2-")
-             for n in NODES}
-    nx.draw_networkx_labels(g, pos, labels=short, font_size=6)
-    edge_labels = {(e["source_node"], e["target_node"]): e["trial_name"][:9]
-                   for e in EDGES}
-    nx.draw_networkx_edge_labels(g, pos, edge_labels=edge_labels, font_size=5,
-                                  bbox=dict(facecolor="white", edgecolor="none",
-                                            alpha=0.75, pad=0.3))
-    plt.title(f"HR+/HER2- mBC pivotal-trial DAG (N={len(EDGES)} trials)", fontsize=10)
-    plt.axis("off")
+        by_source.setdefault((e["source_state"], e["biomarker"]), []).append(e)
+    # Draw nodes (filled circles) for each source location and a tag inline.
+    for (s, b), elist in by_source.items():
+        x = state_to_x.get(s, len(state_order))
+        y = bm_to_y.get(b, len(biomarker_order))
+        ax.scatter([x], [y], s=420, c="#cce5ff", edgecolors="#1f4a7b",
+                    linewidths=1.2, zorder=3)
+        # node label
+        ax.text(x, y - 0.30, f"{s}\n[{b}]", ha="center", va="top", fontsize=6.5)
+        # trial labels stacked above node
+        for i, e in enumerate(sorted(elist, key=lambda x: x["year_pc"])):
+            label = f"{e['trial_name']} ({e['year_pc']}) → {e['drug_class']}"
+            ax.annotate(label, xy=(x, y), xytext=(x + 0.18, y + 0.22 + i * 0.20),
+                        fontsize=5.5,
+                        arrowprops=dict(arrowstyle="->", color="#888",
+                                         alpha=0.6, lw=0.7))
+    ax.set_xticks(range(len(state_order)))
+    ax.set_xticklabels([s.replace("+", "\n+") for s in state_order],
+                       fontsize=7.5, rotation=0)
+    ax.set_yticks(range(len(biomarker_order)))
+    ax.set_yticklabels(biomarker_order, fontsize=7.5)
+    ax.set_xlabel("Patient state at trial enrolment", fontsize=9)
+    ax.set_ylabel("Biomarker profile", fontsize=9)
+    ax.set_title(f"HR+/HER2- mBC pivotal-trial DAG (N={len(EDGES)} trials)",
+                  fontsize=10)
+    ax.grid(True, alpha=0.25, linestyle=":")
+    ax.set_axisbelow(True)
+    ax.set_xlim(-0.5, len(state_order) - 0.5)
+    ax.set_ylim(-0.7, len(biomarker_order) - 0.2)
     plt.tight_layout()
     out = FIGS / "fig1_dag.pdf"
     plt.savefig(out, dpi=200, bbox_inches="tight")
