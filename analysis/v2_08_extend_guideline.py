@@ -60,7 +60,7 @@ ADDITIONAL_NODES = [
         "recommended_classes": [
             {"class": "SERD oral + CDK4/6i", "grade": "II-B"},
         ],
-        "cited_trials": [],  # SERENA-6 NCT04711252 should support
+        "cited_trials": ["NCT04964934"],  # SERENA-6 (corrected NCT)
         "year": 2024,
         "source": "ASCO",
     },

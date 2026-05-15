@@ -85,6 +85,11 @@
     "biomarker": "HR+/HER2-/AKTpath"
   },
   {
+    "node_id": "post-endo|HR+/HER2-/ESR1mut",
+    "state": "post-endo",
+    "biomarker": "HR+/HER2-/ESR1mut"
+  },
+  {
     "node_id": "post-endo|HR+/HER2-/HER2-low",
     "state": "post-endo",
     "biomarker": "HR+/HER2-/HER2-low"

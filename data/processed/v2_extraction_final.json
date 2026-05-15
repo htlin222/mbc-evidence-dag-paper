@@ -1579,7 +1579,8 @@
       "hrd_status": null
     },
     "subgroup_readouts": [
-      "AKTpath"
+      "AKTpath",
+      "post-CDK46i_subgroup"
     ],
     "drug_class": "AKTi + fulvestrant",
     "year_pc": 2023,
@@ -1615,7 +1616,8 @@
     },
     "subgroup_readouts": [
       "HER2-low",
-      "HER2-ultralow"
+      "HER2-ultralow",
+      "post-CDK46i_subgroup"
     ],
     "drug_class": "HER2-ADC (T-DXd)",
     "year_pc": 2024,
@@ -2022,7 +2024,9 @@
       "brca_germline": null,
       "hrd_status": null
     },
-    "subgroup_readouts": [],
+    "subgroup_readouts": [
+      "HER2-low_subgroup"
+    ],
     "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
     "year_pc": 2024,
     "guideline_target_node": "post-chemo|HR+/HER2-|endocrine-refractory",
@@ -2709,5 +2713,48 @@
     "guideline_target_node": "post-ET|any|HR+/HER2-",
     "confidence": "high",
     "notes": "Phase III oral SERD D-0502 vs fulvestrant in previously treated ER+/HER2- LA/MBC after recurrence on/after adjuvant endocrine therapy or progression after 1-2 lines of systemic endocrine therapy. Excludes prior SERD/SERCA. Prior CDK4/6i not explicitly addressed."
+  },
+  {
+    "nct_id": "NCT03056755",
+    "trial_name": "BYLieve",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": true,
+      "post_chemo_metastatic_min": 0
+    },
+    "excluded": {},
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "pik3ca_mut": true
+    },
+    "subgroup_readouts": [],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2020,
+    "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Added v2 round 1 after clinical reviewer flagged missing pivotal trial for post-CDK4/6i PIK3CAmut (G7); alpelisib in post-CDK4/6i PIK3CAmut population",
+    "provenance": "v2_round1_added"
+  },
+  {
+    "nct_id": "NCT04964934",
+    "trial_name": "SERENA-6",
+    "prior_state": {
+      "post_endo": true,
+      "post_cdk46i": false
+    },
+    "excluded": {},
+    "biomarker": {
+      "hr_pos": true,
+      "her2_neg": true,
+      "esr1_mut": true
+    },
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|ESR1mut|HR+/HER2-",
+    "confidence": "high",
+    "notes": "Added v2 round 1 to correct prior NCT04711252 vs SERENA-6 confusion; ctDNA-detected ESR1mut early switch within first-line CDK4/6i",
+    "provenance": "v2_round1_added"
   }
 ]

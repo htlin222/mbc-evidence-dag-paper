@@ -471,7 +471,8 @@
     "source_state": "post-endo",
     "biomarker": "HR+/HER2-/AKTpath",
     "subgroup_readouts": [
-      "AKTpath"
+      "AKTpath",
+      "post-CDK46i_subgroup"
     ],
     "drug_class": "AKTi + fulvestrant",
     "year_pc": 2023,
@@ -486,7 +487,8 @@
     "biomarker": "HR+/HER2-/HER2-low",
     "subgroup_readouts": [
       "HER2-low",
-      "HER2-ultralow"
+      "HER2-ultralow",
+      "post-CDK46i_subgroup"
     ],
     "drug_class": "HER2-ADC (T-DXd)",
     "year_pc": 2024,
@@ -615,7 +617,9 @@
     "source_node": "post-endo+post-chemo|HR+/HER2-",
     "source_state": "post-endo+post-chemo",
     "biomarker": "HR+/HER2-",
-    "subgroup_readouts": [],
+    "subgroup_readouts": [
+      "HER2-low_subgroup"
+    ],
     "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
     "year_pc": 2024,
     "guideline_target_node": "post-chemo|HR+/HER2-|endocrine-refractory",
@@ -828,5 +832,29 @@
     "year_pc": 2026,
     "guideline_target_node": "post-ET|any|HR+/HER2-",
     "provenance": null
+  },
+  {
+    "nct_id": "NCT03056755",
+    "trial_name": "BYLieve",
+    "source_node": "post-endo+post-CDK46i|HR+/HER2-/PIK3CAmut",
+    "source_state": "post-endo+post-CDK46i",
+    "biomarker": "HR+/HER2-/PIK3CAmut",
+    "subgroup_readouts": [],
+    "drug_class": "PI3Ki + fulvestrant",
+    "year_pc": 2020,
+    "guideline_target_node": "post-CDK46i|PIK3CAmut|HR+/HER2-",
+    "provenance": "v2_round1_added"
+  },
+  {
+    "nct_id": "NCT04964934",
+    "trial_name": "SERENA-6",
+    "source_node": "post-endo|HR+/HER2-/ESR1mut",
+    "source_state": "post-endo",
+    "biomarker": "HR+/HER2-/ESR1mut",
+    "subgroup_readouts": [],
+    "drug_class": "SERD oral + CDK4/6i",
+    "year_pc": 2024,
+    "guideline_target_node": "post-endo|ESR1mut|HR+/HER2-",
+    "provenance": "v2_round1_added"
   }
 ]

@@ -1,4 +1,4 @@
-# Cover Letter — JCO Clinical Cancer Informatics
+# Cover Letter — JCO Clinical Cancer Informatics (v2.0.0)
 
 [Date placeholder]
 
@@ -8,43 +8,39 @@ JCO Clinical Cancer Informatics
 
 Dear Dr. [Editor name placeholder],
 
-We submit for consideration as an **Original Report** (or, at the editor's
-discretion, as a **Methods Article** or **Research Letter**) the manuscript
-"A Computable Map of Treatment-Sequencing Evidence in HR+/HER2- Metastatic
-Breast Cancer: A Graph-Theoretic Pilot Comparing Trial Chains with the ESMO
-Guideline Decision Tree."
+We submit for consideration as an **Original Report** the manuscript "A Computable
+Map of Treatment-Sequencing Evidence in HR+/HER2- Metastatic Breast Cancer: A 64-Trial,
+Pre-Registered Graph-Theoretic Analysis of ESMO, ASCO, and NCCN Decision-Tree
+Concordance."
 
-The manuscript introduces, to our knowledge for the first time, a
-reproducible computational framework that places a pivotal-trial corpus and
-a clinical-guideline decision tree on a shared (state, biomarker) node space
-and computes an evidence-free decision-point ratio (EFDPR) plus an
-operationalization discordance index (ODI). The framework, the frozen JSON
-schema, the ESMO 2024 HR+/HER2- mBC decision-tree encoding, and the analysis
-code are released under the MIT licence at the GitHub URL in the Code
-Availability statement, with a Zenodo DOI minted at the tagged release.
+The manuscript introduces a reproducible computational framework that places a
+systematic pivotal-trial corpus and the unified ESMO+ASCO+NCCN HR+/HER2- mBC
+guideline decision tree on a shared (state, biomarker) node space and computes an
+evidence-free decision-point ratio (EFDPR) plus an operationalization discordance
+index (ODI). On 25 unified decision nodes against 66 in-scope trial edges, the
+pre-registered one-sided exact binomial test of $H_0: \mathrm{EFDPR} \le 0.25$
+rejected the null at $\alpha = 0.05$ with $P = 0.011$ (EFDPR 0.48, Clopper-Pearson
+95\% CI 0.28--0.69); operationalization discordance for the prior-CDK4/6i variable
+across 3,240 trial pairs was substantial (ODI 0.64, CI 0.62--0.66).
 
-This 16-trial pilot is a pre-registered methodology submission whose primary
-contribution is the released framework and decision-tree encoding; the
-pre-registered exact-binomial test of EFDPR > 0.25 did not reject the null
-in this corpus (P = 0.37), and we report this transparently throughout the
-manuscript. We believe the framework is of immediate use to guideline
-committees and trial sponsors as a guideline-update audit, and we look
-forward to extending the same pipeline to NSCLC and mCRC in companion
-manuscripts.
+The analysis is fully pre-registered (\texttt{docs/prereg-v2.md} commit \texttt{085ae54},
+amendment v2.1 \texttt{079b540}, both committed before any v2 outcome data). The
+LLM-extraction pipeline is dual-annotator validated (Claude + Codex/GPT-5; post-
+adjudication mean PABAK 0.99 on key fields; Cohen's $\kappa$ paradox for
+\texttt{akt\_path} explicitly disclosed). The framework, frozen schema, decision-tree
+encoding, dual-annotator outputs, adjudication log, and 4-round v1 reviewer cycle
+are released openly at \texttt{github.com/htlin/mbc-evidence-dag-paper} under MIT
+licence with Zenodo DOI minted at the tagged release.
 
-The manuscript has not been previously published and is not under
-consideration elsewhere. All authors have approved the submission and
-declare no competing interests. A preprint copy will be posted to medRxiv
-concurrent with this submission.
+The manuscript has not been previously published and is not under consideration
+elsewhere. A preprint will be posted to medRxiv concurrent with this submission.
 
 We suggest three potential reviewers with no apparent conflict of interest:
-[Reviewer 1], [Reviewer 2], [Reviewer 3] (full names, affiliations, and emails
-to be added at submission).
-
-We thank you for considering our submission.
+[Reviewer 1], [Reviewer 2], [Reviewer 3] (full names, affiliations, and emails to
+be added at submission).
 
 Sincerely,
 
-H.-T.\ Lin
+H.-T. Lin
 [Affiliation to be supplied]
-ppoiu87@gmail.com
+\texttt{ppoiu87@gmail.com}

@@ -1,0 +1,124 @@
+% Supplementary material v2.
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\title{\textbf{Supplementary Material (v2.0.0)} \\
+A Computable Map of Treatment-Sequencing Evidence in HR+/HER2- Metastatic Breast Cancer:\\
+A 64-Trial, Pre-Registered Graph-Theoretic Analysis of ESMO, ASCO, and NCCN Decision-Tree Concordance}
+\author{H.-T.\ Lin}
+\date{\today}
+\begin{document}
+\maketitle
+
+\section*{Supplementary Table S1. Reporting Transparency Checklist}
+\noindent
+This study reports a pre-registered graph-theoretic computational analysis. We adopt a custom transparency checklist combining PRISMA-2020 reporting items (relevant to evidence synthesis) with a graph-encoding addendum specific to the present method.
+
+\begin{longtable}{p{5.6cm}p{3.0cm}p{6.0cm}}
+\toprule
+\textbf{Item} & \textbf{Reported in} & \textbf{Notes} \\
+\midrule
+\endhead
+1. Title identifies evidence synthesis & Title & ``Computable Map of Treatment-Sequencing Evidence'' \\
+2. Structured abstract & Abstract & 268-word JCO CCI structure \\
+3. Rationale & Introduction & Composition across non-overlapping trials \\
+4. Objectives & Introduction & EFDPR + ODI \\
+5. Eligibility criteria for trials & Methods 2.1, 2.2 & Eight pre-specified filters (\texttt{v2\_02\_filter\_corpus.py}) \\
+6. Information sources & Methods 2.1 & ClinicalTrials.gov v2 + ESMO 2024 + ASCO 2022 + NCCN 2024 \\
+7. Search strategy & Methods 2.2 & Frozen API query at \texttt{v2\_01\_systematic\_search.py} \\
+8. Selection process & Methods 2.2 & Eight pre-specified filters; 874 candidates $\to$ 82 trials \\
+9. Data extraction process & Methods 2.3 & Dual-annotator LLM (Claude + Codex/GPT-5) + protocol adjudication \\
+10. Data items & Methods 2.3 & Frozen schema v1.0 fields \\
+11. Risk-of-bias assessment & Discussion & Selection bias disclosed; multi-round internal review log \\
+12. Effect measures & Methods 2.7 & EFDPR; ODI \\
+13. Synthesis methods & Methods 2.6 & Concordance algorithm; tolerance grid \\
+14. Reporting bias assessment & Limitations & Snapshot date; corpus expansion disclosed \\
+15. Certainty assessment & Discussion & Pre-registered tolerance levels; sensitivity by guideline source \\
+16. Study selection results & Results 3.2 & 74 systematic + 6 supplementary + 2 round-1-added = 82 \\
+17. Study characteristics & Table 1 + S3 & Per-trial schema fills \\
+18. Risk of bias & Limitations & Disclosed \\
+19. Results of individual studies & DAG edges & Trial primary endpoint per edge \\
+20. Results of syntheses & Results 3.3--3.6 & EFDPR, ODI, sensitivity, secondary outcomes \\
+21. Reporting biases & Discussion & Reviewer-cycle history disclosed \\
+22. Certainty of evidence & Discussion & Pre-registered exact test rejected at $P = 0.011$ \\
+23. Discussion & Discussion & Three caveats + three positives + outlook \\
+24. Limitations & Discussion & Pilot-to-production scaling honestly framed \\
+25. Implications & Discussion & Outlook \\
+26. Registration and protocol & Methods 2.1, prereg-v2 & \texttt{docs/prereg-v2.md} at commit \texttt{085ae54} + amendment \texttt{079b540} \\
+27. Support & Funding statement & No specific funding \\
+28. Competing interests & Conflicts statement & None declared \\
+29. Availability of data, code, materials & Statements & MIT licence, GitHub URL, Zenodo DOI at v2.0.0 \\
+\midrule
+G1. Graph node space & Methods 2.4 & (prior-state, biomarker) tuples \\
+G2. Graph edge construction & Methods 2.4 & Trial $\to$ edge from required-state node \\
+G3. Guideline-tree encoding & Methods 2.5 & 25-node ESMO+ASCO+NCCN unified \\
+G4. Concordance algorithm & Methods 2.6 & State-superset + biomarker tolerance + drug match + temporal precedence \\
+G5. Tolerance levels & Methods 2.6 & Strict / ESCAT / liberal, pre-registered sensitivity grid \\
+G6. Reproducibility (seed + commit hash) & Methods 2.8 & Seed 20260516; \texttt{v2.0.0} commit \\
+\bottomrule
+\end{longtable}
+
+\section*{Supplementary Table S2. Inter-annotator Agreement (Cohen's $\kappa$ and PABAK)}
+
+Cohen's $\kappa$ and the prevalence-adjusted bias-adjusted kappa (PABAK $= 2P_0 - 1$) on the 20-trial validation subset (pre- and post-adjudication). Adjudication rules (17) applied per the protocol's decision-rule hierarchy.
+
+\begin{tabular}{lccccc}
+\toprule
+Field & Pre-adj $\kappa$ & Post-adj $\kappa$ & Post-adj agreement & PABAK & Gate $\ge 0.70$ \\
+\midrule
+prior\_state.post\_endo      & 0.398 & 1.000 & 100\% & 1.000 & Pass (Cohen + PABAK) \\
+prior\_state.post\_cdk46i    & 0.667 & 1.000 & 100\% & 1.000 & Pass (Cohen + PABAK) \\
+biomarker.hr\_pos            & 0.643 & 1.000 & 100\% & 1.000 & Pass (Cohen + PABAK) \\
+biomarker.her2\_neg          & 0.649 & 1.000 & 100\% & 1.000 & Pass (Cohen + PABAK) \\
+biomarker.her2\_low          & 1.000 & 1.000 & 100\% & 1.000 & Pass (Cohen + PABAK) \\
+biomarker.pik3ca\_mut        & 1.000 & 1.000 & 100\% & 1.000 & Pass (Cohen + PABAK) \\
+biomarker.esr1\_mut          & 1.000 & 1.000 & 100\% & 1.000 & Pass (Cohen + PABAK) \\
+biomarker.akt\_path          & 0.000 & 0.000 &  95\% & 0.900 & Fail Cohen, Pass PABAK \\
+\bottomrule
+\end{tabular}
+
+\textbf{Note on the kappa paradox for \texttt{akt\_path}.} When two annotators agree on a category that is rare in the marginal distribution (both annotators rate the field as \texttt{null} on 19 of 20 trials), Cohen's $\kappa$ is suppressed despite high raw agreement. This is the well-documented kappa paradox; PABAK is the standard adjustment. We report both metrics and explicitly disclose that the pre-registered Cohen's $\kappa \ge 0.70$ gate fails on \texttt{akt\_path} alone (due to the paradox, not substantive disagreement); under PABAK the gate passes on every key field.
+
+\section*{Supplementary Text 1. Pre-registration trail and v2 deviations}
+
+The v2 pre-registration is in two commits:
+\begin{itemize}
+\item \texttt{docs/prereg-v2.md} at commit \texttt{085ae54} (initial freeze, before any v2 outcome data observed).
+\item Amendment v2.1 at commit \texttt{079b540} (widened date filter to 2013--2026; tightened enrolment $\ge 200$; disclosed before any LLM extraction).
+\end{itemize}
+
+\textbf{v2 deviations disclosed:}
+\begin{itemize}
+\item \textbf{Two trials added in round-1 internal review (BYLieve NCT03056755, SERENA-6 NCT04964934).} The systematic search and supplementary inclusion produced 80 trials; internal review surfaced two pivotal trials missing from the corpus that are guideline-cited and clinically pivotal. Added before primary-test computation was finalised; the addition is documented in the repository commit log.
+\item \textbf{Three extraction errors corrected in round-1.} CAPItello-291 and DESTINY-Breast06 post-CDK4/6i subgroup-readout flags were missing; TROPION-Breast01 HER2-low subgroup-readout flag was missing. All three corrections were applied to the final extraction file with explicit rationale.
+\item \textbf{17 adjudication rules (not 14 as initially reported)} were applied per the protocol's decision-rule hierarchy.
+\item \textbf{Cohen's $\kappa \ge 0.70$ gate failed pre-adjudication} on \texttt{post\_endo} ($\kappa = 0.40$) and \texttt{akt\_path} ($\kappa = 0.00$); post-adjudication all fields pass under PABAK but \texttt{akt\_path} still fails Cohen's $\kappa$ due to the kappa paradox. Both metrics reported.
+\item \textbf{Pre-registered S2 and S3 reported descriptively} rather than with formal hypothesis tests, due to small corpus and the realistic null distribution for temporal lag.
+\item \textbf{By-guideline-source sensitivity (E1)} promoted from exploratory to pre-specified sensitivity reporting; not re-classified as confirmatory.
+\item \textbf{G6 (AKT-pathway) state coding} retained as \texttt{post-endo} (per v1.0.0 Round 4 review); not re-deviating.
+\item \textbf{NCT-label correction.} An earlier internal draft confused NCT04711252 (SERENA-4, first-line) with NCT04964934 (SERENA-6, ctDNA-detected ESR1mut switch); corrected to the latter.
+\end{itemize}
+
+\section*{Supplementary Table S3. Trial Corpus (provided as JSON in repository)}
+
+The full 82-trial structured extraction (post-adjudication) is released as \texttt{data/processed/v2\_extraction\_final.json} in the repository; the per-trial fields include nct\_id, trial\_name, prior\_state, biomarker, subgroup\_readouts, drug\_class, year\_pc, guideline\_target\_node, confidence, notes, and provenance (\texttt{systematic\_search}, \texttt{v1\_supplementary}, or \texttt{v2\_round1\_added}).
+
+\section*{Supplementary Table S4. Guideline Decision Tree Encoding}
+
+The 25-node ESMO+ASCO+NCCN HR+/HER2- mBC decision-tree encoding is released as \texttt{data/processed/v2\_decision\_tree.json} with each node carrying (node\_id, state, biomarker, recommended\_classes with grade, cited\_trials, year, source).
+
+\section*{Supplementary Table S5. Operationalization Discordance Tokens}
+
+Biomarker-token vocabulary for the ODI computation is in \texttt{analysis/v2\_10\_compute\_odi.py}.
+
+\section*{Supplementary Table S6. Reviewer-Cycle History}
+
+Four-round v1 review cycle (16 review passes) is in \texttt{reviews/round[1-4]/}; one-round v2 review cycle (4 review passes) is in \texttt{reviews/v2\_round1/}; integration commits are in the repository git log.
+
+\end{document}

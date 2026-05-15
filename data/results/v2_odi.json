@@ -36,13 +36,14 @@
       "IPATunity130",
       "BioItaLEE",
       "INAVO120",
-      "INAVO121"
+      "INAVO121",
+      "BYLieve"
     ],
-    "n_trials": 6,
-    "n_pairs": 15,
-    "odi": 0.0556,
-    "bootstrap_ci95_low": 0.0222,
-    "bootstrap_ci95_high": 0.1
+    "n_trials": 7,
+    "n_pairs": 21,
+    "odi": 0.0476,
+    "bootstrap_ci95_low": 0.0159,
+    "bootstrap_ci95_high": 0.0794
   },
   "AKTpath": {
     "trials": [
@@ -139,13 +140,14 @@
       "SNF-precision (abemaSNF1/3)",
       "CAPItrue",
       "Albumin-bound sirolimus + fulvestrant",
-      "D-0502 vs fulvestrant"
+      "D-0502 vs fulvestrant",
+      "BYLieve"
     ],
-    "n_trials": 80,
-    "n_pairs": 3160,
-    "odi": 0.6402,
-    "bootstrap_ci95_low": 0.6234,
-    "bootstrap_ci95_high": 0.656
+    "n_trials": 81,
+    "n_pairs": 3240,
+    "odi": 0.6407,
+    "bootstrap_ci95_low": 0.6231,
+    "bootstrap_ci95_high": 0.6577
   },
   "gBRCAmut": {
     "trials": [
