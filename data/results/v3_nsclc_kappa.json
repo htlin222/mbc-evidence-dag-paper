@@ -1,0 +1,57 @@
+{
+  "per_field": {
+    "prior_state.post_egfr_tki": {
+      "kappa": 0.8829,
+      "pabak": 0.8462,
+      "agreement_pct": 0.9231,
+      "n_pairs": 13
+    },
+    "prior_state.post_osimertinib": {
+      "kappa": 0.866,
+      "pabak": 0.8462,
+      "agreement_pct": 0.9231,
+      "n_pairs": 13
+    },
+    "prior_state.post_alk_tki": {
+      "kappa": 0.2909,
+      "pabak": 0.0769,
+      "agreement_pct": 0.5385,
+      "n_pairs": 13
+    },
+    "biomarker.egfr_mut": {
+      "kappa": 1.0,
+      "pabak": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 13
+    },
+    "biomarker.egfr_t790m": {
+      "kappa": 0.6061,
+      "pabak": 0.6923,
+      "agreement_pct": 0.8462,
+      "n_pairs": 13
+    },
+    "biomarker.alk_rearranged": {
+      "kappa": 0.8488,
+      "pabak": 0.8462,
+      "agreement_pct": 0.9231,
+      "n_pairs": 13
+    },
+    "biomarker.tumor_type": {
+      "kappa": 1.0,
+      "pabak": 1.0,
+      "agreement_pct": 1.0,
+      "n_pairs": 13
+    },
+    "drug_class": {
+      "kappa": 0.7194,
+      "pabak": 0.5385,
+      "agreement_pct": 0.7692,
+      "n_pairs": 13
+    }
+  },
+  "n_validation": 13,
+  "mean_kappa": 0.7768,
+  "mean_pabak": 0.7308,
+  "passes_gate_07_cohen": false,
+  "passes_gate_07_pabak": false
+}
