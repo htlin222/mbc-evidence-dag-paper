@@ -11,8 +11,8 @@ Dear Dr. [Editor name placeholder],
 We submit for consideration as an **Original Report** (or, at the editor's
 discretion, as a **Methods Article** or **Research Letter**) the manuscript
 "A Computable Map of Treatment-Sequencing Evidence in HR+/HER2- Metastatic
-Breast Cancer: Graph-Theoretic Discordance Between Trial Chains and Guideline
-Pathways."
+Breast Cancer: A Graph-Theoretic Pilot Comparing Trial Chains with the ESMO
+Guideline Decision Tree."
 
 The manuscript introduces, to our knowledge for the first time, a
 reproducible computational framework that places a pivotal-trial corpus and
