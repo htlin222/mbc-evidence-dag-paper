@@ -103,3 +103,10 @@ Primary EFDPR (strict tolerance): a single test. Secondary outcomes (S1 ODI, S2 
 
 ## Frozen prior to outcome data
 This v2 prereg is committed BEFORE the systematic search is executed (i.e., before `analysis/v2_01_systematic_search.py` is run on the live CT.gov API for the v2 corpus). The commit hash of THIS file is the v2 prereg timestamp.
+
+## Amendment v2.1 (2026-05-16, disclosed BEFORE LLM extraction)
+The initial systematic search per Section "Confirmatory analysis plan" step 1 was run on the live CT.gov API and returned 874 candidate studies; the pre-specified date filter `2015-01-01 .. 2026-05-16` excluded 15 of the 16 v1.0.0 corpus trials, all of which started in 2013--2014 (e.g., PALOMA-3 NCT01942135, MONALEESA-2 NCT01958021, MONARCH-2 NCT02107703). These trials are foundational pivotal CDK4/6i trials cited by ESMO, ASCO, and NCCN and are essential to the corpus.
+
+**Amendment**: the date range is widened to `2013-01-01 .. 2026-05-16` to capture pre-2015 pivotal CDK4/6i trials; the enrolment threshold is tightened from $\ge 50$ to $\ge 200$ to focus the corpus on pivotal-scale trials.
+
+The amendment is **committed before any LLM extraction**, before any DAG construction, and before any EFDPR computation on the v2 corpus. The primary outcome, primary test, and rejection threshold remain unchanged. This amendment is disclosed in the manuscript as a v2 deviation.
