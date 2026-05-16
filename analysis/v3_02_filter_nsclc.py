@@ -24,10 +24,12 @@ METASTATIC_RX = re.compile(
     re.IGNORECASE,
 )
 EGFR_OR_ALK_RX = re.compile(
-    r"\b(EGFR.?mutation|EGFR.?mutant|EGFR.?positive|EGFR.?T790M|EGFR.?ex19|EGFR.?L858R|"
-    r"EGFR.?exon.?19|EGFR.?exon.?20|EGFR.?ex20|ALK.?rearrang|ALK.?translocat|"
+    r"(EGFR.?mutation|EGFR.?mutant|EGFR.?positive|EGFR.?T790M|EGFR.?ex19|EGFR.?L858R|"
+    r"EGFR.?exon.?19|EGFR.?exon.?20|EGFR.?ex20|"
+    r"\bex20ins\b|\bexon.?20.?insertion|\bEGFR.?ex20|"  # v3 round-1 fix: capture PAPILLON-style 'Exon 20ins'
+    r"ALK.?rearrang|ALK.?translocat|"
     r"ALK.?positive|ALK.?mutat|ALK.?fusion|crizotinib|alectinib|brigatinib|lorlatinib|"
-    r"osimertinib|gefitinib|erlotinib|afatinib|dacomitinib)\b",
+    r"osimertinib|gefitinib|erlotinib|afatinib|dacomitinib|amivantamab|lazertinib)",
     re.IGNORECASE,
 )
 NSCLC_RX = re.compile(

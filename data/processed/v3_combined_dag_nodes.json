@@ -108,6 +108,12 @@
     "tumor": "NSCLC"
   },
   {
+    "node_id": "post-chemo|NSCLC",
+    "state": "post-chemo",
+    "biomarker": "NSCLC",
+    "tumor": "NSCLC"
+  },
+  {
     "node_id": "post-osimertinib+post-ALKTKI|EGFR-mut/ALK-rearranged/NSCLC",
     "state": "post-osimertinib+post-ALKTKI",
     "biomarker": "EGFR-mut/ALK-rearranged/NSCLC",

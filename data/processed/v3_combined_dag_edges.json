@@ -1349,6 +1349,19 @@
     "provenance": null
   },
   {
+    "nct_id": "NCT04538664",
+    "trial_name": "PAPILLON",
+    "source_node": "first-line|EGFR-mut/EGFR-ex20ins/NSCLC",
+    "source_state": "first-line",
+    "biomarker": "EGFR-mut/EGFR-ex20ins/NSCLC",
+    "subgroup_readouts": [],
+    "drug_class": "Amivantamab + chemotherapy",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "first-line|EGFR-ex20ins|NSCLC",
+    "provenance": "nsclc_v3_round1_added"
+  },
+  {
     "nct_id": "NCT04592666",
     "trial_name": "APPEAL",
     "source_node": "post-EGFRTKI|EGFR-mut/EGFR-T790M/NSCLC",
@@ -1374,6 +1387,23 @@
     "year_pc": 2023,
     "tumor": "NSCLC",
     "guideline_target_node": "post-osimertinib|EGFR-mut|NSCLC",
+    "provenance": "nsclc_v3_round1_corrected"
+  },
+  {
+    "nct_id": "NCT04656652",
+    "trial_name": "TROPION-Lung01",
+    "source_node": "post-chemo|NSCLC",
+    "source_state": "post-chemo",
+    "biomarker": "NSCLC",
+    "subgroup_readouts": [
+      "non-actionable_subgroup",
+      "actionable_genomic_alteration_subgroup",
+      "EGFR-mut_subgroup"
+    ],
+    "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
+    "year_pc": 2023,
+    "tumor": "NSCLC",
+    "guideline_target_node": "post-chemo|any-biomarker|NSCLC",
     "provenance": "nsclc_v3_round1_corrected"
   },
   {

@@ -29,23 +29,40 @@ def _bm_tokens(b):    return set(b.split("/"))
 
 
 def _state_match(edge_state, gl_state):
+    """State superset with special line-agnostic tokens. v3 R1 fix:
+    'brain-mets' is NO LONGER stripped (was an inflation source — N20 reduced
+    to N13+N15). 'brain-mets' guideline nodes are now matched only when the
+    trial explicitly enrols/stratifies brain-mets cohorts (encoded via a
+    subgroup_readouts entry checked by the liberal-tolerance matcher).
+    """
     gl_t = _state_tokens(gl_state)
-    for special in ("metastatic", "indolent", "visceral-crisis", "brain-mets", "poor-prognosis"):
+    for special in ("metastatic", "indolent", "visceral-crisis", "poor-prognosis"):
         gl_t = gl_t - {special}
     return gl_t.issubset(_state_tokens(edge_state))
 
 
 def _bm_match_strict(e, g, _sub):
-    return _bm_tokens(e) == _bm_tokens(g)
+    """Strict: trial biomarker tokens must be a SUPERSET of guideline tokens.
+
+    Rationale: a trial with more specific biomarker eligibility (e.g.
+    EGFR-mut/EGFR-ex19del/EGFR-L858R/NSCLC) DOES support a guideline node
+    with more general biomarker requirement (e.g. EGFR-mut/NSCLC). Set-
+    equality was incorrect and caused 4+ NSCLC-EGFR nodes to be falsely
+    evidence-free (v3 round-1 clinical reviewer ask #1-2). This is
+    analogous to the state-superset rule already in place.
+    """
+    return _bm_tokens(g).issubset(_bm_tokens(e))
 
 
 def _bm_match_escat(e, g, _sub):
+    """ESCAT-aligned: strict (superset) plus ESCAT-equivalence groupings.
+    Allows ESCAT-grouped tokens in the guideline to be matched by any member
+    of the equivalence group present in the trial.
+    """
     if _bm_match_strict(e, g, _sub): return True
     e_set, g_set = _bm_tokens(e), _bm_tokens(g)
-    # core check (HR+/HER2- for mBC; NSCLC for NSCLC)
     if "NSCLC" in g_set and "NSCLC" not in e_set: return False
     if "NSCLC" not in g_set and "NSCLC" in e_set: return False
-    # core mBC HR+/HER2-
     if {"HR+", "HER2-"} & g_set:
         if not ({"HR+", "HER2-"} & e_set): return False
     for tok in g_set - {"HR+", "HER2-", "NSCLC"}:
@@ -113,6 +130,12 @@ DRUG_CLASS_EQUIVALENCE = {
     "Bevacizumab + chemotherapy": {"Bevacizumab + chemotherapy"},
     "Ramucirumab + EGFR TKI": {"Ramucirumab + EGFR TKI"},
     "Bevacizumab + EGFR TKI": {"Bevacizumab + EGFR TKI"},
+    # v3 R1 fix: add NSCLC drug classes flagged by clinical reviewer as
+    # missing (SAVANNAH MET+osi, EGFR ex20ins TKIs, etc.)
+    "MET-TKI + osimertinib": {"MET-TKI + osimertinib", "investigational (other)"},
+    "EGFR TKI mutant-selective (ex20ins)": {"EGFR TKI mutant-selective (ex20ins)",
+                                              "EGFR TKI 3rd-gen (osimertinib)",
+                                              "investigational (other)"},
     "investigational (other)": {"investigational (other)"},
 }
 
@@ -151,23 +174,40 @@ def clopper_pearson(k, n, alpha=0.05):
     return lo, hi
 
 
+def bootstrap_ci_efdpr(edges, gls, tol, n_iter=1000, seed=20260516):
+    """Percentile bootstrap CI by guideline-node resampling.
+    v3 R1 fix: was promised in prereg-v3 but never computed."""
+    rng = random.Random(seed)
+    est = []
+    for _ in range(n_iter):
+        sample = [rng.choice(gls) for _ in range(len(gls))]
+        p, *_ = efdpr(edges, sample, tol)
+        est.append(p)
+    est.sort()
+    lo = est[max(0, int(0.025 * n_iter) - 1)]
+    hi = est[min(n_iter - 1, int(0.975 * n_iter))]
+    return lo, hi
+
+
 def run_subset(edges, gls, label):
     out = {"label": label, "n_nodes": len(gls)}
     for tol in ("strict", "escat", "liberal"):
         p, k, n, ef, per = efdpr(edges, gls, tol)
         cp_lo, cp_hi = clopper_pearson(k, n)
+        boot_lo, boot_hi = bootstrap_ci_efdpr(edges, gls, tol)
         pval = exact_binomial_p(k, n)
         out[tol] = {
             "point_estimate": round(p, 4),
             "evidence_free_count": k,
             "total_nodes": n,
             "clopper_pearson_ci95": [round(cp_lo, 4), round(cp_hi, 4)],
+            "bootstrap_ci95":       [round(boot_lo, 4), round(boot_hi, 4)],
             "exact_p_one_sided_vs_p25": round(pval, 4),
             "rejects": bool(pval < 0.05),
             "evidence_free_nodes": ef,
             "per_node_support": per,
         }
-        print(f"    {tol:<8s} EFDPR={p:.3f}  CP-CI=[{cp_lo:.3f},{cp_hi:.3f}]  P={pval:.4f}  {'REJECT' if pval<0.05 else 'fails to reject'}")
+        print(f"    {tol:<8s} EFDPR={p:.3f}  CP-CI=[{cp_lo:.3f},{cp_hi:.3f}]  Boot-CI=[{boot_lo:.3f},{boot_hi:.3f}]  P={pval:.4f}  {'REJECT' if pval<0.05 else 'fails'}")
     return out
 
 

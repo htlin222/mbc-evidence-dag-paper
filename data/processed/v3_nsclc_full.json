@@ -5487,6 +5487,52 @@
     "notes": "MARIPOSA: phase 3 amivantamab + lazertinib vs osimertinib vs lazertinib monotherapy, first-line EGFR-mutant NSCLC (Ex19del/L858R)."
   },
   {
+    "nct_id": "NCT04538664",
+    "trial_name": "PAPILLON",
+    "prior_state": {
+      "post_egfr_tki": false,
+      "post_osimertinib": false,
+      "post_chemo_metastatic_min": 0,
+      "post_alk_tki": null,
+      "post_immunotherapy": null,
+      "menopausal_status": null,
+      "post_endo": null,
+      "post_cdk46i": null
+    },
+    "excluded": {
+      "post_egfr_tki": true,
+      "post_osimertinib": true,
+      "post_alk_tki": null,
+      "post_chemo_metastatic_any": true,
+      "post_immunotherapy": null
+    },
+    "biomarker": {
+      "hr_pos": false,
+      "her2_neg": null,
+      "her2_low": null,
+      "pik3ca_mut": null,
+      "esr1_mut": null,
+      "akt_path": null,
+      "brca_germline": null,
+      "egfr_mut": true,
+      "egfr_t790m": false,
+      "egfr_ex19del": false,
+      "egfr_l858r": false,
+      "egfr_ex20ins": true,
+      "egfr_other_mut": false,
+      "alk_rearranged": false,
+      "alk_resistance_mut": null,
+      "tumor_type": "NSCLC-EGFR"
+    },
+    "subgroup_readouts": [],
+    "drug_class": "Amivantamab + chemotherapy",
+    "year_pc": 2023,
+    "guideline_target_node": "first-line|EGFR-ex20ins|NSCLC",
+    "confidence": "high",
+    "notes": "v3 R1 fix: PAPILLON added; missed by F5 regex word-boundary bug for 'Exon 20ins'",
+    "provenance": "nsclc_v3_round1_added"
+  },
+  {
     "nct_id": "NCT04591431",
     "trial_name": "ROME (basket)",
     "prior_state": {
@@ -5660,17 +5706,18 @@
       "egfr_other_mut": null,
       "alk_rearranged": null,
       "alk_resistance_mut": null,
-      "tumor_type": "NSCLC-other"
+      "tumor_type": "NSCLC-EGFR"
     },
     "subgroup_readouts": [
+      "non-actionable_subgroup",
       "actionable_genomic_alteration_subgroup",
-      "non-actionable_subgroup"
+      "EGFR-mut_subgroup"
     ],
     "drug_class": "TROP2-ADC (datopotamab deruxtecan)",
     "year_pc": 2023,
     "guideline_target_node": "post-chemo|any-biomarker|NSCLC",
     "confidence": "medium",
-    "notes": "v3 round-1 corrected: original supplementary NCT04644237 was DESTINY-Lung02 HER2-mutated; real TROPION-Lung01 is NCT04656652. Trial enrolled mixed biomarker NSCLC; partially in scope (EGFR-mut and AGA subgroups).",
+    "notes": "v3 round-1 corrected: original supplementary NCT04644237 was DESTINY-Lung02 HER2-mutated; real TROPION-Lung01 is NCT04656652. Trial enrolled mixed biomarker NSCLC; partially in scope (EGFR-mut and AGA subgroups). | v3 R1 fix: tumor_type re-routed to NSCLC-EGFR (was NSCLC-other; trial enrolls broad pop, EGFR-mut subgroup is registrational)",
     "provenance": "nsclc_v3_round1_corrected"
   },
   {

@@ -2,7 +2,7 @@
   {
     "node_id": "N1",
     "state": "first-line",
-    "biomarker": "EGFR-mut/EGFR-ex19del-or-L858R/NSCLC",
+    "biomarker": "EGFR-mut/NSCLC",
     "recommended_classes": [
       {
         "class": "EGFR TKI 3rd-gen (osimertinib)",
@@ -198,25 +198,10 @@
       }
     ],
     "cited_trials": [
-      "NCT02075840"
-    ],
-    "year": 2017,
-    "source": "ESMO+ASCO+NCCN"
-  },
-  {
-    "node_id": "N14",
-    "state": "first-line",
-    "biomarker": "ALK-rearranged/NSCLC",
-    "recommended_classes": [
-      {
-        "class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)",
-        "grade": "I-A"
-      }
-    ],
-    "cited_trials": [
+      "NCT02075840",
       "NCT02737501"
     ],
-    "year": 2020,
+    "year": 2017,
     "source": "ESMO+ASCO+NCCN"
   },
   {

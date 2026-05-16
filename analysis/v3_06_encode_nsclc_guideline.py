@@ -22,11 +22,14 @@ OUT.parent.mkdir(parents=True, exist_ok=True)
 
 NODES = [
     # ===== EGFR-mutant section ============================================
-    # N1: 1L common-sensitizing EGFR mutation (ex19del or L858R) -> osimertinib
+    # N1: 1L common-sensitizing EGFR mutation -> osimertinib
+    # v3 R1 fix: removed compound token "EGFR-ex19del-or-L858R" that never
+    # matched any trial-encoded biomarker. Now uses "EGFR-mut" base token;
+    # subset semantics ensures specific-ex19del/L858R trials still support this.
     {
         "node_id": "N1",
         "state": "first-line",
-        "biomarker": "EGFR-mut/EGFR-ex19del-or-L858R/NSCLC",
+        "biomarker": "EGFR-mut/NSCLC",
         "recommended_classes": [{"class": "EGFR TKI 3rd-gen (osimertinib)", "grade": "I-A"}],
         "cited_trials": ["NCT02296125"],  # FLAURA
         "year": 2018,
@@ -145,24 +148,16 @@ NODES = [
     },
 
     # ===== ALK-rearranged section ==========================================
-    # N13: 1L ALK+ -> alectinib (ALEX)
+    # N13: 1L ALK+ -> 2nd-gen ALK TKI (alectinib/brigatinib/ceritinib/ensartinib)
+    # v3 R1 fix: merged former N13 (ALEX) and N14 (ALTA-1L) — they were pure
+    # duplicates differing only in cited trial. Single node now cites both.
     {
         "node_id": "N13",
         "state": "first-line",
         "biomarker": "ALK-rearranged/NSCLC",
         "recommended_classes": [{"class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)", "grade": "I-A"}],
-        "cited_trials": ["NCT02075840"],  # ALEX
+        "cited_trials": ["NCT02075840", "NCT02737501"],  # ALEX + ALTA-1L
         "year": 2017,
-        "source": "ESMO+ASCO+NCCN",
-    },
-    # N14: 1L ALK+ -> brigatinib (ALTA-1L)
-    {
-        "node_id": "N14",
-        "state": "first-line",
-        "biomarker": "ALK-rearranged/NSCLC",
-        "recommended_classes": [{"class": "ALK TKI 2nd-gen (alectinib/brigatinib/ceritinib/ensartinib)", "grade": "I-A"}],
-        "cited_trials": ["NCT02737501"],  # ALTA-1L
-        "year": 2020,
         "source": "ESMO+ASCO+NCCN",
     },
     # N15: 1L ALK+ -> lorlatinib (CROWN)
@@ -215,7 +210,12 @@ NODES = [
         "year": 2022,
         "source": "NCCN",
     },
-    # N20: ALK+ + brain mets -> alectinib or lorlatinib (CNS-active)
+    # N20: ALK+ + brain mets -> CNS-active ALK TKI
+    # v3 R1 fix: kept distinct from N13 (no brain-mets) because clinically
+    # brain-mets enriched populations are a distinct decision point;
+    # state-superset rule will allow first-line trials to support N20 only
+    # if they specifically enrolled or stratified brain-mets cohorts.
+    # The brain-mets token is intentionally NOT stripped here.
     {
         "node_id": "N20",
         "state": "first-line+brain-mets",
