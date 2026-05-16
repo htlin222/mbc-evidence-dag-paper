@@ -1392,9 +1392,9 @@
   {
     "nct_id": "NCT04656652",
     "trial_name": "TROPION-Lung01",
-    "source_node": "post-chemo|NSCLC",
+    "source_node": "post-chemo|EGFR-mut/NSCLC",
     "source_state": "post-chemo",
-    "biomarker": "NSCLC",
+    "biomarker": "EGFR-mut/NSCLC",
     "subgroup_readouts": [
       "non-actionable_subgroup",
       "actionable_genomic_alteration_subgroup",

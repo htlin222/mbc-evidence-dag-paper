@@ -108,9 +108,9 @@
     "tumor": "NSCLC"
   },
   {
-    "node_id": "post-chemo|NSCLC",
+    "node_id": "post-chemo|EGFR-mut/NSCLC",
     "state": "post-chemo",
-    "biomarker": "NSCLC",
+    "biomarker": "EGFR-mut/NSCLC",
     "tumor": "NSCLC"
   },
   {

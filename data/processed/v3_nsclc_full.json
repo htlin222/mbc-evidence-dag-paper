@@ -5698,7 +5698,7 @@
       "esr1_mut": null,
       "akt_path": null,
       "brca_germline": null,
-      "egfr_mut": null,
+      "egfr_mut": true,
       "egfr_t790m": null,
       "egfr_ex19del": null,
       "egfr_l858r": null,

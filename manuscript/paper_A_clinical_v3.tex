@@ -78,16 +78,16 @@ Major clinical guidelines (ESMO, ASCO, NCCN) accommodate this fragmentation by c
 The pre-registration (\texttt{docs/prereg-v3.md}, commit \texttt{4b5bf1a}) was committed before any NSCLC outcome-touching analysis. The primary outcome (pooled strict-tolerance EFDPR), primary test (one-sided exact binomial of $H_0: p \le 0.25$ at $\alpha = 0.05$), tumor-stratified sensitivity, and inter-annotator validation gates were pre-registered. mBC analysis follows v2.0.0 (frozen tag); NSCLC analysis is new in v3.
 
 \subsection{Systematic trial search and inclusion}
-NSCLC: ClinicalTrials.gov v2 API (freeze 2026-05-16; 702 candidates) was filtered by eight pre-specified criteria (phase 2/3, interventional, start year 2013--2026, NSCLC + metastatic, EGFR or ALK biomarker, eligibility retrievable, enrolment $\ge 100$, primary completion by 2026) to 176 systematic candidates. Five reviewer-flagged supplementary pivotal trials (PROFILE 1014, AURA3 corrected from a v3-round-0 NCT-misidentification to NCT02151981, HERTHENA-Lung01 corrected to NCT04619004, TROPION-Lung01 corrected to NCT04656652, plus one trial removed for misidentification) brought the final NSCLC corpus to 180 trials, of which 145 entered the in-scope trial-DAG. mBC corpus (81 trials) and decision tree (25 nodes) are inherited unchanged from v2.0.0.
+NSCLC: ClinicalTrials.gov v2 API (freeze 2026-05-16; 702 candidates) was filtered by eight pre-specified criteria (phase 2/3, interventional, start year 2013--2026, NSCLC + metastatic, EGFR or ALK biomarker, eligibility retrievable, enrolment $\ge 100$, primary completion by 2026) to 176 systematic candidates. Five reviewer-flagged supplementary pivotal trials (PROFILE 1014, AURA3 corrected from a v3-round-0 NCT-misidentification to NCT02151981, HERTHENA-Lung01 corrected to NCT04619004, TROPION-Lung01 corrected to NCT04656652, plus one trial removed for misidentification) brought the final NSCLC corpus to 178 trials, of which 145 entered the in-scope trial-DAG. mBC corpus (81 trials) and decision tree (25 nodes) are inherited unchanged from v2.0.0.
 
 \subsection{Dual-annotator LLM extraction}
 For NSCLC, eligibility text was structured into the schema (v1.0 with NSCLC-specific biomarker tokens) by Annotator A (Claude) in 4 parallel batches and Annotator B (Codex / GPT-5) on a 15-trial validation subset (seed 20260516). Pre-adjudication mean Cohen's $\kappa$\citep{cohen1960kappa} on 8 NSCLC key fields was 0.78; mean PABAK\citep{byrt1993pabak,viera2005} was 0.73. The kappa gate failed pre-adjudication on \texttt{post\_alk\_tki} (small validation-sample effect, $\kappa = 0.29$) and \texttt{egfr\_t790m} ($\kappa = 0.61$); other fields passed.
 
 \subsection{NSCLC guideline decision-tree encoding}
-The unified ESMO+ASCO+NCCN NSCLC EGFR + ALK decision tree was hand-curated from the source guidelines (ESMO Clinical Practice Guideline for metastatic NSCLC; ASCO living guideline; NCCN NSCLC v5.2024) into 25 nodes (13 ESMO+ASCO+NCCN-shared, 6 NCCN-unique, 2 ASCO+NCCN, 2 ESMO+NCCN, 1 ESMO-only, 1 ASCO-only). 12 nodes cover EGFR-mutant decisions (including 4 post-osimertinib sub-positions), 8 cover ALK-rearranged (including resistance-mutation salvage), and 5 cover combined or special-population scenarios.
+The unified ESMO+ASCO+NCCN NSCLC EGFR + ALK decision tree was hand-curated from the source guidelines (ESMO Clinical Practice Guideline for metastatic NSCLC; ASCO living guideline; NCCN NSCLC v5.2024) into 24 nodes (12 ESMO+ASCO+NCCN-shared, 6 NCCN-unique, 2 ASCO+NCCN, 2 ESMO+NCCN, 1 ESMO-only, 1 ASCO-only). 17 nodes cover EGFR-mutant decisions (including 4 post-osimertinib sub-positions), 7 cover ALK-rearranged (including resistance-mutation salvage), and 5 cover combined or special-population scenarios.
 
 \subsection{Concordance algorithm and pooled inference}
-The four concordance criteria are unchanged from v2: state superset, drug-class equivalence, biomarker concordance (pre-registered tolerance grid: strict / ESCAT-aligned\citep{mateo2018escat} / liberal), and temporal precedence. Graph operations use \texttt{networkx}.\citep{hagberg2008networkx} The combined DAG has 210 edges (145 NSCLC in-scope + 65 mBC in-scope) and 47 canonical source nodes. The pooled EFDPR is computed on the 50-node pooled denominator with the pre-registered one-sided exact binomial test as primary, Clopper-Pearson exact 95\% CI\citep{clopper1934} as the small-$n$ recommended interval, and bootstrap percentile CI\citep{efron1979bootstrap} as a sensitivity comparison; tumor-stratified estimates (mBC, NSCLC, NSCLC-EGFR, NSCLC-ALK) are reported as sensitivity. PRISMA-2020 reporting items\citep{moher2020prisma} are listed in Supplementary Table S1 with a graph-encoding addendum.
+The four concordance criteria are unchanged from v2: state superset, drug-class equivalence, biomarker concordance (pre-registered tolerance grid: strict / ESCAT-aligned\citep{mateo2018escat} / liberal), and temporal precedence. Graph operations use \texttt{networkx}.\citep{hagberg2008networkx} The combined DAG has 212 edges (147 NSCLC in-scope + 65 mBC in-scope) and 48 canonical source nodes. The pooled EFDPR is computed on the 50-node pooled denominator with the pre-registered one-sided exact binomial test as primary, Clopper-Pearson exact 95\% CI\citep{clopper1934} as the small-$n$ recommended interval, and bootstrap percentile CI\citep{efron1979bootstrap} as a sensitivity comparison; tumor-stratified estimates (mBC, NSCLC, NSCLC-EGFR, NSCLC-ALK) are reported as sensitivity. PRISMA-2020 reporting items\citep{moher2020prisma} are listed in Supplementary Table S1 with a graph-encoding addendum.
 
 \section{Results}\label{sec:results}
 
@@ -97,7 +97,7 @@ Under strict concordance the pooled EFDPR was \textbf{0.39} (19/49 decision node
 \begin{figure}[!t]
 \centering
 \includegraphics[width=0.93\linewidth]{../figures/v3_fig1_forest.pdf}
-\caption{Pooled mBC + NSCLC EFDPR (strict tolerance) with primary test and four pre-specified sensitivity subsets. Diamond: primary 50-node analysis ($P = 0.0004$); circles: sensitivity subsets. Asterisks mark rejections at $\alpha = 0.05$.}
+\caption{Pooled mBC + NSCLC EFDPR (strict tolerance) with primary test and four pre-specified sensitivity subsets. Diamond: primary 49-node analysis ($P = 0.023$); circles: sensitivity subsets. Asterisks mark rejections at $\alpha = 0.05$.}
 \label{fig:forest}
 \end{figure}
 
@@ -107,7 +107,7 @@ The pre-registered exact-binomial test rejected the null on the v3 pooled ($n=49
 \begin{figure}[!t]
 \centering
 \includegraphics[width=0.82\linewidth]{../figures/v3_fig3_trajectory.pdf}
-\caption{Pilot $\to$ production $\to$ multi-tumor trajectory of EFDPR (left axis) and the pre-registered exact-binomial test $P$-value (right axis, $-\log_{10}$ scale). The pooled 50-node test rejects at $P = 0.0004$ ($-\log_{10} P = 3.4$).}
+\caption{Pilot $\to$ production $\to$ multi-tumor trajectory of EFDPR (left axis) and the pre-registered exact-binomial test $P$-value (right axis, $-\log_{10}$ scale). The pooled 50-node test rejects at $P = 0.023$ ($-\log_{10} P = 3.4$).}
 \label{fig:trajectory}
 \end{figure}
 
@@ -120,7 +120,7 @@ The 19 evidence-free decision nodes under strict concordance (post critical-bug 
 \begin{figure}[!t]
 \centering
 \includegraphics[width=0.95\linewidth]{../figures/v3_fig2_per_node.pdf}
-\caption{Per-node trial-edge support across the pooled 50-node decision tree, separated into mBC (left) and NSCLC (right). Red bars mark evidence-free nodes (strict tolerance); height represents the count of supporting trial edges.}
+\caption{Per-node trial-edge support across the pooled 49-node decision tree, separated into mBC (left) and NSCLC (right). Red bars mark evidence-free nodes (strict tolerance); height represents the count of supporting trial edges.}
 \label{fig:per_node}
 \end{figure}
 
@@ -130,7 +130,7 @@ The mBC prior-CDK4/6i inclusion variable showed substantial cross-trial discorda
 \section{Discussion}\label{sec:discussion}
 
 \paragraph{Headline.}
-At adequately-powered multi-tumor scale (50 pooled guideline nodes across mBC HR+/HER2- and NSCLC EGFR + ALK), the pre-registered exact-binomial test rejected $H_0: \mathrm{EFDPR} \le 0.25$ at $P = 0.0004$. Roughly half of ESMO+ASCO+NCCN decision nodes for these biomarker-driven metastatic settings lack a single trial edge that directly traverses the recommended (state, biomarker) pair under strict concordance.
+At adequately-powered multi-tumor scale (50 pooled guideline nodes across mBC HR+/HER2- and NSCLC EGFR + ALK), the pre-registered exact-binomial test rejected $H_0: \mathrm{EFDPR} \le 0.25$ at $P = 0.023$. Roughly four in ten ESMO+ASCO+NCCN decision nodes for these biomarker-driven metastatic settings lack a single trial edge that directly traverses the recommended (state, biomarker) pair under strict concordance.
 
 \paragraph{NSCLC EGFR post-osimertinib is the largest concentrated gap.}
 Of 17 EGFR-mutant decision nodes, 12 are evidence-free at strict tolerance. The post-osimertinib decision space --- amivantamab + chemotherapy (MARIPOSA-2), HER3-ADC (HERTHENA-Lung01), TROP2-ADC (TROPION-Lung01), MET-amp salvage (SAVANNAH), and platinum doublet --- has multiple guideline-cited recommendations but few trials whose enrolled population strictly matches the "post-osimertinib" state encoded in the guideline node. This pattern is exactly what motivated the framework: the trials enroll patients in nuanced post-TKI subgroups, but the guideline collapses them to one branch and asks the clinician to choose between them.
@@ -139,7 +139,7 @@ Of 17 EGFR-mutant decision nodes, 12 are evidence-free at strict tolerance. The 
 ALK-rearranged decisions, by contrast, were the only sensitivity subset that failed to reject ($P = 0.63$). The ALK trial corpus is well-stratified by line (ALEX, ALTA-1L, CROWN, PROFILE 1014 all in 1L; lorlatinib trials extend to 2L+); the resistance-mutation landscape, while complex, has been mapped trial-by-trial. This contrast --- EGFR-mutant rejected, ALK-rearranged not --- is itself the clearest demonstration that the framework distinguishes between fragmented and consolidated evidence landscapes rather than punishing any tumor type indiscriminately.
 
 \paragraph{What this means for guideline committees.}
-The 24 evidence-free decision nodes are not all equally problematic. Some (e.g., NCCN's recently-added TROP2-ADC nodes) are recent additions inheriting trial-readout lag and will likely resolve in the next 1--2 guideline cycles. Others (post-CDK4/6i+post-endo everolimus salvage; post-osimertinib post-chemo) reflect structural gaps in the trial agenda that the next generation of pivotal trials should target with enrichment populations matching the guideline-node patient state.
+The 19 evidence-free decision nodes are not all equally problematic. Some (e.g., NCCN's recently-added TROP2-ADC nodes) are recent additions inheriting trial-readout lag and will likely resolve in the next 1--2 guideline cycles. Others (post-CDK4/6i+post-endo everolimus salvage; post-osimertinib post-chemo) reflect structural gaps in the trial agenda that the next generation of pivotal trials should target with enrichment populations matching the guideline-node patient state.
 
 \paragraph{Three caveats.}
 First, ESCAT-aligned and liberal tolerance gave $P = 0.10$ on the pooled denominator. The strict-tolerance rejection is the pre-registered primary inference, but the magnitude of the gap depends on biomarker-operationalization stringency. Second, the LLM-extraction pipeline's pre-adjudication Cohen's $\kappa$ was 0.78 for NSCLC and 0.67 for mBC, with documented adjudication trail. Third, BOLERO-2 (everolimus, started 2009) was excluded by the prereg date filter, contributing to the mBC G9/G13 evidence-free flags; this is a corpus-boundary effect that a future ALL-historical extension would alleviate.
@@ -148,7 +148,7 @@ First, ESCAT-aligned and liberal tolerance gave $P = 0.10$ on the pooled denomin
 First, the framework is now empirically validated across two biomarker-driven solid tumors with a pre-registered primary test rejection. Second, the multi-round internal adversarial review process surfaced and corrected 6 NCT-identification errors across v1/v2/v3 with full git-log transparency. Third, the released artifacts (frozen schema, extraction protocol, dual-annotator outputs, adjudication rules, decision-tree encodings, analysis code) make the framework auditable and re-runnable at each guideline update.
 
 \paragraph{Limitations.}
-The 261-trial pooled corpus is a snapshot at freeze 2026-05-16. Driver-negative NSCLC, KRAS G12C, ROS1, RET, MET ex14, NTRK, BRAF V600E, and HER2-mutant NSCLC are out-of-scope for v3; their inclusion is deferred to v4. The framework cannot adjudicate whether a given composition-across-non-overlap is clinically acceptable; that judgement remains with the guideline committee.
+The 259-trial pooled corpus is a snapshot at freeze 2026-05-16. Driver-negative NSCLC, KRAS G12C, ROS1, RET, MET ex14, NTRK, BRAF V600E, and HER2-mutant NSCLC are out-of-scope for v3; their inclusion is deferred to v4. The framework cannot adjudicate whether a given composition-across-non-overlap is clinically acceptable; that judgement remains with the guideline committee.
 
 \paragraph{Outlook.}
 The released framework supports continuous EFDPR auditing at each ESMO, ASCO, or NCCN guideline update; multi-tumor pooling across mBC + NSCLC + mCRC (the next planned extension) is expected to provide adequate power to detect smaller effects ($p_1 \approx 0.30$).
