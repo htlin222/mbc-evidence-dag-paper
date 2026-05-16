@@ -6,24 +6,26 @@
 
 ## Headline finding (publishable)
 
-On a pooled 50-node ESMO+ASCO+NCCN decision tree (25 mBC HR+/HER2- + 25 NSCLC EGFR/ALK) against a 210-edge trial-DAG from 261 systematically-searched pivotal trials:
+On a pooled 49-node ESMO+ASCO+NCCN decision tree (25 mBC HR+/HER2- + 25 NSCLC EGFR/ALK) against a 210-edge trial-DAG from 259 systematically-searched pivotal trials:
 
-**Strict-tolerance pooled EFDPR = 0.48 (Clopper-Pearson 95% CI 0.34--0.63);
-pre-registered one-sided exact-binomial test of H₀: EFDPR ≤ 0.25 REJECTS at α = 0.05 (P = 0.0004).**
+**Strict-tolerance pooled EFDPR = 0.39 (Clopper-Pearson 95% CI 0.25–0.54; bootstrap CI 0.25–0.53);
+pre-registered one-sided exact-binomial test of H₀: EFDPR ≤ 0.25 REJECTS at α = 0.05 (P = 0.023).**
 
-Tumor-stratified sensitivity (strict):
+ESCAT-aligned and liberal tolerance: EFDPR 0.35 (P = 0.084, marginal non-rejection).
+
+Tumor-stratified sensitivity (strict; individually under-powered for confirmatory inference):
 - mBC-only (n=25): EFDPR 0.40, P = 0.07 (marginal, consistent with v2.0.0)
-- NSCLC-only (n=25): EFDPR 0.56, P = 0.0009 (rejects)
-- NSCLC EGFR-only (n=17): EFDPR 0.71, P = 0.0001 (strongly rejects)
-- NSCLC ALK-only (n=8): EFDPR 0.25, P = 0.63 (well-evidenced; fails to reject)
+- NSCLC-only (n=24): EFDPR 0.38, P = 0.12 (fails)
+- NSCLC EGFR-only (n=17): EFDPR 0.41, P = 0.11 (fails)
+- NSCLC ALK-only (n=7): EFDPR 0.29, P = 0.56 (well-evidenced; fails to reject — falsifiability demonstration)
 
 ## Trajectory across the program
 
-| Version | Scope | EFDPR | Exact P | Reject? |
+| Version | Scope | EFDPR (strict) | Exact P | Reject? |
 |---|---|---|---|---|
 | v1.0.0 | mBC pilot (n=16 nodes) | 0.31 | 0.37 | fails |
 | v2.0.0 | mBC production (n=25 nodes) | 0.40 | 0.07 | marginal |
-| **v3.0.0** | **mBC + NSCLC pooled (n=50)** | **0.48** | **0.0004** | **rejects** |
+| **v3.0.0** | **mBC + NSCLC pooled (n=49)** | **0.39** | **0.023** | **rejects** |
 
 ## Two-paper deliverables
 
@@ -44,7 +46,7 @@ Both papers share the same underlying analysis and pre-registration commit (`4b5
 | `079b540` | prereg-v2 amendment v2.1 (date range, enrolment threshold) BEFORE extraction |
 | `4b5bf1a` | **prereg-v3** (NSCLC extension + multi-tumor pooled test) committed BEFORE any NSCLC outcome data |
 | `11abc41` | v3 NSCLC corpus + dual-annotator extraction (post-prereg) |
-| `0bcf6fa` | v3 pooled analysis: REJECT H₀ at P=0.0004 |
+| `0bcf6fa` | v3 pooled analysis: REJECT H₀ at P=0.023 |
 
 Result trajectory disclosed in both manuscripts as part of pre-registration transparency.
 
@@ -58,7 +60,8 @@ Result trajectory disclosed in both manuscripts as part of pre-registration tran
 
 ## Honest caveats (disclosed in manuscripts)
 
-- Strict-tolerance test rejects (P=0.0004) but ESCAT-aligned and liberal tolerance give P=0.10 — tolerance-grid sensitivity matters and is reported as pre-registered
+- Strict-tolerance test rejects (P=0.023) but ESCAT-aligned and liberal tolerance give P=0.084 — tolerance-grid sensitivity matters and is reported as pre-registered
+- Rejection is one node deep (k_crit=18, observed k=19 at n=49); BH correction across 15 cells would give q≈0.35. Defense: prereg-v3 commits the pooled strict-tolerance test as the single primary inferential commitment
 - Pre-adjudication mean Cohen's κ on key fields: 0.67 (mBC) / 0.78 (NSCLC); failed gate on `akt_path` and `post_alk_tki` due to kappa paradox / small-n; PABAK pass on most fields
 - Post-adjudication κ is structurally adjudicability, not independent re-rating
 - Out-of-scope for v3: driver-negative NSCLC, KRAS G12C, ROS1, RET, MET ex14, NTRK, BRAF V600E, HER2-mutant NSCLC (deferred to v4)

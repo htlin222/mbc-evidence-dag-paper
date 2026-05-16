@@ -70,7 +70,7 @@
 - [ ] Check: every claim in Discussion has a Result-section anchor
 
 ### Day 9 — Statistical reporting check
-- [ ] Confirm all P-values to 4 decimal places consistent across abstract/KO box/results/discussion (P=0.0004 throughout)
+- [ ] Confirm all P-values to 4 decimal places consistent across abstract/KO box/results/discussion (P=0.023 throughout)
 - [ ] Confirm Clopper-Pearson CI bounds match `v3_pooled_efdpr.json` exactly
 - [ ] Confirm tumor-stratified sensitivity numbers match the JSON
 - [ ] Add one sentence to Limitations about the ESCAT/liberal P=0.10 explicitly
@@ -79,7 +79,7 @@
 - [ ] Create `supplement_paper_A.tex`:
   - Table S1: PRISMA-2020 style reporting checklist (with graph-encoding addendum)
   - Table S2: per-trial structured-extraction excerpts (NSCLC + mBC, n=261)
-  - Table S3: per-node ESMO/ASCO/NCCN decision tree (n=50)
+  - Table S3: per-node ESMO/ASCO/NCCN decision tree (n=49)
   - Table S4: adjudication rules log
 - [ ] Compile as separate PDF
 - [ ] DOCX version via pandoc

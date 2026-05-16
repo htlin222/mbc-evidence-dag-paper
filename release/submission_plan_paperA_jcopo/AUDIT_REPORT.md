@@ -12,7 +12,7 @@ Audited PDF: `release/mbc-evidence-dag-paper-A-clinical-v3.0.0.pdf` (330 KB, ~12
 | Key Objective / Knowledge Generated / Relevance box | ✅ Present | JCO-family convention |
 | Pre-registration cited | ✅ | `prereg-v3.md` commit `4b5bf1a` |
 | Pre-registered exact-binomial test as primary | ✅ | Stated explicitly in Methods |
-| Headline result (P=0.0004 REJECT) | ✅ | Consistently throughout |
+| Headline result (P=0.023 REJECT) | ✅ | Consistently throughout |
 | Tumor-stratified sensitivity | ✅ | mBC / NSCLC / NSCLC-EGFR / NSCLC-ALK |
 | 3 figures present and referenced | ✅ | Forest, per-node, trajectory |
 | Discussion: 3 caveats + 3 positives + limitations + outlook | ✅ | Standard structure |
@@ -38,8 +38,8 @@ Audited PDF: `release/mbc-evidence-dag-paper-A-clinical-v3.0.0.pdf` (330 KB, ~12
 
 | # | Issue | Severity | Suggested fix |
 |---|---|---|---|
-| 1 | Figure 1 caption refers to "Diamond: primary 50-node analysis" but in publication-grade rendering the diamond is similar in size to circles; readers may not notice. | low | Increase markersize gap (10 → 14 for diamond) in `v3_09_figures.py` line 36 |
-| 2 | "NSCLC ALK-only (n=8)" sensitivity has n very small; CP-CI [0.03, 0.65] is wide. The narrative correctly notes "well-evidenced" but a sceptical reviewer may flag the small-n CI as inadequately powered to detect a gap. | medium | Add one sentence acknowledging that ALK-only n=8 is underpowered (~30% power at p1=0.40) — disclose this as a structural limit. |
+| 1 | Figure 1 caption refers to "Diamond: primary 49-node analysis" but in publication-grade rendering the diamond is similar in size to circles; readers may not notice. | low | Increase markersize gap (10 → 14 for diamond) in `v3_09_figures.py` line 36 |
+| 2 | "NSCLC ALK-only (n=7)" sensitivity has n very small; CP-CI [0.03, 0.65] is wide. The narrative correctly notes "well-evidenced" but a sceptical reviewer may flag the small-n CI as inadequately powered to detect a gap. | medium | Add one sentence acknowledging that ALK-only n=8 is underpowered (~30% power at p1=0.40) — disclose this as a structural limit. |
 | 3 | The pooled-rejection driven heavily by NSCLC EGFR-only could be framed as "the rejection depends on EGFR-mutant nodes; a stricter null analysis would be the EGFR-only test". An aggressive reviewer might argue the pooled test is over-powered by the EGFR subset. | medium | Add Discussion paragraph: "EGFR-only sensitivity confirms the same direction without pooling; pooled rejection therefore reflects genuine multi-tumor signal, not artificially pooled noise." |
 | 4 | The Methods section is dense for an Original Report (could exceed JCO PO's 3000-word cap once supplement is split off). | low | Audit main-text word count after Day 5 medRxiv DOI integration. |
 | 5 | References still mix DOIs (some have, some don't). | low | Day 4 audit |

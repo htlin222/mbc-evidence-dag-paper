@@ -38,14 +38,17 @@ plt.rcParams.update({
 
 
 def fig_forest():
-    """Forest plot of pooled + 4 sensitivity analyses."""
+    """Forest plot of pooled + 4 sensitivity analyses.
+    v3 R3 fix: read n_nodes from JSON, not hard-coded literals."""
     fig, ax = plt.subplots(figsize=(8.5, 5.0))
+    def nn(key):
+        return EFDPR[key]["strict"]["total_nodes"]
     rows = [
-        ("Primary: pooled mBC + NSCLC (n=50)", EFDPR["primary"]["strict"]),
-        ("Sensitivity: mBC-only (n=25)",        EFDPR["mbc_only"]["strict"]),
-        ("Sensitivity: NSCLC-only (n=25)",      EFDPR["nsclc_only"]["strict"]),
-        ("Sensitivity: NSCLC EGFR-only (n=17)", EFDPR["nsclc_egfr_only"]["strict"]),
-        ("Sensitivity: NSCLC ALK-only (n=8)",   EFDPR["nsclc_alk_only"]["strict"]),
+        (f"Primary: pooled mBC + NSCLC (n={nn('primary')})",      EFDPR["primary"]["strict"]),
+        (f"Sensitivity: mBC-only (n={nn('mbc_only')})",            EFDPR["mbc_only"]["strict"]),
+        (f"Sensitivity: NSCLC-only (n={nn('nsclc_only')})",        EFDPR["nsclc_only"]["strict"]),
+        (f"Sensitivity: NSCLC EGFR-only (n={nn('nsclc_egfr_only')})", EFDPR["nsclc_egfr_only"]["strict"]),
+        (f"Sensitivity: NSCLC ALK-only (n={nn('nsclc_alk_only')})",   EFDPR["nsclc_alk_only"]["strict"]),
     ]
     labels = [r[0] for r in rows]
     pts    = [r[1]["point_estimate"] for r in rows]
@@ -80,7 +83,9 @@ def fig_forest():
     ax.set_yticks(ys); ax.set_yticklabels(labels, fontsize=9)
     ax.set_xlabel("Evidence-Free Decision-Point Ratio (strict tolerance, CP 95% CI)")
     ax.set_xlim(0, 1.10); ax.set_ylim(-0.7, len(rows) - 0.2)
-    ax.set_title("Pooled mBC + NSCLC EFDPR — pre-registered primary test rejects H₀ (P = 0.0004)",
+    primary_p = EFDPR["primary"]["strict"]["exact_p_one_sided_vs_p25"]
+    verdict = "rejects H₀" if primary_p < 0.05 else "marginal non-rejection"
+    ax.set_title(f"Pooled mBC + NSCLC EFDPR — pre-registered primary test {verdict} (P = {primary_p:.3f})",
                   pad=20)
     ax.grid(True, axis="x", alpha=0.25, linestyle=":")
     ax.set_axisbelow(True)
@@ -118,7 +123,8 @@ def fig_per_tumor_breakdown():
              ha="center", fontsize=10, weight="bold", color="#2d5016")
     ax.set_xticks(xs); ax.set_xticklabels(labels, rotation=90, fontsize=7)
     ax.set_ylabel("# trial edges supporting node (strict)")
-    ax.set_title("Per-node trial-edge support across pooled 50-node guideline tree", pad=8)
+    n_pool = EFDPR["primary"]["strict"]["total_nodes"]
+    ax.set_title(f"Per-node trial-edge support across pooled {n_pool}-node guideline tree", pad=8)
     legend_elements = [
         mpatches.Patch(facecolor="#1f4a7b", label="mBC node (supported)"),
         mpatches.Patch(facecolor="#7fb069", label="NSCLC node (supported)"),
@@ -134,13 +140,18 @@ def fig_per_tumor_breakdown():
 
 
 def fig_trajectory():
-    """Pilot -> production -> multi-tumor trajectory of EFDPR + P-value."""
+    """Pilot -> production -> multi-tumor trajectory of EFDPR + P-value.
+    v3 R3 fix: read v3 numbers from JSON, not hard-coded literals."""
     fig, ax1 = plt.subplots(figsize=(8.0, 4.5))
+    v3 = EFDPR["primary"]["strict"]
+    v3_n = v3["total_nodes"]
+    v3_ef = v3["point_estimate"]
+    v3_p  = v3["exact_p_one_sided_vs_p25"]
     stages = ["v1.0.0\nmBC pilot\n(n=16)",
                "v2.0.0\nmBC production\n(n=25)",
-               "v3.0.0\nmBC+NSCLC pooled\n(n=50)"]
-    efdprs = [0.31, 0.40, 0.48]
-    pvals  = [0.37, 0.071, 0.0004]
+               f"v3.0.0\nmBC+NSCLC pooled\n(n={v3_n})"]
+    efdprs = [0.31, 0.40, v3_ef]
+    pvals  = [0.37, 0.071, v3_p]
     xs = np.arange(len(stages))
     ax1.plot(xs, efdprs, "-D", color="#1f4a7b", markersize=12, lw=2,
               label="EFDPR (strict)")
