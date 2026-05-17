@@ -30,14 +30,20 @@ Audited PDF: `release/mbc-evidence-dag-paper-A-clinical-v3.0.0.pdf` (330 KB, ~12
 | Correspondence email | htlin222@kfsyscc.org | confirmed by author |
 | GitHub URL | github.com/htlin222/mbc-evidence-dag-paper | corrected handle |
 
+## ✅ RESOLVED 2026-05-17 (additional)
+
+| Item | Resolved value |
+|---|---|
+| Zenodo DOI | 10.5281/zenodo.20250848 (https://doi.org/10.5281/zenodo.20250848) |
+| GitHub push | DONE (https://github.com/htlin222/mbc-evidence-dag-paper, main + 4 tags) |
+
 ## ⚠️ STILL NEEDS YOUR INPUT BEFORE SUBMISSION
 
 | Item | Current | Action (day reference per POLISH_PLAN) |
 |---|---|---|
 | medRxiv preprint DOI | not yet | Day 5 — after Paper B medRxiv assigns DOI |
-| Zenodo DOI | `[FILL IN Zenodo DOI]` | Day 1 — after Zenodo webhook |
 | Suggested reviewers (3) | none listed | Day 6 — research and add |
-| Cover letter | draft in `cover_letter_jcopo_draft.md` (author block resolved) | Day 7 — finalize editor name, reviewer names, date |
+| Cover letter | draft in `cover_letter_jcopo_draft.md` (author block + Zenodo resolved) | Day 7 — finalize editor name, reviewer names, date |
 | Supplement (Tables S1-S4) | not yet compiled | Day 10 — create |
 
 ## MINOR ISSUES IDENTIFIED IN AUDIT

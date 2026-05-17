@@ -42,10 +42,10 @@ The author declares no competing financial or non-financial interests relevant t
 Not applicable. This study analyses publicly-available trial-registry data and publicly-available clinical-guideline documents only; no human subjects, animal subjects, or identifiable patient data were involved.
 
 ## Data Availability Statement
-All structured data (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules), analysis code, and LaTeX sources are released under MIT licence at the GitHub repository linked in the Code Availability section of the manuscript. A persistent Zenodo DOI is minted at the tagged release (`v3.0.0`).
+All structured data (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules), analysis code, and LaTeX sources are released under MIT licence at https://github.com/htlin222/mbc-evidence-dag-paper at the tagged release `v3.0.0`. The release is permanently archived at Zenodo: `10.5281/zenodo.20250848` (https://doi.org/10.5281/zenodo.20250848).
 
 ## Code Availability Statement
-Python 3.12 analysis pipeline released at the GitHub URL with bootstrap seed `20260516` for deterministic reproducibility. See manuscript Methods §2.8.
+Python 3.12 analysis pipeline released at the GitHub URL and Zenodo DOI `10.5281/zenodo.20250848` with bootstrap seed `20260516` for deterministic reproducibility. See manuscript Methods §2.8.
 
 ## Preprint License
 **CC-BY 4.0** (recommended for maximum reuse; matches the journal-target reproducibility ethos).

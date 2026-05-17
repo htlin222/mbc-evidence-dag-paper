@@ -21,7 +21,7 @@ This work fits JCO Precision Oncology because: (i) the analysis is restricted to
 
 A companion methods manuscript describing the framework in greater depth, together with the dual-LLM-annotator extraction protocol and inter-rater validation, has been deposited as a preprint at medRxiv (DOI: 10.1101/[FILL IN once assigned]) and will be submitted to *Research Synthesis Methods*. The two manuscripts share the same underlying analysis and the same pre-registration (`docs/prereg-v3.md` at commit `4b5bf1a`, committed before any NSCLC outcome-touching analysis); the present submission foregrounds the precision-oncology clinical findings.
 
-All artefacts (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules with rationale, analysis code, LaTeX sources, figures) are released under MIT licence at https://github.com/htlin222/mbc-evidence-dag-paper at the tagged release `v3.0.0`. The persistent Zenodo DOI is [FILL IN Zenodo DOI once minted]. Bootstrap seed `20260516` ensures deterministic reproducibility of every figure and table.
+All artefacts (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules with rationale, analysis code, LaTeX sources, figures) are released under MIT licence at https://github.com/htlin222/mbc-evidence-dag-paper at the tagged release `v3.0.0`. The persistent Zenodo DOI is `10.5281/zenodo.20250848` (https://doi.org/10.5281/zenodo.20250848). Bootstrap seed `20260516` ensures deterministic reproducibility of every figure and table.
 
 We declare no competing financial or non-financial interests relevant to this work. No specific funding was received. All data sources are publicly available; no human-subjects approval was required.
 

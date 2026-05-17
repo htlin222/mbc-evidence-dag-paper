@@ -15,7 +15,7 @@ This is a methods manuscript introducing a pre-registered, reproducible computat
 
 The manuscript follows the Research Synthesis Methods author instructions (AMA references, ≤250-word abstract, required Highlights block, CRediT taxonomy, explicit AI/ML evaluation guidance with model versions and reproducible seeds). We plan to submit the formal version to **Research Synthesis Methods** following the medRxiv preprint posting; a companion clinical-application manuscript (Paper A) will follow to a clinical-informatics journal.
 
-All artefacts (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules, analysis code, LaTeX sources) are released under MIT licence at the GitHub URL with bootstrap seed `20260516` for deterministic reproducibility. A persistent Zenodo DOI will be minted upon preprint posting.
+All artefacts (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules, analysis code, LaTeX sources) are released under MIT licence at https://github.com/htlin222/mbc-evidence-dag-paper with bootstrap seed `20260516` for deterministic reproducibility. The release is permanently archived at Zenodo: `10.5281/zenodo.20250848` (https://doi.org/10.5281/zenodo.20250848).
 
 No human subjects or identifiable patient data are involved; all analysis is based on publicly-available clinical-trial registry data and publicly-available clinical-guideline documents. Ethics approval was therefore not required.
 

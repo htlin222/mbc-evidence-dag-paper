@@ -15,7 +15,9 @@
 | 1 | ORCID iD | 0009-0002-3974-4528 |
 | 2 | Institutional affiliation | Department of Hematology & Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan |
 | 3 | Name | Hsieh-Ting Lin |
-| 5 | GitHub repo URL | github.com/htlin222/mbc-evidence-dag-paper |
+| 5 | GitHub repo URL | https://github.com/htlin222/mbc-evidence-dag-paper (v3.0.0 pushed) |
+| 6 | Zenodo code DOI | 10.5281/zenodo.20250848 (https://doi.org/10.5281/zenodo.20250848) |
+| 7 | GitHub push | DONE (main + 4 tags v1.0.0–v3.1.0 on origin) |
 
 ## ⚠️ Items STILL requiring YOUR input
 
@@ -24,8 +26,6 @@ These need your hands:
 | # | Item | What to enter |
 |---|---|---|
 | 4 | **Endorsement (medRxiv-only)** | medRxiv requires a one-time endorsement from an established researcher in your field. If you've submitted before, skipped. If first time, you'll need to either (a) find an endorser via a colleague or (b) email medRxiv with credentials. Typically ~1 day delay. |
-| 6 | **Zenodo code DOI** | After GitHub→Zenodo webhook fires on v3.0.0 push (~10 min). See `ZENODO_INSTRUCTIONS.md` |
-| 7 | **GitHub push** | Push v3.0.0 tag to github.com/htlin222/mbc-evidence-dag-paper (currently local-only) |
 
 ## ✅ Items pre-staged for you
 

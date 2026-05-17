@@ -36,14 +36,14 @@ Audit method: section-by-section review against medRxiv submission requirements.
 | ORCID iD | 0009-0002-3974-4528 | lin.hsiehting.com/cv |
 | Affiliation | Department of Hematology & Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan | lin.hsiehting.com/cv |
 | Correspondence email | htlin222@kfsyscc.org | confirmed by author |
-| GitHub URL | github.com/htlin222/mbc-evidence-dag-paper | corrected handle |
+| GitHub URL | https://github.com/htlin222/mbc-evidence-dag-paper | pushed v3.0.0 + 4 tags |
+| Zenodo DOI (v3.0.0 immutable) | 10.5281/zenodo.20250848 | https://doi.org/10.5281/zenodo.20250848 |
+| Zenodo concept DOI (always-latest) | 10.5281/zenodo.20250847 | record URL https://zenodo.org/record/20250848 |
 
 ## ⚠️ STILL NEEDS YOUR INPUT (cannot pre-stage)
 
 | Item | Current | Action |
 |---|---|---|
-| Zenodo DOI | Not yet minted | Follow `ZENODO_INSTRUCTIONS.md` (~10 min after GitHub push) |
-| GitHub push | Repo not yet public | Push v3.0.0 to github.com/htlin222/mbc-evidence-dag-paper |
 | medRxiv endorsement | n/a | If first medRxiv submission, secure endorser; otherwise skip |
 
 ## ⚠️ MINOR ISSUES SURFACED (you can decide whether to fix before submission)
@@ -60,7 +60,7 @@ Audit method: section-by-section review against medRxiv submission requirements.
 
 **Paper B is preprint-ready** subject to:
 1. ~~Real ORCID + affiliation + name from you (~5 min)~~ **DONE 2026-05-17**
-2. Push v3.0.0 to GitHub + mint Zenodo DOI (~15 min)
+2. ~~Push v3.0.0 to GitHub + mint Zenodo DOI (~15 min)~~ **DONE 2026-05-17** (Zenodo 10.5281/zenodo.20250848)
 3. ~~Update the 3 placeholders in `paper_B_methods_v3.tex` and recompile (~3 min)~~ **DONE 2026-05-17**
 
-Estimated total time from this state to medRxiv submission: **~15 minutes** (excluding medRxiv-staff queue, typically 1–3 days).
+Estimated total time from this state to medRxiv submission: **~5 minutes** of portal work (excluding medRxiv-staff queue, typically 1–3 days).

@@ -30,7 +30,7 @@ adjudication mean PABAK 0.99 on key fields; Cohen's $\kappa$ paradox for
 \texttt{akt\_path} explicitly disclosed). The framework, frozen schema, decision-tree
 encoding, dual-annotator outputs, adjudication log, and 4-round v1 reviewer cycle
 are released openly at \texttt{github.com/htlin222/mbc-evidence-dag-paper} under MIT
-licence with Zenodo DOI minted at the tagged release.
+licence, permanently archived at Zenodo: \texttt{10.5281/zenodo.20250848}.
 
 The manuscript has not been previously published and is not under consideration
 elsewhere. A preprint will be posted to medRxiv concurrent with this submission.
