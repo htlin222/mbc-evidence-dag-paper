@@ -28,15 +28,22 @@ Audit method: section-by-section review against medRxiv submission requirements.
 | Honest reporting of negatives | ✅ Cohen κ gate failure + kappa paradox disclosed; tolerance-sensitivity P=0.10 noted | Bar-raising honest |
 | Reproducibility seed | ✅ `20260516` stated in Methods | |
 
-## ⚠️ NEEDS YOUR INPUT (cannot pre-stage)
+## ✅ RESOLVED 2026-05-17 (was: NEEDS YOUR INPUT)
+
+| Item | Resolved value | Source |
+|---|---|---|
+| Author full name | Hsieh-Ting Lin | lin.hsiehting.com/cv |
+| ORCID iD | 0009-0002-3974-4528 | lin.hsiehting.com/cv |
+| Affiliation | Department of Hematology & Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan | lin.hsiehting.com/cv |
+| Correspondence email | htlin222@kfsyscc.org | confirmed by author |
+| GitHub URL | github.com/htlin222/mbc-evidence-dag-paper | corrected handle |
+
+## ⚠️ STILL NEEDS YOUR INPUT (cannot pre-stage)
 
 | Item | Current | Action |
 |---|---|---|
-| Author full name | `H.-T. Lin` | Replace with full legal name as you want indexed |
-| ORCID iD | `0000-0000-0000-0000` (placeholder) | Register at orcid.org (3 min) and update `paper_B_methods_v3.tex` line 26 |
-| Affiliation | `[Affiliation to be supplied at submission]` | Real affiliation OR "Independent Researcher" |
-| GitHub URL | `github.com/htlin/mbc-evidence-dag-paper` | Push v3.0.0 to actual GitHub repo |
 | Zenodo DOI | Not yet minted | Follow `ZENODO_INSTRUCTIONS.md` (~10 min after GitHub push) |
+| GitHub push | Repo not yet public | Push v3.0.0 to github.com/htlin222/mbc-evidence-dag-paper |
 | medRxiv endorsement | n/a | If first medRxiv submission, secure endorser; otherwise skip |
 
 ## ⚠️ MINOR ISSUES SURFACED (you can decide whether to fix before submission)
@@ -52,8 +59,8 @@ Audit method: section-by-section review against medRxiv submission requirements.
 ## Overall verdict
 
 **Paper B is preprint-ready** subject to:
-1. Real ORCID + affiliation + name from you (~5 min)
+1. ~~Real ORCID + affiliation + name from you (~5 min)~~ **DONE 2026-05-17**
 2. Push v3.0.0 to GitHub + mint Zenodo DOI (~15 min)
-3. Update the 3 placeholders in `paper_B_methods_v3.tex` and recompile (~3 min)
+3. ~~Update the 3 placeholders in `paper_B_methods_v3.tex` and recompile (~3 min)~~ **DONE 2026-05-17**
 
-Estimated total time from this state to medRxiv submission: **30 minutes** (excluding medRxiv-staff queue, typically 1–3 days).
+Estimated total time from this state to medRxiv submission: **~15 minutes** (excluding medRxiv-staff queue, typically 1–3 days).

@@ -29,7 +29,7 @@ LLM-extraction pipeline is dual-annotator validated (Claude + Codex/GPT-5; post-
 adjudication mean PABAK 0.99 on key fields; Cohen's $\kappa$ paradox for
 \texttt{akt\_path} explicitly disclosed). The framework, frozen schema, decision-tree
 encoding, dual-annotator outputs, adjudication log, and 4-round v1 reviewer cycle
-are released openly at \texttt{github.com/htlin/mbc-evidence-dag-paper} under MIT
+are released openly at \texttt{github.com/htlin222/mbc-evidence-dag-paper} under MIT
 licence with Zenodo DOI minted at the tagged release.
 
 The manuscript has not been previously published and is not under consideration
@@ -41,6 +41,10 @@ be added at submission).
 
 Sincerely,
 
-H.-T. Lin
-[Affiliation to be supplied]
-\texttt{ppoiu87@gmail.com}
+Hsieh-Ting Lin, MD
+Hematology \& Medical Oncology Fellow
+Department of Hematology \& Medical Oncology
+Koo Foundation Sun Yat-Sen Cancer Center
+125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan
+\texttt{htlin222@kfsyscc.org}
+ORCID iD: 0009-0002-3974-4528

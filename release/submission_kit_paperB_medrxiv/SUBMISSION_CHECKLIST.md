@@ -8,18 +8,24 @@
 
 ---
 
-## ⚠️ Items requiring YOUR input (cannot be pre-staged)
+## ✅ Items RESOLVED 2026-05-17 (baked into manuscript)
+
+| # | Item | Resolved value |
+|---|---|---|
+| 1 | ORCID iD | 0009-0002-3974-4528 |
+| 2 | Institutional affiliation | Department of Hematology & Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan |
+| 3 | Name | Hsieh-Ting Lin |
+| 5 | GitHub repo URL | github.com/htlin222/mbc-evidence-dag-paper |
+
+## ⚠️ Items STILL requiring YOUR input
 
 These need your hands:
 
-| # | Item | What to enter | Where I prepared a draft |
-|---|---|---|---|
-| 1 | **Your ORCID iD** | Real ORCID (or register free at orcid.org, ~3 min) | Currently placeholder `0000-0000-0000-0000` in main.tex line 30 |
-| 2 | **Your institutional affiliation** | Real affiliation OR "Independent Researcher" | Currently `[Affiliation to be supplied at submission]` |
-| 3 | **Your real name** | First and last name as you want indexed | Currently `H.-T. Lin` |
-| 4 | **Endorsement (medRxiv-only)** | medRxiv requires a one-time endorsement from an established researcher in your field. If you've submitted before, skipped. If first time, you'll need to either (a) find an endorser via a colleague or (b) email medRxiv with credentials. Typically ~1 day delay. | n/a |
-| 5 | **GitHub repo URL** | Your real fork/account URL once you push the v3.0.0 tag publicly | Currently `github.com/htlin/mbc-evidence-dag-paper` (placeholder) |
-| 6 | **Zenodo code DOI** | After GitHub→Zenodo webhook fires on v3.0.0 push (~10 min) | See `ZENODO_INSTRUCTIONS.md` |
+| # | Item | What to enter |
+|---|---|---|
+| 4 | **Endorsement (medRxiv-only)** | medRxiv requires a one-time endorsement from an established researcher in your field. If you've submitted before, skipped. If first time, you'll need to either (a) find an endorser via a colleague or (b) email medRxiv with credentials. Typically ~1 day delay. |
+| 6 | **Zenodo code DOI** | After GitHub→Zenodo webhook fires on v3.0.0 push (~10 min). See `ZENODO_INSTRUCTIONS.md` |
+| 7 | **GitHub push** | Push v3.0.0 tag to github.com/htlin222/mbc-evidence-dag-paper (currently local-only) |
 
 ## ✅ Items pre-staged for you
 

@@ -19,19 +19,25 @@ Audited PDF: `release/mbc-evidence-dag-paper-A-clinical-v3.0.0.pdf` (330 KB, ~12
 | Data + Code availability statements | ✅ | Both present |
 | Conflicts + funding | ✅ | Both present |
 
-## ⚠️ NEEDS YOUR INPUT BEFORE SUBMISSION
+## ✅ RESOLVED 2026-05-17
+
+| Item | Resolved value | Source |
+|---|---|---|
+| Author full name | Hsieh-Ting Lin | lin.hsiehting.com/cv |
+| ORCID iD | 0009-0002-3974-4528 | lin.hsiehting.com/cv |
+| Affiliation | Department of Hematology & Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, Taipei, Taiwan | lin.hsiehting.com/cv |
+| Postal address | 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan | Koo Foundation public address |
+| Correspondence email | htlin222@kfsyscc.org | confirmed by author |
+| GitHub URL | github.com/htlin222/mbc-evidence-dag-paper | corrected handle |
+
+## ⚠️ STILL NEEDS YOUR INPUT BEFORE SUBMISSION
 
 | Item | Current | Action (day reference per POLISH_PLAN) |
 |---|---|---|
-| Author full name | `H.-T. Lin` | Day 2 — full legal name |
-| ORCID iD | `[Affiliation to be supplied]` line | Day 2 — real ORCID |
-| Affiliation | placeholder | Day 2 — real or "Independent Researcher" |
-| Postal address | not present | Day 2 — add to author block |
 | medRxiv preprint DOI | not yet | Day 5 — after Paper B medRxiv assigns DOI |
-| GitHub URL | `github.com/[FILL IN]/...` | Day 1 — after pushing v3.0.0 |
 | Zenodo DOI | `[FILL IN Zenodo DOI]` | Day 1 — after Zenodo webhook |
 | Suggested reviewers (3) | none listed | Day 6 — research and add |
-| Cover letter | draft in `cover_letter_jcopo_draft.md` | Day 7 — finalize |
+| Cover letter | draft in `cover_letter_jcopo_draft.md` (author block resolved) | Day 7 — finalize editor name, reviewer names, date |
 | Supplement (Tables S1-S4) | not yet compiled | Day 10 — create |
 
 ## MINOR ISSUES IDENTIFIED IN AUDIT

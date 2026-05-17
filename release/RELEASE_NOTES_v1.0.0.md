@@ -99,7 +99,7 @@ Pre-publication citation (preprint pending):
 > Lin H.-T. *A Computable Map of Treatment-Sequencing Evidence in HR+/HER2-
 > Metastatic Breast Cancer: A Graph-Theoretic Pilot Comparing Trial Chains
 > with the ESMO Guideline Decision Tree.* mbc-evidence-dag-paper, v1.0.0,
-> 2026-05-16. GitHub: https://github.com/htlin/mbc-evidence-dag-paper
+> 2026-05-16. GitHub: https://github.com/htlin222/mbc-evidence-dag-paper
 
 ## Known limitations explicitly disclosed in the manuscript
 

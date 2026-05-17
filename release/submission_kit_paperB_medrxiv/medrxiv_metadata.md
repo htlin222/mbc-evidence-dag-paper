@@ -12,7 +12,7 @@ A graph-theoretic framework for guideline–trial evidence concordance
 
 | Order | Full Name | ORCID | Affiliation | Email | Corresponding? |
 |---|---|---|---|---|---|
-| 1 | [FILL IN your name] | [FILL IN your ORCID — register at orcid.org if needed] | [FILL IN your affiliation; "Independent Researcher" is OK] | ppoiu87@gmail.com | Yes |
+| 1 | Hsieh-Ting Lin | 0009-0002-3974-4528 | Department of Hematology & Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan | htlin222@kfsyscc.org | Yes |
 
 ## Abstract (≤250 words; current = 260 words approximate)
 

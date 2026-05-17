@@ -32,9 +32,9 @@
 A Graph-Theoretic Framework for Measuring Evidence-Free Decision Points in
 Clinical Guidelines, with Dual-LLM-Annotator Validation Across Two Solid Tumors}
 
-\author[1,*]{H.-T.\ Lin}
-\affil[1]{[Affiliation to be supplied at submission]. ORCID iD: 0000-0000-0000-0000 (placeholder).}
-\affil[*]{Correspondence: \texttt{ppoiu87@gmail.com}.}
+\author[1,*]{Hsieh-Ting Lin}
+\affil[1]{Department of Hematology \& Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan. ORCID iD: 0009-0002-3974-4528.}
+\affil[*]{Correspondence: \texttt{htlin222@kfsyscc.org}.}
 \date{\today}
 
 \begin{document}
@@ -45,7 +45,7 @@ Clinical Guidelines, with Dual-LLM-Annotator Validation Across Two Solid Tumors}
 
 \begin{abstract}
 \noindent
-Clinical practice guidelines compose treatment recommendations across non-overlapping pivotal trials, but no general computational method has been published for quantifying the structural concordance between a guideline decision tree and its underlying trial evidence. We introduce a graph-theoretic framework that places both objects (pivotal-trial corpus, guideline decision tree) on a shared (state, biomarker) node space, defines an evidence-free decision-point ratio (EFDPR), and tests it with a pre-registered one-sided exact binomial test. The framework is paired with a dual-LLM-annotator extraction pipeline (Claude as annotator A; Codex/GPT-5 as annotator B) validated by Cohen's $\kappa$ and the prevalence-adjusted bias-adjusted kappa (PABAK). We demonstrate the framework across two biomarker-driven metastatic cancers (HR+/HER2-negative breast and EGFR-mutant/ALK-rearranged non-small-cell lung), pooling 259 systematically-searched pivotal trials against a 49-node unified ESMO+ASCO+NCCN decision tree (post v3 round-1 internal review correction of 4 NCT-misidentifications, 6 encoding bugs, and 1 mid-flight guideline-node de-duplication). The pre-registered exact binomial test of $H_0: \mathrm{EFDPR} \le 0.25$ at $\alpha = 0.05$ rejected the null with $P = 0.023$ (strict-tolerance EFDPR 0.39, Clopper-Pearson 95\% CI 0.25--0.54; bootstrap CI 0.25--0.53); ESCAT and liberal tolerance gave 0.35 ($P = 0.084$). Pre-adjudication mean Cohen's $\kappa$ on key fields was 0.67--0.78 across tumors, with documented adjudication trail. The framework, schema, decision-tree encoding, dual-annotator outputs, and adjudication log are released under MIT licence at \texttt{github.com/htlin/mbc-evidence-dag-paper} (\texttt{v3.0.0}).
+Clinical practice guidelines compose treatment recommendations across non-overlapping pivotal trials, but no general computational method has been published for quantifying the structural concordance between a guideline decision tree and its underlying trial evidence. We introduce a graph-theoretic framework that places both objects (pivotal-trial corpus, guideline decision tree) on a shared (state, biomarker) node space, defines an evidence-free decision-point ratio (EFDPR), and tests it with a pre-registered one-sided exact binomial test. The framework is paired with a dual-LLM-annotator extraction pipeline (Claude as annotator A; Codex/GPT-5 as annotator B) validated by Cohen's $\kappa$ and the prevalence-adjusted bias-adjusted kappa (PABAK). We demonstrate the framework across two biomarker-driven metastatic cancers (HR+/HER2-negative breast and EGFR-mutant/ALK-rearranged non-small-cell lung), pooling 259 systematically-searched pivotal trials against a 49-node unified ESMO+ASCO+NCCN decision tree (post v3 round-1 internal review correction of 4 NCT-misidentifications, 6 encoding bugs, and 1 mid-flight guideline-node de-duplication). The pre-registered exact binomial test of $H_0: \mathrm{EFDPR} \le 0.25$ at $\alpha = 0.05$ rejected the null with $P = 0.023$ (strict-tolerance EFDPR 0.39, Clopper-Pearson 95\% CI 0.25--0.54; bootstrap CI 0.25--0.53); ESCAT and liberal tolerance gave 0.35 ($P = 0.084$). Pre-adjudication mean Cohen's $\kappa$ on key fields was 0.67--0.78 across tumors, with documented adjudication trail. The framework, schema, decision-tree encoding, dual-annotator outputs, and adjudication log are released under MIT licence at \texttt{github.com/htlin222/mbc-evidence-dag-paper} (\texttt{v3.0.0}).
 \end{abstract}
 
 \medskip
@@ -150,7 +150,7 @@ The framework's strict-tolerance concordance algorithm is deliberately conservat
 Following the Research Synthesis Methods AI/ML evaluation guidance, we explicitly disclose: model versions (Claude 4.7, Codex GPT-5 at execution time 2026-05-16), prompts (released as \texttt{analysis/extraction\_protocol.md} and \texttt{extraction\_protocol\_nsclc.md}), full per-trial outputs of both annotators, all adjudication rules with rationale, and reproducible random seeds (\texttt{20260516}) for validation-subset selection and bootstrap CIs. Inter-rater agreement is reported both pre- and post-adjudication for each schema field.
 
 \section*{Data Availability Statement}
-The data underlying this manuscript are publicly available from ClinicalTrials.gov (queries reproduced in \texttt{analysis/v3\_01\_systematic\_search\_nsclc.py} and v2 counterpart). Processed datasets (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules) are released under MIT licence at \url{https://github.com/htlin/mbc-evidence-dag-paper} (tag \texttt{v3.0.0}) with Zenodo DOI minted at release.
+The data underlying this manuscript are publicly available from ClinicalTrials.gov (queries reproduced in \texttt{analysis/v3\_01\_systematic\_search\_nsclc.py} and v2 counterpart). Processed datasets (frozen JSON schema, decision-tree encodings, dual-annotator outputs, adjudication rules) are released under MIT licence at \url{https://github.com/htlin222/mbc-evidence-dag-paper} (tag \texttt{v3.0.0}) with Zenodo DOI minted at release.
 
 \section*{Code Availability Statement}
 The full analysis pipeline (Python 3.12, \texttt{networkx} 3.5, \texttt{scipy} 1.17, \texttt{matplotlib} 3.8) is released at the same GitHub URL. The tagged commit reproduces every figure and table; bootstrap seed is \texttt{20260516}.

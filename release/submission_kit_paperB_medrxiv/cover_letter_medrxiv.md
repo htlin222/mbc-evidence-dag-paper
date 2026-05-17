@@ -23,7 +23,10 @@ We declare no competing financial or non-financial interests relevant to this wo
 
 Sincerely,
 
-[FILL IN your name]
-[FILL IN your affiliation; "Independent Researcher" acceptable]
-ppoiu87@gmail.com
-ORCID iD: [FILL IN]
+Hsieh-Ting Lin, MD
+Hematology & Medical Oncology Fellow
+Department of Hematology & Medical Oncology
+Koo Foundation Sun Yat-Sen Cancer Center
+125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan
+htlin222@kfsyscc.org
+ORCID iD: 0009-0002-3974-4528
