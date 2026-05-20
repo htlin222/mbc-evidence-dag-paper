@@ -33,7 +33,7 @@ are released openly at \texttt{github.com/htlin222/mbc-evidence-dag-paper} under
 licence, permanently archived at Zenodo: \texttt{10.5281/zenodo.20250848}.
 
 The manuscript has not been previously published and is not under consideration
-elsewhere. A preprint will be posted to medRxiv concurrent with this submission.
+elsewhere.
 
 We suggest three potential reviewers with no apparent conflict of interest:
 [Reviewer 1], [Reviewer 2], [Reviewer 3] (full names, affiliations, and emails to
