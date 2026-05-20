@@ -4,14 +4,14 @@
 
 ---
 
-[Date — e.g., 2026-05-30]
+2026-05-20
 
-Dr. Stacy W. Gray
+James M. Ford, MD, FASCO
 Editor-in-Chief
 *JCO Precision Oncology*
 American Society of Clinical Oncology
 
-Dear Dr. Gray,
+Dear Dr. Ford,
 
 We submit for consideration as an **Original Report** the manuscript "**Evidence-Free Decision Points in Biomarker-Driven Metastatic Cancer Guidelines: A Pre-Registered Multi-Tumor Audit of ESMO, ASCO, and NCCN Decision Trees in HR+/HER2- Breast Cancer and EGFR/ALK Non-Small-Cell Lung Cancer**."
 

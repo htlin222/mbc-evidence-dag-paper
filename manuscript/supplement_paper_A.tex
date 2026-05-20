@@ -1,0 +1,64 @@
+%% Supplement — Paper A (Clinical Application, v3.0.0)
+%% Target journal: JCO Precision Oncology
+%% Build: latexmk -pdf supplement_paper_A.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.0cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{microtype}
+\usepackage{authblk}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+
+\titleformat{\section}{\fontsize{12}{14}\bfseries\sffamily}{\thesection}{0.6em}{}
+\setlength{\parskip}{0.25\baselineskip}
+\setlength{\parindent}{0pt}
+\captionsetup{font=small,labelfont=bf,labelsep=period}
+\renewcommand{\familydefault}{\rmdefault}
+
+\title{\fontsize{14}{17}\bfseries\sffamily
+Supplementary Material for:\\
+Evidence-Free Decision Points in Biomarker-Driven Metastatic Cancer Guidelines}
+
+\author[1,*]{Hsieh-Ting Lin}
+\affil[1]{Department of Hematology \& Medical Oncology, Koo Foundation Sun Yat-Sen Cancer Center, 125 Lide Rd., Beitou Dist., Taipei 11259, Taiwan. ORCID iD: 0009-0002-3974-4528.}
+\affil[*]{Correspondence: \texttt{htlin222@kfsyscc.org}.}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent This document supplements the main manuscript \textit{Evidence-Free Decision Points in Biomarker-Driven Metastatic Cancer Guidelines: A Pre-Registered Multi-Tumor Audit of ESMO, ASCO, and NCCN Decision Trees in HR+/HER2- Breast Cancer and EGFR/ALK Non-Small-Cell Lung Cancer} (Paper A; tagged release \texttt{v3.0.0}; Zenodo DOI \texttt{10.5281/zenodo.20250848}).
+
+\medskip
+\noindent The four tables provided are:
+
+\begin{itemize}
+  \item \textbf{Table S1.} PRISMA-2020 reporting items modified for graph-theoretic guideline-trial concordance analysis (with graph-encoding addendum).
+  \item \textbf{Table S2.} Representative per-trial structured extractions (10 of 259 pivotal trials).
+  \item \textbf{Table S3.} Full 49-node ESMO/ASCO/NCCN unified decision tree with strict-tolerance concordance status.
+  \item \textbf{Table S4.} Adjudication rules log consolidating the deterministic rules applied when LLM annotators disagreed.
+\end{itemize}
+
+\section*{S1: PRISMA-2020 reporting checklist (modified)}
+\input{supplement_table_S1.tex}
+
+\section*{S2: Representative per-trial structured extractions}
+\input{supplement_table_S2.tex}
+
+\section*{S3: Full 49-node guideline decision tree with concordance status}
+\input{supplement_table_S3.tex}
+
+\section*{S4: Adjudication rules log}
+\input{supplement_table_S4.tex}
+
+\end{document}

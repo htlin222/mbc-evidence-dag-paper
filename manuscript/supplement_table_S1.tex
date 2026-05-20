@@ -1,0 +1,43 @@
+% Supplementary Table S1 — PRISMA-2020 reporting items (modified for graph-encoding)
+\begin{table}[H]
+\centering
+\caption{\textbf{PRISMA-2020 reporting items modified for graph-theoretic guideline-trial concordance analysis}. Items reflect the systematic-search and structured-extraction core of PRISMA-2020 (Page \textit{et al.} 2021), with a graph-encoding addendum at the end specific to this study type.}
+\label{tab:S1}
+\footnotesize
+\begin{tabular}{@{}p{0.04\textwidth}p{0.30\textwidth}p{0.55\textwidth}@{}}
+\toprule
+\# & Item & Location in manuscript / repository \\
+\midrule
+1 & Title identifies study as systematic with concordance computation & Title (both papers) \\
+2 & Structured abstract with Purpose / Methods / Results / Conclusion & Abstract section \\
+3 & Rationale: established gap in literature & Introduction \\
+4 & Objectives stated as testable pre-specified question (EFDPR vs $p_0=0.25$) & Introduction final paragraph; pre-registration commits \texttt{4b5bf1a} \\
+5 & Eligibility criteria (population, intervention, comparator, outcomes) & Methods §\ref{sec:methods}, \texttt{prereg-v3.md} \\
+6 & Information sources: ClinicalTrials.gov v2 API; ESMO/ASCO/NCCN guideline documents & Methods; \texttt{analysis/v3\_01\_systematic\_search\_nsclc.py} \\
+7 & Search query reproduced verbatim & \texttt{analysis/v3\_01\_systematic\_search\_nsclc.py} \\
+8 & Selection process with two-pass filter and audit trail & \texttt{analysis/v3\_02\_filter\_nsclc.py}; \texttt{data/processed/v3\_nsclc\_filter\_log.json} \\
+9 & Data collection: dual-LLM-annotator pipeline (Claude 4.7 + Codex/GPT-5) with adjudication & Methods §dual-annotator; \texttt{extraction\_protocol.md} \& \texttt{extraction\_protocol\_nsclc.md} \\
+10 & Data items: frozen JSON schema (state, biomarker, drug class, line of therapy) & \texttt{extraction\_protocol*.md} ``Output schema'' \\
+11 & Bias assessment: pre-adjudication Cohen's $\kappa$ and PABAK with documented gate failures & Methods §inter-rater; \texttt{data/results/v3\_nsclc\_kappa.json} \\
+12 & Synthesis methods: graph-theoretic concordance with strict / ESCAT / liberal biomarker-tolerance grid & Methods §framework \\
+13 & Reporting bias assessment: pre-registration of primary test prevents outcome-dependent analysis-choice & \texttt{docs/prereg-v3.md} \\
+14 & Certainty assessment: one-sided exact binomial with Clopper-Pearson exact CI + bootstrap sensitivity & Methods §statistical inference \\
+15 & Search results: 702 NSCLC candidates → 178 pivotal trials (5 supplementary additions after round-1 audit); mBC corpus 81 trials from v2.0.0 & Results §corpus; \texttt{data/processed/v3\_nsclc\_filter\_log.json} \\
+16 & Study characteristics summary (Tables S2--S3) & Supplement \\
+17 & Risk of bias of individual studies: not applicable at the trial-extraction level; bias of the extraction process is assessed via dual-LLM-annotator $\kappa$/PABAK & Methods \\
+18 & Results: EFDPR 0.39, P=0.023 (pooled strict); see Figure 2 per-node breakdown & Results; Figure 2 \\
+19 & Results of syntheses: ESCAT/liberal sensitivity (P=0.084); tumour-stratified analyses & Results §sensitivity \\
+20 & Reporting bias: pre-registration trail (commits \texttt{085ae54}, \texttt{079b540}, \texttt{4b5bf1a}) limits researcher degrees of freedom & Methods §pre-registration \\
+21 & Certainty of evidence: one-node-deep rejection disclosed; BH-q across 15-cell tolerance grid disclosed & Discussion §caveats \\
+22 & Discussion: 3 caveats + 3 positives + limitations + outlook & Discussion \\
+23 & Conclusion: actionable identification of evidence-free decision positions & Conclusion paragraph \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Graph-encoding addendum (specific to this study type)}} \\
+24 & Node space definition $\mathcal{N} = \mathcal{S} \times \mathcal{B}$ explicit & Methods §framework \\
+25 & Edge construction rule from trial eligibility text to (state, biomarker, drug class) edge & Methods; \texttt{analysis/v3\_07\_build\_combined\_dag.py} \\
+26 & Concordance criteria spelled out (state-superset, biomarker-superset, drug-class, temporal-precedence) & Methods §concordance algorithm \\
+27 & Pre-specified tolerance grid (strict / ESCAT / liberal) reported as sensitivity & Methods \& Results \\
+28 & Released artefacts permit re-execution byte-identically (bootstrap seed \texttt{20260516}) & Methods; \texttt{data/results/v3\_pooled\_efdpr.json}; Zenodo \texttt{10.5281/zenodo.20250848} \\
+\bottomrule
+\end{tabular}
+\end{table}

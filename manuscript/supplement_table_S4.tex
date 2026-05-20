@@ -1,0 +1,50 @@
+% Supplementary Table S4 — Adjudication rules log (consolidated from extraction protocols)
+\begin{table}[H]
+\centering
+\caption{\textbf{Adjudication rules log} consolidating the deterministic decision rules used when the two LLM annotators disagreed on a structured-extraction field. Full per-trial annotator outputs and the JSON-level adjudicated record are released in \texttt{data/processed/v2\_extraction\_final.json} (mBC) and \texttt{nsclc\_full.json} (NSCLC). Rules were pre-specified in \texttt{analysis/extraction\_protocol.md} (committed \texttt{4b5bf1a}, before any outcome-touching analysis).}
+\label{tab:S4}
+\footnotesize
+\begin{tabular}{@{}p{0.18\textwidth}p{0.78\textwidth}@{}}
+\toprule
+Field & Adjudication rule \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{mBC HR+/HER2- pipeline rules}} \\
+\midrule
+\texttt{post\_endo} vs \texttt{excluded.post\_endo\_metastatic\_any}
+& "Must have progressed on prior endocrine therapy in the metastatic setting" $\Rightarrow$ \texttt{post\_endo: true}. "No prior systemic therapy in the metastatic setting" $\Rightarrow$ \texttt{excluded.post\_endo\_metastatic\_any: true}. Silent $\Rightarrow$ both \texttt{null}. \\
+\texttt{post\_cdk46i}
+& "Must have received prior CDK4/6i" $\Rightarrow$ \texttt{true}. "Prior CDK4/6i is permitted" $\Rightarrow$ \texttt{null} (allowed, not required). "No prior CDK4/6i" or "CDK4/6i-naive" $\Rightarrow$ \texttt{false} AND \texttt{excluded.post\_cdk46i: true}. \\
+\texttt{biomarker.hr\_pos}
+& Eligibility requires HR+ or ER+ $\Rightarrow$ \texttt{true}. Eligibility enrols all-comers $\Rightarrow$ \texttt{null} if HR+ is a stratification; \texttt{false} if explicitly HR-. \\
+\texttt{biomarker.her2\_neg} vs \texttt{her2\_low}
+& "HER2-negative" (IHC 0/1+/2+ ISH-) $\Rightarrow$ \texttt{her2\_neg: true}, \texttt{her2\_low: null}. Specifically requires HER2-low (IHC 1+ or 2+/ISH-) $\Rightarrow$ both \texttt{her2\_neg: true} AND \texttt{her2\_low: true}. Requires HER2+ (IHC 3+ or ISH-amplified) $\Rightarrow$ \texttt{her2\_neg: false}; trial flagged out-of-scope. \\
+\texttt{biomarker.pik3camut} \&
+\texttt{biomarker.esr1mut} \&
+\texttt{biomarker.akt\_path}
+& Extracted only when explicitly required by trial eligibility; \texttt{null} otherwise. \texttt{akt\_path} adjudication kappa failed gate (PABAK pass) — disclosed in Methods. \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{NSCLC EGFR/ALK pipeline rules}} \\
+\midrule
+\texttt{tumor\_type}
+& "NSCLC-EGFR" if eligibility requires EGFR mutation; "NSCLC-ALK" if ALK rearrangement; "NSCLC-both" if multi-cohort; "NSCLC-other" $\Rightarrow$ trial flagged out-of-scope (HER2-mut, KRAS G12C, ROS1, RET, MET, NTRK, BRAF, driver-negative). \\
+mBC-specific fields on NSCLC trials & All \texttt{null} or \texttt{false}; never inferred. \\
+\texttt{post\_egfr\_tki} vs \texttt{post\_osimertinib}
+& Post-1st/2nd-gen TKI progression $\Rightarrow$ \texttt{post\_egfr\_tki: true}. Post-osimertinib (3rd-gen) progression $\Rightarrow$ both \texttt{post\_egfr\_tki: true} AND \texttt{post\_osimertinib: true}. Silent $\Rightarrow$ \texttt{null}. \\
+\texttt{alk\_resistance\_mut}
+& If trial enrols patients with specific ALK resistance mutations (e.g., G1202R) $\Rightarrow$ \texttt{true}; else \texttt{null}. \\
+\texttt{drug\_class}
+& Prefer most specific canonical string. For combination arms, use the experimental-arm class. \\
+\texttt{guideline\_target\_node}
+& Format \texttt{<state>|<biomarker>|NSCLC}, e.g.\ \texttt{post-osimertinib|EGFR-mut|NSCLC}. \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Cross-pipeline rules}} \\
+\midrule
+Out-of-scope handling
+& Out-of-scope trials are retained in the extraction record with \texttt{confidence: "low"} and \texttt{notes: "Out of scope: <reason>"} for transparency; they do not enter the trial-DAG. \\
+Tie-breaking
+& When annotators disagreed on a Boolean field that flips trial inclusion, the adjudication outcome is determined by re-reading the verbatim eligibility text per the rules above. The two annotator outputs (pre-adjudication) and the adjudicated record (post-adjudication) are released side-by-side in \texttt{v2\_extraction\_final.json}. \\
+Round-1 audit corrections
+& Four NCT-misidentifications (AURA3, HERTHENA-Lung01, TROPION-Lung01, FLAURA-CNS) and six encoding bugs were caught during round-1 internal review and corrected with hand-curated records before final analysis. The audit trail is in commit history (\texttt{4ff3cdd}, \texttt{dadf797}, \texttt{123a461}). \\
+\bottomrule
+\end{tabular}
+\end{table}

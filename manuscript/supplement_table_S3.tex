@@ -1,0 +1,62 @@
+% Supplementary Table S3 — full 49-node ESMO/ASCO/NCCN decision tree
+\begin{table}[H]
+\centering
+\caption{\textbf{Full 49-node ESMO/ASCO/NCCN unified decision tree} with strict-tolerance concordance status. ``Concordant'' = at least one trial edge satisfies state-superset, biomarker-superset, drug-class, and temporal-precedence criteria. ``Evidence-free'' = no such trial edge. Concordant trial counts in last column are derived from \texttt{data/results/v3\_pooled\_efdpr.json}.}
+\label{tab:S3}
+\footnotesize
+\begin{tabular}{@{}p{0.05\textwidth}p{0.10\textwidth}p{0.13\textwidth}p{0.18\textwidth}p{0.22\textwidth}p{0.06\textwidth}p{0.10\textwidth}@{}}
+\toprule
+Node & Tumor & State & Biomarker & Recommended class(es) & Year & Concordance \\
+\midrule
+G1 & mBC & first-line & HR+/HER2- & CDK4/6i + AI & 2018 & concordant (n=4) \\
+G2 & mBC & first-line+pre-me… & HR+/HER2- & CDK4/6i + endocrine (pre-menopausa… & 2019 & concordant (n=1) \\
+G3 & mBC & post-endo & HR+/HER2- & CDK4/6i + fulvestrant & 2016 & concordant (n=1) \\
+G4 & mBC & post-endo & HR+/HER2-/PIK3CAmut & PI3Ki + fulvestrant & 2020 & concordant (n=2) \\
+G5 & mBC & post-CDK46i & HR+/HER2-/ESR1mut & SERD oral & 2023 & concordant (n=1) \\
+G6 & mBC & post-endo & HR+/HER2-/AKTpath & AKTi + fulvestrant & 2024 & concordant (n=1) \\
+G7 & mBC & post-CDK46i & HR+/HER2-/PIK3CAmut & PI3Ki + fulvestrant & 2022 & concordant (n=1) \\
+G8 & mBC & post-CDK46i & HR+/HER2-/HER2-low & HER2-ADC (T-DXd) & 2024 & concordant (n=1) \\
+G9 & mBC & post-CDK46i & HR+/HER2-/no-actionable & everolimus + exemestane; chemother… & 2022 & \textbf{evidence-free} \\
+G10 & mBC & post-CDK46i & HR+/HER2- & CDK4/6i + fulvestrant (post-CDK4/6… & 2024 & concordant (n=2) \\
+G11 & mBC & post-endo & HR+/HER2-/HER2-low & HER2-ADC (T-DXd) & 2024 & concordant (n=1) \\
+G12 & mBC & post-chemo & HR+/HER2-/HER2-low & HER2-ADC (T-DXd) & 2022 & \textbf{evidence-free} \\
+G13 & mBC & post-CDK46i+post-… & HR+/HER2- & everolimus + exemestane & 2018 & \textbf{evidence-free} \\
+G14 & mBC & post-CDK46i+post-… & HR+/HER2- & Sacituzumab govitecan & 2023 & \textbf{evidence-free} \\
+G15 & mBC & post-endo & HR+/HER2-/PIK3CAmut & PI3Ki triplet (inavolisib + CDK4/6… & 2024 & \textbf{evidence-free} \\
+G16 & mBC & metastatic & gBRCAmut/HER2- & PARPi (olaparib); PARPi (talazopar… & 2018 & concordant (n=1) \\
+G17 & mBC & first-line+viscer… & HR+/HER2- & chemotherapy single agent & 2022 & \textbf{evidence-free} \\
+G19 & mBC & post-endo & HR+/HER2-/ESR1mut & SERD oral + CDK4/6i & 2024 & concordant (n=1) \\
+G20 & mBC & post-endo+post-CD… & HR+/HER2- & TROP2-ADC (sacituzumab govitecan) & 2023 & concordant (n=1) \\
+G21 & mBC & post-chemo & HR+/HER2-/HER2-low & TROP2-ADC (datopotamab deruxtecan)… & 2025 & \textbf{evidence-free} \\
+G22 & mBC & first-line+indole… & HR+/HER2- & endocrine therapy alone & 2020 & \textbf{evidence-free} \\
+G23 & mBC & post-endo+post-CD… & HR+/HER2- & TROP2-ADC (sacituzumab govitecan) & 2023 & concordant (n=1) \\
+G24 & mBC & first-line+indole… & HR+/HER2- & endocrine therapy alone & 2018 & \textbf{evidence-free} \\
+G25 & mBC & post-CDK46i+post-… & HR+/HER2- & chemotherapy single agent & 2022 & \textbf{evidence-free} \\
+G26 & mBC & post-CDK46i & HR+/HER2-/AKTpath & AKTi + fulvestrant & 2024 & concordant (n=1) \\
+N1 & NSCLC & first-line & EGFR-mut/NSCLC & EGFR TKI 3rd-gen (osimertinib) & 2018 & concordant (n=4) \\
+N2 & NSCLC & first-line & EGFR-mut/NSCLC & EGFR TKI 3rd-gen + chemotherapy & 2024 & concordant (n=1) \\
+N3 & NSCLC & first-line & EGFR-mut/NSCLC & EGFR TKI 3rd-gen + bispecific (ami… & 2024 & concordant (n=1) \\
+N4 & NSCLC & first-line & EGFR-mut/NSCLC & EGFR TKI 2nd-gen (afatinib/dacomit… & 2017 & concordant (n=1) \\
+N5 & NSCLC & first-line & EGFR-mut/NSCLC & Bevacizumab + EGFR TKI; Ramuciruma… & 2020 & concordant (n=2) \\
+N6 & NSCLC & post-EGFRTKI & EGFR-mut/EGFR-T790M/NSCLC & EGFR TKI 3rd-gen (osimertinib) & 2017 & concordant (n=4) \\
+N7 & NSCLC & post-osimertinib & EGFR-mut/NSCLC & Amivantamab + chemotherapy & 2023 & concordant (n=1) \\
+N8 & NSCLC & post-osimertinib & EGFR-mut/NSCLC & HER3-ADC (patritumab deruxtecan) & 2023 & concordant (n=1) \\
+N9 & NSCLC & post-osimertinib+… & EGFR-mut/NSCLC & TROP2-ADC (datopotamab deruxtecan) & 2023 & \textbf{evidence-free} \\
+N10 & NSCLC & post-osimertinib & EGFR-mut/NSCLC & Platinum doublet chemotherapy & 2020 & \textbf{evidence-free} \\
+N11 & NSCLC & first-line & EGFR-ex20ins/NSCLC & Amivantamab + chemotherapy & 2024 & concordant (n=1) \\
+N12 & NSCLC & post-chemo & EGFR-ex20ins/NSCLC & investigational (other) & 2022 & \textbf{evidence-free} \\
+N13 & NSCLC & first-line & ALK-rearranged/NSCLC & ALK TKI 2nd-gen (alectinib/brigati… & 2017 & concordant (n=2) \\
+N15 & NSCLC & first-line & ALK-rearranged/NSCLC & ALK TKI 3rd-gen (lorlatinib) & 2020 & concordant (n=1) \\
+N16 & NSCLC & first-line & ALK-rearranged/NSCLC & ALK TKI 1st-gen (crizotinib) & 2014 & concordant (n=1) \\
+N17 & NSCLC & post-ALKTKI & ALK-rearranged/NSCLC & ALK TKI 2nd-gen (alectinib/brigati… & 2017 & concordant (n=5) \\
+N18 & NSCLC & post-ALKTKI & ALK-rearranged/NSCLC & ALK TKI 3rd-gen (lorlatinib) & 2018 & concordant (n=1) \\
+N19 & NSCLC & post-ALKTKI & ALK-rearranged/ALK-resis… & Platinum doublet chemotherapy & 2022 & \textbf{evidence-free} \\
+N20 & NSCLC & first-line+brain-… & ALK-rearranged/NSCLC & ALK TKI 3rd-gen (lorlatinib); ALK … & 2020 & \textbf{evidence-free} \\
+N21 & NSCLC & post-osimertinib & EGFR-mut/MET-amp/NSCLC & investigational (other) & 2024 & \textbf{evidence-free} \\
+N22 & NSCLC & first-line+brain-… & EGFR-mut/NSCLC & EGFR TKI 3rd-gen (osimertinib) & 2018 & \textbf{evidence-free} \\
+N23 & NSCLC & post-osimertinib+… & EGFR-mut/NSCLC & investigational (other) & 2024 & \textbf{evidence-free} \\
+N24 & NSCLC & post-osimertinib+… & EGFR-mut/NSCLC & Platinum doublet chemotherapy & 2020 & \textbf{evidence-free} \\
+N25 & NSCLC & first-line+poor-p… & EGFR-mut/NSCLC & EGFR TKI 3rd-gen + chemotherapy & 2024 & concordant (n=1) \\
+\bottomrule
+\end{tabular}
+\end{table}
